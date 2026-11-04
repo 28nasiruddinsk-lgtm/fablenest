@@ -30,4 +30,26 @@
 @media (prefers-reduced-motion:reduce){.ab-reveal{opacity:1;transform:none;transition:none}}
 
 /* style.css has its own .row (a nowrap contact line); inside Bootstrap pages .row is only the grid row */
-.row{white-space:normal;font:inherit;letter-spacing:inherit}
+.container .row,.container-fluid .row{white-space:normal;font:inherit;letter-spacing:inherit}
+
+/* difference: dark panel + 4 cards */
+.ab-diff{padding:clamp(18px,3vw,56px) clamp(8px,.95vw,18px) clamp(30px,4vw,80px)}
+.ab-diff__panel{background:#002a1c;border-radius:clamp(20px,1.6vw,30px);padding:clamp(40px,4.4vw,84px) 0 clamp(46px,5vw,96px);text-align:center}
+.ab-diff__h{margin:0 auto 12px;width:min(88%,1010px)}
+.ab-diff__h img{display:block;width:100%;height:auto;mix-blend-mode:lighten}
+.ab-diff__lead{margin:0 auto clamp(26px,3.4vw,64px);max-width:1000px;padding:0 20px;font:400 clamp(14px,1.05vw,20px)/1.45 var(--body);letter-spacing:-.025em;color:#fff}
+.ab-card{height:100%;padding:clamp(18px,1.8vw,32px) clamp(16px,1.5vw,28px) clamp(22px,2vw,38px);background:#fff;border-radius:clamp(18px,1.4vw,26px);text-align:center;transition:transform .35s var(--ease-pop),box-shadow .35s}
+.ab-card:hover{transform:translateY(-8px);box-shadow:0 18px 34px rgba(0,0,0,.35)}
+.ab-card__icon{display:block;width:min(100%,300px);height:auto;margin:0 auto;mix-blend-mode:multiply;transition:transform .45s var(--ease-pop)}
+.ab-card:hover .ab-card__icon{transform:scale(1.07) rotate(-3deg)}
+.ab-card__title{margin:0}
+.ab-card__title img{display:block;width:100%;height:auto;mix-blend-mode:multiply}
+.ab-card hr{margin:clamp(10px,1vw,16px) 6% clamp(12px,1.1vw,18px);border:0;border-top:1px solid #002a1c;opacity:1}
+.ab-card p{margin:0;font:400 clamp(13px,.85vw,16px)/1.45 var(--body);letter-spacing:-.02em;color:#002a1c}
+.ab-diff .ab-reveal{transition-delay:calc(var(--i,0)*.12s)}
+
+/* vision */
+.ab-vision{padding:clamp(40px,6vw,120px) 0 clamp(40px,6vw,120px);background:#fff;color:#002a1c}
+.ab-vision .ab-p{max-width:620px}
+
+.ab-diff .row{align-items:stretch}

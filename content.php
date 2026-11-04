@@ -125,10 +125,10 @@ return [
             'title' => 'The Difference We Bring',
             'intro' => 'Great children’s books are created through a thoughtful balance of storytelling, visual creativity, and professional execution.',
             'cards' => [
-                ['Creative Collaboration', 'Custom artwork and storytelling turn your ideas into engaging books for young readers.'],
-                ['Personalized Support', 'Your goals guide our process, with support shaped around your ideas and publishing needs.'],
-                ['Full Book Solutions!', 'Editing, design, formatting, and publishing bring essential services together in one place.'],
-                ['Author Collaboration', 'We listen, communicate clearly, and keep your vision at the heart of each project.'],
+                ['Creative Collaboration', 'Custom artwork and storytelling turn your ideas into engaging books for young readers.', 'assets/s/diff_icon1.jpg', 'assets/s/diff_title1.jpg'],
+                ['Personalized Support', 'Your goals guide our process, with support shaped around your ideas and publishing needs.', 'assets/s/diff_icon2.jpg', 'assets/s/diff_title2.jpg'],
+                ['Full Book Solutions!', 'Editing, design, formatting, and publishing bring essential services together in one place.', 'assets/s/diff_icon3.jpg', 'assets/s/diff_title3.jpg'],
+                ['Author Collaboration', 'We listen, communicate clearly, and keep your vision at the heart of each project.', 'assets/s/diff_icon4.jpg', 'assets/s/diff_title4.jpg'],
             ],
         ],
         'vision' => [

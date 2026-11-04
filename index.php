@@ -65,18 +65,7 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
   <a class="a b2 line rv rv-pop" style="--x:400;--y:1931;--w:195;--h:59;--d:1.65" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a>
 </section>
 
-<section class="sec" id="cta" style="--y0:2150;--h:330">
-  <div class="a cta-bar rv rv-up" style="--x:26;--y:2181;--w:1868;--h:268"></div>
-  <h2 class="a cta-h rv" style="--x:162;--y:2244;--w:700;--h:48;--d:.45"><?= $e($c['cta']['title']) ?></h2>
-  <p class="a t20 rv-lines stag" style="--x:162;--y:2308;--w:640;--h:84;--d:.6"><?= $br($c['cta']['lines']) ?></p>
-  <form action="submit.php" method="post" autocomplete="off" data-form>
-    <input type="hidden" name="form" value="cta"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <input class="a fld" style="--x:888;--y:2232;--w:404;--h:42;--d:.7" type="text" name="name" placeholder="Your Name" aria-label="Your name" required>
-    <input class="a fld" style="--x:1335;--y:2232;--w:404;--h:42;--d:.85" type="tel" name="phone" placeholder="Phone Number" aria-label="Phone number">
-    <input class="a fld" style="--x:888;--y:2338;--w:574;--h:42;--d:1" type="text" name="message" placeholder="Tell Us About Your Book" aria-label="About your book">
-    <button class="a cta-btn rv rv-pop" style="--x:1520;--y:2331;--w:219;--h:60;--d:1.15" type="submit"><?= $e($c['cta']['button']) ?></button>
-  </form>
-</section>
+<?php include __DIR__ . '/inc/sec-cta.php' ?>
 
 <section class="sec wd" id="services" style="--y0:2554;--h:1800">
   <img class="a" style="--x:18;--y:2555;--w:1884;--h:1792" src="assets/s/whatdo.jpg" alt="" decoding="async">
@@ -104,13 +93,7 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
   </svg>
 </section>
 
-<section class="sec" id="imagination" style="--y0:4440;--h:897">
-  <img class="a art" style="--x:0;--y:4440;--w:1920;--h:897" src="assets/s/imag.jpg" alt="<?= $e($c['imagination']['alt']) ?>" decoding="async" loading="lazy">
-  <h2 style="display:contents" aria-label="Imagination deserves to be seen"><img class="a mul rv rv-word" style="--x:446;--y:4486;--w:510;--h:92;--d:.35" src="assets/s/w1.jpg" alt=""><img class="a mul rv rv-word" style="--x:964;--y:4486;--w:382;--h:92;--d:.6" src="assets/s/w2.jpg" alt=""><img class="a mul rv rv-word" style="--x:1356;--y:4486;--w:120;--h:92;--d:.85" src="assets/s/w3.jpg" alt=""></h2>
-  <p class="a t20 c rv-lines stag" style="--x:560;--y:4844;--w:800;--h:56;--d:.6"><?= $br($c['imagination']['lines']) ?></p>
-  <a class="a b2 fill rv rv-pop" style="--x:742;--y:4948;--w:226;--h:58;--d:.9" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a>
-  <a class="a b2 line rv rv-pop" style="--x:985;--y:4948;--w:195;--h:58;--d:1.05" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a>
-</section>
+<?php include __DIR__ . '/inc/sec-imagination.php' ?>
 
 <section class="sec" id="why" style="--y0:5515;--h:825">
   <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
@@ -129,40 +112,9 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
 <?php endforeach ?>
 </section>
 
-<section class="sec" id="stories" style="--y0:7345;--h:728">
-  <img class="a rv" style="--x:18;--y:7345;--w:1884;--h:728" src="assets/s/author.jpg" alt="" decoding="async" loading="lazy">
-  <h2 class="a lit rv rv-pop" style="--x:650;--y:7410;--w:630;--h:80;--d:.2"><img src="assets/s/h_author.png" alt="Author Stories"></h2>
-  <p class="a t20 c rv" style="--x:0;--y:7489;--w:1920;--h:28;--d:.45;color:#fff"><?= $e($c['stories']['intro']) ?></p>
-<?php foreach ($stories as $i => $s): ?>
-  <div class="a tst" style="--x:0;--y:7345;--w:1920;--h:728;--dir:1;pointer-events:none"<?= $i ? ' hidden' : '' ?>>
-    <div class="a av" style="--x:888;--y:7601;--w:144;--h:146"><img src="<?= $e($s['photo']) ?>" alt="<?= $e($s['name']) ?>"></div>
-    <p class="a nm" style="--x:560;--y:7765;--w:800;--h:36"><?= $e($s['name']) ?></p>
-    <p class="a t20 c q" style="--x:360;--y:7821;--w:1200;--h:84"><?= $br($s['text']) ?></p>
-    <p class="a stars" style="--x:760;--y:7937;--w:400;--h:40" aria-label="<?= (int)$s['stars'] ?> out of 5 stars"><?= str_repeat('★', (int)$s['stars']) ?></p>
-  </div>
-<?php endforeach ?>
-<?php if (count($stories) > 1): ?>
-  <button class="a arr rv rv-l" id="tprev" style="--x:160;--y:7789;--w:65;--h:65;--d:.7" aria-label="Previous story"><svg viewBox="0 0 24 24" fill="none" stroke="#002a1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
-  <button class="a arr rv rv-r" id="tnext" style="--x:1693;--y:7789;--w:65;--h:65;--d:.7" aria-label="Next story"><svg viewBox="0 0 24 24" fill="none" stroke="#002a1c" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
-<?php endif ?>
-</section>
+<?php include __DIR__ . '/inc/sec-stories.php' ?>
 
-<section class="sec" id="contact" style="--y0:8220;--h:740">
-  <h2 class="a mul rv rv-wipe" style="--x:170;--y:8246;--w:580;--h:168"><img src="assets/s/h_contact.jpg" alt="Let's Bring Your Story to Life"></h2>
-  <p class="a t20 rv-lines stag" style="--x:177;--y:8424;--w:620;--h:140;--d:.4"><?= $br($c['contact']['lines']) ?></p>
-<?php foreach ([['phone', 8620], ['email', 8712], ['address', 8807]] as $i => [$k, $y]): ?>
-  <div class="a row rv rv-l" style="--x:175;--y:<?= $y ?>;--w:420;--h:60;--d:<?= .6 + $i * .15 ?>"><img class="mul" src="assets/s/c<?= $i + 1 ?>.png" alt=""><span><?= $e($c['contact'][$k]) ?></span></div>
-<?php endforeach ?>
-  <img class="a mul rv rv-r" style="--x:880;--y:8220;--w:880;--h:740;--d:.3" src="assets/s/paper.png" alt="" decoding="async" loading="lazy">
-  <form action="submit.php" method="post" autocomplete="off" data-form>
-    <input type="hidden" name="form" value="contact"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <input class="a pf rv" style="--x:969;--y:8331;--w:684;--h:67;--d:1" type="text" name="name" placeholder="Name" aria-label="Name" required>
-    <input class="a pf rv" style="--x:969;--y:8421;--w:684;--h:66;--d:1.1" type="email" name="email" placeholder="Email" aria-label="Email" required>
-    <input class="a pf rv" style="--x:969;--y:8510;--w:684;--h:65;--d:1.2" type="tel" name="phone" placeholder="Phone" aria-label="Phone">
-    <textarea class="a pf rv" style="--x:969;--y:8600;--w:684;--h:150;--d:1.3;padding-top:calc(20*var(--u))" name="message" placeholder="Message" aria-label="Message"></textarea>
-    <button class="a pbtn rv rv-pop" style="--x:968;--y:8773;--w:686;--h:71;--d:1.45" type="submit"><?= $e($c['contact']['button']) ?></button>
-  </form>
-</section>
+<?php include __DIR__ . '/inc/sec-contact.php' ?>
 
 <?php include __DIR__ . '/inc/site-footer.php' ?>
 
