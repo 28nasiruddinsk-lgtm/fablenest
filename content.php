@@ -8,7 +8,7 @@ return [
     // x = horizontal position of the link in the header (1920 px design width)
     'nav' => [
         ['Home', '#top', 457],
-        ['About Us', '#about', 588],
+        ['About Us', 'about.php', 588],
         ['Our Services', '#services', 750],
         ['Meet the Author', '#stories', 945],
         ['Portfolio', '#portfolio', 1176],
@@ -102,7 +102,7 @@ return [
 
     'footer' => [
         'lines' => ['We help authors transform their ideas into beautifully', 'crafted children’s books through professional', 'publishing, illustration, design, and marketing', 'services.'],
-        'quick' => [['About Us', '#about'], ['Our Services', '#services'], ['Our Portfolio', '#portfolio'], ['How It Works', '#services'], ['Testimonials', '#stories'], ['FAQs', '#contact'], ['Blog', '#contact'], ['Contact Us', '#contact']],
+        'quick' => [['About Us', 'about.php'], ['Our Services', '#services'], ['Our Portfolio', '#portfolio'], ['How It Works', '#services'], ['Testimonials', '#stories'], ['FAQs', '#contact'], ['Blog', '#contact'], ['Contact Us', '#contact']],
         'services' => ['Book Illustrations', 'Book publishing', 'Author Branding', 'Author Website', 'Social Media Marketing', 'Book Trailer', 'Press Release', 'Copyright Registration'],
         'social' => [['Facebook', '#'], ['Instagram', '#'], ['LinkedIn', '#']],
         'copyright' => 'Copyright © 2026 Your Website . All Rights Reserved.',
