@@ -4,19 +4,16 @@ require __DIR__ . '/inc/boot.php';
 $a = $c['about_page'];
 $title = $a['title'];
 $current = 'about.php';
+$bootstrap = true;
+$css = ['about.css'];
 $base = 'index.php';
 include __DIR__ . '/inc/head.php';
 include __DIR__ . '/inc/site-header.php';
 ?>
+<?php include __DIR__ . '/inc/about-banner.php' ?>
 <div class="wf">
 
-<section class="ws whero wcenter band" data-label="hero">
-  <div class="wrap">
-    <h1><?= $e($a['title']) ?></h1>
-    <p><?= $e($a['subtitle']) ?></p>
-    <div class="wbtns"><a class="wbtn fill" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a><a class="wbtn" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a></div>
-  </div>
-</section>
+
 
 <?php include __DIR__ . '/inc/brands.php' ?>
 

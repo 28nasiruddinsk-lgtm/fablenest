@@ -1,0 +1,17 @@
+/* About Us banner. Bootstrap only supplies the grid and spacing; everything you see is custom. */
+.ab-banner{min-height:clamp(340px,32vw,640px);background:#00291b url(assets/s/about-banner.jpg) center bottom/cover no-repeat;isolation:isolate}
+.ab-banner::before{content:"";position:absolute;inset:0;z-index:-1;background:inherit;transform-origin:50% 100%;animation:ab-settle 1.8s var(--ease-out) both}
+.ab-title img{display:block;margin:0 auto;width:clamp(230px,21vw,400px);height:auto;mix-blend-mode:lighten;animation:ab-pop .9s var(--ease-pop) .25s both}
+.ab-sub{max-width:720px;font:400 clamp(15px,1.05vw,20px)/1.5 var(--body);letter-spacing:-.02em;color:#fff;opacity:.95;animation:ab-rise .8s var(--ease-out) .55s both}
+.ab-btn{display:inline-flex;align-items:center;justify-content:center;min-width:clamp(150px,11.4vw,220px);height:clamp(46px,3.2vw,62px);padding:0 28px;border:2px solid #fff;border-radius:999px;
+  font:500 clamp(15px,.95vw,18px)/1 var(--body);letter-spacing:-.01em;color:#fff;transition:transform .25s var(--ease-pop),box-shadow .25s,background .25s,color .25s;animation:ab-rise .7s var(--ease-pop) both}
+.ab-btn--fill{border-color:transparent;color:#002a1c;background:linear-gradient(153deg,#ffe3bd 30%,#ffc169 80%);animation-delay:.8s}
+.ab-btn--line{animation-delay:.92s}
+.ab-btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.35)}
+.ab-btn--line:hover{background:#fff;color:#002a1c}
+.ab-btn:active{transform:scale(.97)}
+@keyframes ab-settle{from{transform:scale(1.08)}to{transform:none}}
+@keyframes ab-pop{from{opacity:0;transform:translateY(24px) scale(.7)}to{opacity:1;transform:none}}
+@keyframes ab-rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ab-banner::before,.ab-title img,.ab-sub,.ab-btn{animation:none}}
+@media (max-width:700px){.ab-banner{background-position:center}}

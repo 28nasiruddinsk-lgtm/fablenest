@@ -91,6 +91,4 @@ textarea.box{min-height:120px;resize:vertical}
 }
 @media (max-width:560px){.cards{grid-template-columns:1fr}.slider{grid-template-columns:1fr}.slider .warr{display:none}}
 
-/* the original header's roots hang over the grey hero, so draw them in pencil grey on these pages */
-body.wire .roots path{stroke:#666}
-.wf .whero{padding-top:120px}
+
