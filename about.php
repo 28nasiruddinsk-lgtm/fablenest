@@ -6,30 +6,18 @@ $title = $a['title'];
 $current = 'about.php';
 $bootstrap = true;
 $css = ['about.css'];
+$js = ['about.js'];
 $base = 'index.php';
 include __DIR__ . '/inc/head.php';
 include __DIR__ . '/inc/site-header.php';
 ?>
 <?php include __DIR__ . '/inc/about-banner.php' ?>
-<div class="wf">
-
-
 
 <?php include __DIR__ . '/inc/logos.php' ?>
 
-<section class="ws" data-label="intro: text + picture">
-  <div class="wrap wtwo">
-    <div>
-      <h2><?php foreach ($a['intro']['heading'] as $l): ?><span><?= $e($l) ?></span><?php endforeach ?></h2>
-<?php foreach ($a['intro']['paragraphs'] as $t): ?>
-      <p><?= $e($t) ?></p>
-<?php endforeach ?>
-    </div>
-    <?= $ph('picture', 'r43') ?>
-  </div>
-  <span class="note" style="right:90px;top:70px">picture not in the design yet</span>
-</section>
+<?php include __DIR__ . '/inc/about-intro.php' ?>
 
+<div class="wf">
 <?php include __DIR__ . '/inc/cta.php' ?>
 
 <section class="ws band" data-label="4 cards">

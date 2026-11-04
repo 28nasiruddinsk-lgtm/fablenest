@@ -15,3 +15,19 @@
 @keyframes ab-rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.ab-banner::before,.ab-title img,.ab-sub,.ab-btn{animation:none}}
 @media (max-width:700px){.ab-banner{background-position:center}}
+/* intro: text + picture */
+.ab-wrap{padding-left:clamp(20px,8.4vw,200px);padding-right:clamp(20px,8.4vw,200px)}
+.ab-intro{padding:clamp(48px,6vw,110px) 0 clamp(40px,5vw,90px);background:#fff;color:#002a1c}
+.ab-h{margin:0}
+.ab-h img{display:block;width:min(100%,820px);height:auto;mix-blend-mode:multiply}
+.ab-p{margin:0 0 1.15em;max-width:640px;font:400 clamp(15px,1.05vw,20px)/1.45 var(--body);letter-spacing:-.032em}
+.ab-pic{display:block;width:100%;aspect-ratio:4/3;border-radius:28px}
+.ab-pic--empty{display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,#fff4df,#ffe3bd 55%,#ffc169);box-shadow:inset 0 0 0 3px #002a1c,8px 10px 0 #002a1c}
+.ab-pic--empty img{width:26%;height:auto;opacity:.8;transform:rotate(-6deg)}
+.ab-reveal{opacity:0;transform:translateY(34px);transition:opacity .8s var(--ease-out),transform .9s var(--ease-pop)}
+.ab-reveal--late{transition-delay:.2s}
+.ab-reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.ab-reveal{opacity:1;transform:none;transition:none}}
+
+/* style.css has its own .row (a nowrap contact line); inside Bootstrap pages .row is only the grid row */
+.row{white-space:normal;font:inherit;letter-spacing:inherit}
