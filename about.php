@@ -15,7 +15,7 @@ include __DIR__ . '/inc/site-header.php';
 
 
 
-<?php include __DIR__ . '/inc/brands.php' ?>
+<?php include __DIR__ . '/inc/logos.php' ?>
 
 <section class="ws" data-label="intro: text + picture">
   <div class="wrap wtwo">
