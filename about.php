@@ -4,22 +4,24 @@ require __DIR__ . '/inc/boot.php';
 $a = $c['about_page'];
 $title = $a['title'];
 $current = 'about.php';
+$base = 'index.php';
 include __DIR__ . '/inc/head.php';
-include __DIR__ . '/inc/header.php';
+include __DIR__ . '/inc/site-header.php';
 ?>
+<div class="wf">
 
-<section class="sec hero center band" data-label="hero">
+<section class="ws whero wcenter band" data-label="hero">
   <div class="wrap">
     <h1><?= $e($a['title']) ?></h1>
     <p><?= $e($a['subtitle']) ?></p>
-    <div class="btns"><a class="btn fill" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a><a class="btn" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a></div>
+    <div class="wbtns"><a class="wbtn fill" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a><a class="wbtn" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a></div>
   </div>
 </section>
 
 <?php include __DIR__ . '/inc/brands.php' ?>
 
-<section class="sec" data-label="intro: text + picture">
-  <div class="wrap two">
+<section class="ws" data-label="intro: text + picture">
+  <div class="wrap wtwo">
     <div>
       <h2><?php foreach ($a['intro']['heading'] as $l): ?><span><?= $e($l) ?></span><?php endforeach ?></h2>
 <?php foreach ($a['intro']['paragraphs'] as $t): ?>
@@ -33,20 +35,20 @@ include __DIR__ . '/inc/header.php';
 
 <?php include __DIR__ . '/inc/cta.php' ?>
 
-<section class="sec band" data-label="4 cards">
-  <div class="wrap center">
+<section class="ws band" data-label="4 cards">
+  <div class="wrap wcenter">
     <h2><?= $e($a['difference']['title']) ?></h2>
-    <p class="lead"><?= $e($a['difference']['intro']) ?></p>
+    <p class="wlead"><?= $e($a['difference']['intro']) ?></p>
     <div class="cards">
 <?php foreach ($a['difference']['cards'] as [$title, $text]): ?>
-      <div class="card sk"><?= $ph('icon') ?><h3><?= $e($title) ?></h3><hr><p><?= $e($text) ?></p></div>
+      <div class="wcard sk"><?= $ph('icon') ?><h3><?= $e($title) ?></h3><hr><p><?= $e($text) ?></p></div>
 <?php endforeach ?>
     </div>
   </div>
 </section>
 
-<section class="sec" data-label="vision: picture + text">
-  <div class="wrap two">
+<section class="ws" data-label="vision: picture + text">
+  <div class="wrap wtwo">
     <?= $ph('picture', 'r43') ?>
     <div>
       <h2><?php foreach ($a['vision']['heading'] as $l): ?><span><?= $e($l) ?></span><?php endforeach ?></h2>
@@ -60,4 +62,12 @@ include __DIR__ . '/inc/header.php';
 <?php include __DIR__ . '/inc/imagination.php' ?>
 <?php include __DIR__ . '/inc/stories.php' ?>
 <?php include __DIR__ . '/inc/contact.php' ?>
-<?php include __DIR__ . '/inc/footer.php' ?>
+</div>
+
+<div class="pg solo">
+<?php include __DIR__ . '/inc/site-footer.php' ?>
+</div>
+</main>
+<?php include __DIR__ . '/inc/scripts.php' ?>
+</body>
+</html>

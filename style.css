@@ -327,3 +327,6 @@ img{display:block}
 .row img{width:calc(60*var(--u));height:calc(60*var(--u))}
 .row span{margin-left:calc(17*var(--u))}
 .ft-h{margin:0;font:400 calc(27*var(--u))/calc(36*var(--u)) var(--body);letter-spacing:-.02em}
+/* a page that shows only the footer (the wireframe pages) */
+.pg.solo{height:calc(692*var(--u))}
+.pg.solo .sec{top:0}
