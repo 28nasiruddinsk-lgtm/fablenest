@@ -60,7 +60,7 @@
 .bk-img__box{position:relative;container-type:inline-size;overflow:hidden;border-radius:clamp(20px,1.6vw,30px)}
 .bk-img__art{display:block;width:100%;height:auto;transform-origin:50% 100%;animation:bk-settle 1.8s var(--ease-out) both;animation-play-state:paused}
 .bk-img.in .bk-img__art{animation-play-state:running}
-.bk-img__btn{position:absolute;top:58.9%;height:6.3cqw;min-height:34px;padding:0;font-size:max(13px,.95cqw)}
+.bk-img__btn{position:absolute;top:58.9%;height:3.1cqw;min-height:34px;padding:0;font-size:max(12px,.95cqw)}
 @keyframes bk-settle{from{transform:scale(1.08);opacity:.2}to{transform:none;opacity:1}}
 @media (prefers-reduced-motion:reduce){.bk-img__art,.bk-step__dot{animation:none}.bk-step:not(:last-child)::after{transform:none!important;transition:none}}
 @media (max-width:700px){.bk-img__btn{font-size:11px}}
