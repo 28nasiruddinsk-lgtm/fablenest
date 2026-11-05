@@ -191,4 +191,29 @@ return [
             ['Copyright Registration', 'Protect your work from day one.'],
         ],
     ],
+
+    // Portfolio section (inc/portfolio.php). Each tab: label, picture ratio, items [title, image, link or '', small caption].
+    // These pictures are placeholders cut from the site's own artwork; swap in real work here.
+    'work' => [
+        'intro' => 'A look at books, artwork, films and websites we have made with our authors.',
+        'tabs' => [
+            'covers' => ['label' => 'Book Covers', 'ratio' => '470 / 540', 'items' => [
+                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
+                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
+                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
+                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
+            ]],
+            'illustrations' => ['label' => 'Illustrations', 'ratio' => '4 / 3', 'items' => [
+                ['Giraffe on the run', 'assets/s/pf_ill1.jpg', '', 'Full-page spread'],
+                ['The big bike race', 'assets/s/pf_ill2.jpg', '', 'Full-page spread'],
+                ['The curly ladder', 'assets/s/pf_ill3.jpg', '', 'Cover art'],
+            ]],
+            'trailers' => ['label' => 'Book Trailer', 'ratio' => '16 / 10', 'items' => [
+                ['The Curly Ladder, trailer', 'assets/s/pf_trl1.jpg', '', '0:45'],
+            ]],
+            'websites' => ['label' => 'Author Website', 'ratio' => '16 / 10', 'items' => [
+                ['Author site, home page', 'assets/s/pf_web1.jpg', '', 'authorname.com'],
+            ]],
+        ],
+    ],
 ];

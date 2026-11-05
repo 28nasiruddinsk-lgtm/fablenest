@@ -26,6 +26,8 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php include __DIR__ . '/inc/book-how.php' ?>
 
+<?php $pfTabs = ['covers']; include __DIR__ . '/inc/portfolio.php' ?>
+
 <?php include __DIR__ . '/inc/book-imagination.php' ?>
 
 <div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(60*var(--u))">
