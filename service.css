@@ -97,3 +97,19 @@
 .pf__bar b{flex:1;margin-left:10px;padding:3px 14px;border-radius:999px;background:#fff;font:400 13px var(--body);color:#5a6a62;text-align:left}
 .pf__card--websites .pf__pic{box-shadow:0 14px 30px rgba(0,42,28,.14)}
 @media (prefers-reduced-motion:reduce){.pf__panel.is-on .pf__cell{animation:none}}
+
+/* text headings for the service pages (the book page uses pictures of its headings) */
+.sv-title{display:block;font:700 clamp(32px,4.6vw,88px)/1.05 var(--logo);letter-spacing:.01em;text-transform:uppercase;color:#fff;animation:ab-pop .9s var(--ease-pop) .25s both}
+.sv-h{margin:0;font:700 clamp(30px,3.4vw,66px)/1.12 var(--logo);letter-spacing:.005em;color:#002a1c}
+.sv-h span{display:inline}
+.sv-h--dark{color:#fff}
+.sv-h--center{margin:0 auto 12px;width:min(92%,1000px);text-align:center}
+.sv-acc{color:#9fbc00}
+.sv-h--dark .sv-acc{color:#deff21}
+.sv-h span:nth-child(n+2){margin-left:.05em}
+.bk-sol__h+p,.bk-sol .sv-h{margin-bottom:20px}
+.sv-num{display:grid;place-items:center;width:clamp(48px,4vw,76px);aspect-ratio:1;margin-bottom:clamp(14px,2vw,40px);border-radius:50%;background:#deff21;color:#002a1c;font:700 clamp(16px,1.3vw,24px) var(--logo);transition:transform .45s var(--ease-pop)}
+.bk-tile:hover .sv-num{transform:rotate(-8deg) scale(1.1)}
+.sv-t{margin:0 0 10px;font:700 clamp(18px,1.6vw,30px)/1.15 var(--logo);color:#002a1c}
+.sv-st{margin:0 auto;font:700 clamp(17px,1.5vw,28px)/1.15 var(--logo);color:#fff}
+.bk-step__dot span.sv-step{position:absolute;inset:0;border-radius:0;background:none;display:grid;place-items:center;font:700 clamp(30px,3.4vw,64px) var(--logo);color:#6b8000}

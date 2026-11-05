@@ -175,7 +175,16 @@ return [
     ],
 
     // footer service names that have their own page
-    'service_pages' => ['Book publishing' => 'book-publishing.php'],
+    'service_pages' => [
+        'Book publishing' => 'book-publishing.php',
+        'Book Illustrations' => 'service.php?s=book-illustrations',
+        'Author Branding' => 'service.php?s=author-branding',
+        'Author Website' => 'service.php?s=author-website',
+        'Social Media Marketing' => 'service.php?s=social-media-marketing',
+        'Book Trailer' => 'service.php?s=book-trailer',
+        'Press Release' => 'service.php?s=press-release',
+        'Copyright Registration' => 'service.php?s=copyright-registration',
+    ],
 
     // "Our Services" mega menu in the header: [name, short line]. A service with a page listed in service_pages links there.
     'mega' => [

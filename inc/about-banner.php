@@ -3,7 +3,7 @@
   <div class="container position-relative py-5">
     <div class="row justify-content-center">
       <div class="col-lg-10 col-xl-8">
-        <h1 class="ab-title mb-3"<?= isset($bn['w']) ? ' style="--tw:' . $e($bn['w']) . '"' : '' ?>><img src="<?= $e($bn['img']) ?>" alt="<?= $e($bn['title']) ?>"></h1>
+        <h1 class="ab-title mb-3"<?= isset($bn['w']) ? ' style="--tw:' . $e($bn['w']) . '"' : '' ?>><?php if (!empty($bn['img'])): ?><img src="<?= $e($bn['img']) ?>" alt="<?= $e($bn['title']) ?>"><?php else: ?><span class="sv-title"><?= $e($bn['title']) ?></span><?php endif ?></h1>
         <p class="ab-sub mx-auto"<?= isset($bn['sw']) ? ' style="max-width:' . $e($bn['sw']) . '"' : '' ?>><?= $e($bn['sub']) ?></p>
         <div class="ab-actions d-flex flex-wrap justify-content-center gap-3 mt-4">
           <a class="ab-btn ab-btn--fill" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a>
