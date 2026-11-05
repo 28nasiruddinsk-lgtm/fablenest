@@ -176,4 +176,19 @@ return [
 
     // footer service names that have their own page
     'service_pages' => ['Book publishing' => 'book-publishing.php'],
+
+    // "Our Services" mega menu in the header: [name, short line]. A service with a page listed in service_pages links there.
+    'mega' => [
+        'intro' => ['Everything your book needs', 'From the first draft to launch day, in one place.'],
+        'items' => [
+            ['Book publishing', 'Editing, cover design and formatting, ready to publish.'],
+            ['Book Illustrations', 'Characters and scenes drawn for young readers.'],
+            ['Author Branding', 'A look and voice readers remember.'],
+            ['Author Website', 'A home online for you and your books.'],
+            ['Social Media Marketing', 'Reach parents, teachers and readers.'],
+            ['Book Trailer', 'A short film that sells your story.'],
+            ['Press Release', 'Announce your launch to the right people.'],
+            ['Copyright Registration', 'Protect your work from day one.'],
+        ],
+    ],
 ];

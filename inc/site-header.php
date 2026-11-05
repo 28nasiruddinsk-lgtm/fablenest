@@ -12,7 +12,27 @@ $br ??= fn(array $lines) => implode('<br>', array_map(fn($l) => $l === '' ? '&nb
   <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   <ul class="links" id="links">
 <?php foreach ($c['nav'] as [$label, $href, $x]): ?>
-    <li><a<?= $href === $current ? ' class="active"' : '' ?> href="<?= $e($link($href)) ?>" style="--x:<?= (int)$x ?>"><?= $e($label) ?></a></li>
+<?php $mega = $href === '#services'; ?>
+    <li<?= $mega ? ' class="has-mega"' : '' ?>><a<?= $href === $current ? ' class="active"' : '' ?> href="<?= $e($link($href)) ?>" style="--x:<?= (int)$x ?>"<?= $mega ? ' aria-haspopup="true" aria-expanded="false"' : '' ?>><?= $e($label) ?></a>
+<?php if ($mega): ?>
+      <div class="mega" id="mega">
+        <div class="mega__intro">
+          <strong><?= $e($c['mega']['intro'][0]) ?></strong>
+          <p><?= $e($c['mega']['intro'][1]) ?></p>
+          <a class="mega__all" href="<?= $e($link('#services')) ?>">All services <span aria-hidden="true">→</span></a>
+        </div>
+        <ul class="mega__grid">
+<?php foreach ($c['mega']['items'] as $n => [$name, $line]): $page = $c['service_pages'][$name] ?? null; ?>
+          <li><a href="<?= $e($page ?? $link('#services')) ?>"<?= $page ? '' : ' class="soon"' ?>>
+            <span class="mega__n"><?= sprintf('%02d', $n + 1) ?></span>
+            <span class="mega__t"><?= $e($name) ?><?= $page ? '' : ' <em>soon</em>' ?></span>
+            <span class="mega__d"><?= $e($line) ?></span>
+          </a></li>
+<?php endforeach ?>
+        </ul>
+      </div>
+<?php endif ?>
+    </li>
 <?php endforeach ?>
   </ul>
 </nav>

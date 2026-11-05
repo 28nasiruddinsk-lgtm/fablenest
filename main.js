@@ -30,10 +30,22 @@ burger.addEventListener('click', () => {
   const open = links.classList.toggle('open');
   burger.setAttribute('aria-expanded', open);
 });
+// "Our Services" mega menu: on touch / small screens the link toggles it; hover and keyboard focus handle desktop
+const mega = document.querySelector('.has-mega');
+const megaLink = mega && mega.querySelector(':scope > a');
+const setMega = open => { mega.classList.toggle('open', open); megaLink.setAttribute('aria-expanded', open); };
+if (mega) {
+  const small = matchMedia('(max-width:980px), (hover:none)');
+  megaLink.addEventListener('click', e => { if (small.matches && !mega.classList.contains('open')) { e.preventDefault(); setMega(true); } });
+  document.addEventListener('click', e => { if (!mega.contains(e.target)) setMega(false); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { setMega(false); megaLink.blur(); } });
+}
 links.addEventListener('click', e => {
-  if (e.target.tagName === 'A') {
+  const a = e.target.closest('a');
+  if (a && a !== megaLink) {
     links.classList.remove('open');
     burger.setAttribute('aria-expanded', false);
+    if (mega) setMega(false);
   }
 });
 
