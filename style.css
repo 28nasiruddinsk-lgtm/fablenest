@@ -365,3 +365,9 @@ img{display:block}
   .mega__t{font-size:16px}.mega__d{font-size:13px}
 }
 @media (prefers-reduced-motion:reduce){.mega{transition:none}}
+
+/* form fields on the parchment: stay transparent and readable even when the browser autofills them or forces dark mode */
+:root{color-scheme:only light}
+.pf,.fld,.f input,.f textarea{color-scheme:only light}
+.pf:-webkit-autofill,.pf:-webkit-autofill:hover,.pf:-webkit-autofill:focus,.fld:-webkit-autofill,.f input:-webkit-autofill,.f textarea:-webkit-autofill{
+  -webkit-text-fill-color:#1b2a1f;caret-color:#1b2a1f;transition:background-color 9999s ease-out 0s;box-shadow:0 0 0 1000px rgba(255,255,255,0) inset}
