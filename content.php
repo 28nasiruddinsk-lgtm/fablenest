@@ -139,4 +139,41 @@ return [
             ],
         ],
     ],
+
+    // Book Publishing service page
+    'book_page' => [
+        'title' => 'Book Publishing',
+        'subtitle' => 'Professional publishing solutions that transform your written work into a book ready to reach readers.',
+        'intro' => [
+            'heading' => ['Every Manuscript Deserves a', 'Professional', 'Finish'],
+            'paragraphs' => [
+                'Publishing a book is more than making your manuscript available to readers. It’s about presenting your work with quality, care, and attention to every detail.',
+                'Our book publishing services bring together the essential elements of professional book production. Whether you’re preparing your first manuscript or publishing another title, we help you navigate the process with creative expertise and practical guidance.',
+                'From refining your content to preparing your book for publication, our goal is to make your publishing experience organized, collaborative, and rewarding.',
+            ],
+        ],
+        'solution' => [
+            'text' => 'From your first manuscript to the final published edition, we bring together every essential service needed to transform your ideas into a professionally crafted book. Our team combines editorial expertise, creative design, and publishing knowledge to ensure every element of your book is thoughtfully developed and carefully prepared.',
+            // [title image, description, icon image]; the first tile's pictures are reused where the design repeats them
+            'tiles' => [
+                ['Manuscript Preparation', 'Get your manuscript ready for publication with professional editing, proofreading, and content refinement.', 'assets/s/bk_i1.jpg', 'assets/s/bk_t1.jpg'],
+                ['Book Cover Design', 'Create a compelling first impression with a professionally designed cover that reflects your book’s identity.', 'assets/s/bk_i2.jpg', 'assets/s/bk_t2.jpg'],
+                ['Manuscript Preparation', 'Get your manuscript ready for publication with professional editing, proofreading, and content refinement.', 'assets/s/bk_i1.jpg', 'assets/s/bk_t1.jpg'],
+                ['Manuscript Preparation', 'Get your manuscript ready for publication with professional editing, proofreading, and content refinement.', 'assets/s/bk_i2.jpg', 'assets/s/bk_t1.jpg'],
+            ],
+        ],
+        'how' => [
+            'intro' => 'Our structured process helps make every stage of publishing easier to understand and manage.',
+            'steps' => [
+                ['Initial Consultation', 'We discuss your manuscript, publishing goals, audience, and project requirements.', 'assets/s/bk_s1.jpg'],
+                ['Manuscript Review', 'We assess your content and identify the editorial and production requirements.', 'assets/s/bk_s2.jpg'],
+                ['Editing & Design', 'Your manuscript moves through the required editing, cover design, and interior formatting stages.', 'assets/s/bk_s3.jpg'],
+                ['Publishing', 'Your book is submitted through the selected publishing platform, following its requirements.', 'assets/s/bk_s4.jpg'],
+            ],
+        ],
+        'imagination_alt' => 'A startled chick runs through a colourful jungle while an eagle swoops in',
+    ],
+
+    // footer service names that have their own page
+    'service_pages' => ['Book publishing' => 'book-publishing.php'],
 ];

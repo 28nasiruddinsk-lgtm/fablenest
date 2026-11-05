@@ -8,6 +8,7 @@ $bootstrap = true;
 $css = ['about.css'];
 $js = ['about.js'];
 $base = 'index.php';
+$bn = ['title' => $a['title'], 'sub' => $a['subtitle'], 'img' => 'assets/s/h_about.png'];
 include __DIR__ . '/inc/head.php';
 include __DIR__ . '/inc/site-header.php';
 ?>

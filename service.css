@@ -1,0 +1,66 @@
+/* Book Publishing page. Bootstrap supplies the grid; the look is custom. */
+.bk-btns{display:flex;flex-wrap:wrap;gap:14px}
+.bk-btn{display:inline-flex;align-items:center;justify-content:center;height:clamp(44px,3.2vw,60px);padding:0 clamp(20px,1.6vw,30px);border:2px solid #fff;border-radius:999px;
+  font:500 clamp(14px,.95vw,18px)/1 var(--body);letter-spacing:-.01em;color:#fff;transition:transform .25s var(--ease-pop),box-shadow .25s,background .25s,color .25s}
+.bk-btn--fill{border-color:transparent;color:#002a1c;background:linear-gradient(153deg,#ffe3bd 30%,#ffc169 80%)}
+.bk-btn--dark{background:#002a1c;border-color:#002a1c}
+.bk-btn--dark:hover{background:#04402b}
+.bk-btn--ink{background:rgba(255,255,255,.35);border-color:#002a1c;color:#002a1c}
+.bk-btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(0,0,0,.3)}
+.bk-btn--line:hover{background:#fff;color:#002a1c}
+.bk-btn--ink:hover{background:#002a1c;color:#fff}
+.bk-btn:active{transform:scale(.97)}
+
+/* our publishing solution */
+.bk-sol{padding:clamp(18px,3vw,56px) clamp(8px,.95vw,18px) clamp(30px,4vw,80px)}
+.bk-sol__box{overflow:hidden;border:1px solid #002a1c;border-radius:clamp(20px,1.6vw,30px);background:#fff}
+.bk-sol__side{background:#002a1c;color:#fff;padding:clamp(40px,4.6vw,88px) clamp(24px,5.5vw,104px);display:flex;flex-direction:column;justify-content:space-between;gap:36px}
+.bk-sol__h{margin:0 0 20px}
+.bk-sol__h img{display:block;width:min(100%,560px);height:auto;mix-blend-mode:lighten}
+.bk-sol__side p{max-width:540px;margin:0;font:400 clamp(14px,1.05vw,20px)/1.45 var(--body);letter-spacing:-.025em}
+.bk-tile{padding:clamp(24px,2.4vw,46px) clamp(22px,2.2vw,42px);min-height:clamp(240px,18vw,350px);display:flex;flex-direction:column;justify-content:space-between;color:#002a1c}
+.bk-tile--white{background:#fff}
+.bk-tile--tint{background:#f2f9cb}
+.bk-tile__icon{display:block;width:clamp(78px,6vw,116px);height:auto;margin-bottom:clamp(14px,2vw,40px);mix-blend-mode:multiply;transition:transform .45s var(--ease-pop)}
+.bk-tile:hover .bk-tile__icon{transform:translateY(-6px) rotate(-5deg) scale(1.08)}
+.bk-tile__t{margin:0 0 10px}
+.bk-tile__t img{display:block;height:clamp(28px,2.9vw,55px);width:auto;max-width:100%;mix-blend-mode:multiply}
+.bk-tile p{margin:0;max-width:300px;font:400 clamp(13px,.85vw,16px)/1.45 var(--body);letter-spacing:-.02em}
+.bk-sol .ab-reveal{transition-delay:calc(var(--i,0)*.1s)}
+
+/* how publishing works */
+.bk-how{padding:0 clamp(8px,.95vw,18px) clamp(30px,4vw,80px)}
+.bk-how__panel{background:#002a1c;border-radius:clamp(20px,1.6vw,30px);padding:clamp(36px,3.6vw,70px) 0 clamp(40px,4.2vw,80px);text-align:center;color:#fff}
+.bk-how__h{margin:0 auto 10px;width:min(80%,810px)}
+.bk-how__h img{display:block;width:100%;height:auto;mix-blend-mode:lighten}
+.bk-how__lead{margin:0 auto clamp(34px,4.6vw,88px);padding:0 20px;font:400 clamp(14px,1.05vw,20px)/1.45 var(--body);letter-spacing:-.025em}
+.bk-steps{--dot:clamp(130px,13vw,252px);row-gap:36px}
+.bk-step{position:relative;padding:0 clamp(8px,1.4vw,28px)}
+.bk-step__dot{position:relative;width:var(--dot);height:var(--dot);margin:0 auto clamp(18px,2vw,34px);border-radius:50%;border:clamp(6px,.6vw,12px) solid #9fbc00;
+  background:linear-gradient(150deg,#fff 20%,#eaffa0 100%);transition:transform .45s var(--ease-pop),box-shadow .45s}
+.bk-step:hover .bk-step__dot{transform:scale(1.06);box-shadow:0 0 0 clamp(6px,.7vw,14px) rgba(159,188,0,.22)}
+.bk-step__dot span{position:absolute;inset:18%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,rgba(255,255,255,0) 70%)}
+/* dashed line to the next circle (only where the four steps sit on one row) */
+@media (min-width:1200px){
+  .bk-step:not(:last-child)::after{content:"";position:absolute;top:calc(var(--dot)/2);left:calc(50% + var(--dot)/2);width:calc(100% - var(--dot));border-top:3px dashed #fff;
+    transform-origin:0 50%;transform:scaleX(0);transition:transform .8s var(--ease-out) calc(var(--i)*.3s + .45s)}
+  .bk-step.in:not(:last-child)::after{transform:scaleX(1)}
+}
+.bk-step__t{margin:0 auto}
+.bk-step__t img{display:block;margin:0 auto;height:clamp(24px,2vw,38px);width:auto;max-width:100%;mix-blend-mode:lighten}
+.bk-step hr{margin:6px auto 10px;width:min(100%,320px);border:0;border-top:1px solid #fff;opacity:.9}
+.bk-step p{margin:0 auto;max-width:300px;font:400 clamp(12px,.8vw,15px)/1.45 var(--body);letter-spacing:-.02em}
+.bk-how .ab-reveal{transition-delay:calc(var(--i,0)*.15s)}
+.bk-step__dot{animation:bk-pop .8s var(--ease-pop) both;animation-play-state:paused}
+.bk-step.in .bk-step__dot{animation-play-state:running;animation-delay:calc(var(--i)*.15s + .2s)}
+@keyframes bk-pop{from{transform:scale(.4)}to{transform:none}}
+
+/* imagination banner */
+.bk-img{padding:clamp(8px,1vw,20px) 0 0;background:#fff}
+.bk-img__box{position:relative;container-type:inline-size;overflow:hidden;border-radius:clamp(20px,1.6vw,30px)}
+.bk-img__art{display:block;width:100%;height:auto;transform-origin:50% 100%;animation:bk-settle 1.8s var(--ease-out) both;animation-play-state:paused}
+.bk-img.in .bk-img__art{animation-play-state:running}
+.bk-img__btn{position:absolute;top:58.9%;height:6.3cqw;min-height:34px;padding:0;font-size:max(13px,.95cqw)}
+@keyframes bk-settle{from{transform:scale(1.08);opacity:.2}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.bk-img__art,.bk-step__dot{animation:none}.bk-step:not(:last-child)::after{transform:none!important;transition:none}}
+@media (max-width:700px){.bk-img__btn{font-size:11px}}

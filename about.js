@@ -4,4 +4,4 @@ const io = new IntersectionObserver(es => es.forEach(e => {
   e.target.classList.add('in');
   io.unobserve(e.target);
 }), { threshold: .15 });
-document.querySelectorAll('.ab-reveal').forEach(el => io.observe(el));
+document.querySelectorAll('.ab-reveal, .bk-img').forEach(el => io.observe(el));
