@@ -4,6 +4,7 @@ require __DIR__ . '/inc/boot.php';
 $a = $c['about_page'];
 $title = $a['title'];
 $current = 'about.php';
+$seoKey = 'about';
 $bootstrap = true;
 $css = ['about.css'];
 $js = ['about.js'];
@@ -16,6 +17,8 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php include __DIR__ . '/inc/logos.php' ?>
 
+<?php include __DIR__ . '/inc/seo-answer.php' ?>
+
 <?php include __DIR__ . '/inc/about-intro.php' ?>
 
 <div class="pg solo" style="height:calc(330*var(--u))">
@@ -25,6 +28,8 @@ include __DIR__ . '/inc/site-header.php';
 <?php include __DIR__ . '/inc/about-diff.php' ?>
 
 <?php include __DIR__ . '/inc/about-vision.php' ?>
+
+<?php include __DIR__ . '/inc/seo-faq.php' ?>
 
 <div class="pg solo" style="height:calc(897*var(--u))">
 <?php include __DIR__ . '/inc/sec-imagination.php' ?>

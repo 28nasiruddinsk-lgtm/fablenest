@@ -5,7 +5,7 @@ $all = require __DIR__ . '/content-services.php';
 $slug = $_GET['s'] ?? '';
 if (!isset($all[$slug])) {
     http_response_code(404);
-    $title = 'Service not found';
+    $title = 'Service not found'; $noindex = true; $seoKey = '404';
     $current = '#services'; $base = 'index.php'; $bootstrap = true; $css = ['about.css', 'service.css'];
     include __DIR__ . '/inc/head.php';
     include __DIR__ . '/inc/site-header.php';
@@ -15,6 +15,7 @@ if (!isset($all[$slug])) {
 }
 $s = $all[$slug];
 $title = $s['name'];
+$seoKey = $slug;
 $current = '#services';
 $base = 'index.php';
 $bootstrap = true;
@@ -29,6 +30,8 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php include __DIR__ . '/inc/logos.php' ?>
 
+<?php include __DIR__ . '/inc/seo-answer.php' ?>
+
 <?php include __DIR__ . '/inc/svc-intro.php' ?>
 
 <div class="pg solo" style="height:calc(330*var(--u))">
@@ -40,6 +43,10 @@ include __DIR__ . '/inc/site-header.php';
 <?php include __DIR__ . '/inc/svc-how.php' ?>
 
 <?php $pfTabs = $s['portfolio']; include __DIR__ . '/inc/portfolio.php' ?>
+
+<?php include __DIR__ . '/inc/seo-faq.php' ?>
+
+<?php include __DIR__ . '/inc/seo-related.php' ?>
 
 <?php include __DIR__ . '/inc/book-imagination.php' ?>
 

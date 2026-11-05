@@ -10,13 +10,13 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?= $e($c['title']) ?></title>
-<meta name="description" content="<?= $e($c['description']) ?>">
+<?php $seoKey = 'home'; include __DIR__ . '/inc/seo.php' ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@700&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css?v=<?= filemtime(__DIR__ . '/style.css') ?>">
+<link rel="stylesheet" href="seo.css?v=<?= filemtime(__DIR__ . '/seo.css') ?>">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -55,7 +55,9 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
 
 <?php include __DIR__ . '/inc/logos.php' ?>
 
-<div class="pg">
+<?php include __DIR__ . '/inc/seo-answer.php' ?>
+
+<div class="pg" style="height:calc(7700*var(--u))">
 
 <section class="sec" id="about" style="--y0:1300;--h:880">
   <img class="a rv rv-r" style="--x:860;--y:1240;--w:1060;--h:770;--d:.15" src="assets/s/ladder.jpg" alt="<?= $e($c['about']['alt']) ?>" decoding="async">
@@ -116,8 +118,12 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
 
 <?php include __DIR__ . '/inc/sec-contact.php' ?>
 
-<?php include __DIR__ . '/inc/site-footer.php' ?>
+</div>
 
+<?php include __DIR__ . '/inc/seo-faq.php' ?>
+
+<div class="pg solo" style="margin-top:calc(80*var(--u))">
+<?php include __DIR__ . '/inc/site-footer.php' ?>
 </div>
 </main>
 <?php include __DIR__ . '/inc/scripts.php' ?>

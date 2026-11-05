@@ -197,3 +197,11 @@ links.addEventListener('click', e => {
   };
   sec.addEventListener('enter', run);
 })();
+
+// answer / FAQ / related blocks fade in when they scroll into view
+const sxIo = new IntersectionObserver(es => es.forEach(en => {
+  if (!en.isIntersecting) return;
+  en.target.classList.add('in');
+  sxIo.unobserve(en.target);
+}), { threshold: .12 });
+document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));

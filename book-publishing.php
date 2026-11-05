@@ -4,6 +4,7 @@ require __DIR__ . '/inc/boot.php';
 $b = $c['book_page'];
 $title = $b['title'];
 $current = '#services';
+$seoKey = 'book-publishing';
 $base = 'index.php';
 $bootstrap = true;
 $css = ['about.css', 'service.css'];
@@ -16,6 +17,8 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php include __DIR__ . '/inc/logos.php' ?>
 
+<?php include __DIR__ . '/inc/seo-answer.php' ?>
+
 <?php include __DIR__ . '/inc/book-intro.php' ?>
 
 <div class="pg solo" style="height:calc(330*var(--u))">
@@ -27,6 +30,10 @@ include __DIR__ . '/inc/site-header.php';
 <?php include __DIR__ . '/inc/book-how.php' ?>
 
 <?php $pfTabs = ['covers']; include __DIR__ . '/inc/portfolio.php' ?>
+
+<?php include __DIR__ . '/inc/seo-faq.php' ?>
+
+<?php include __DIR__ . '/inc/seo-related.php' ?>
 
 <?php include __DIR__ . '/inc/book-imagination.php' ?>
 

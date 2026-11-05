@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^sitemap\.xml$ sitemap.php [L]
+RewriteRule ^robots\.txt$ robots.php [L]
+RewriteRule ^llms\.txt$ llms.php [L]
+
+# word files are only for the pages to read, not for visitors
+<FilesMatch "^content.*\.php$">
+  Require all denied
+</FilesMatch>
