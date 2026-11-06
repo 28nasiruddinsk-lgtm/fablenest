@@ -49,6 +49,32 @@ links.addEventListener('click', e => {
   }
 });
 
+// roots hanging from the bottom edge of the header bar over the banner (random but always the same)
+(() => {
+  const svg = document.querySelector('.roots svg'); if (!svg) return;
+  let s = 11; const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647, r = (a, b) => a + rnd() * (b - a);
+  const NS = 'http://www.w3.org/2000/svg', mk = (n, at) => { const e = document.createElementNS(NS, n); for (const k in at) e.setAttribute(k, at[k]); return e; };
+  let idx = 0;
+  const grow = (g, x, y, ang, len, w, depth) => {
+    let px = x, py = y, walked = 0;
+    while (walked < len) {
+      const t = walked / len, step = 8;
+      ang += r(-.3, .3) + (Math.PI / 2 - ang) * .12;
+      const nx = px + Math.cos(ang) * step, ny = py + Math.sin(ang) * step, sw = Math.max(.9, w * (1 - t * .85));
+      g.appendChild(mk('path', { d: `M${px} ${py}L${nx} ${ny}`, stroke: '#ffffff', 'stroke-width': sw }));
+      if (sw > 3) g.appendChild(mk('path', { d: `M${px} ${py}L${nx} ${ny}`, stroke: '#b9d2c4', 'stroke-width': sw * .28, opacity: .7 }));
+      if (depth < 2 && t > .3 && t < .75 && rnd() < .22) grow(g, nx, ny, ang + (rnd() < .5 ? -1 : 1) * r(.5, 1.1), (len - walked) * r(.5, .8), sw * .75, depth + 1);
+      px = nx; py = ny; walked += step;
+    }
+  };
+  // the header bar is full width; its bottom edge is y = 0 in this box
+  for (let x = 24; x < 1900; x += r(30, 62)) {
+    const g = mk('g', { class: 'root', style: `--i:${idx++};transform-origin:${x}px -1px` });
+    grow(g, x, -1, Math.PI / 2 + r(-.3, .3), r(30, 78), r(3.5, 6.5), 0);
+    svg.appendChild(g);
+  }
+})();
+
 // Scroll-in animations, forms, story slider and the "What We Do" dot route
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -180,73 +206,22 @@ const sxIo = new IntersectionObserver(es => es.forEach(en => {
 }), { threshold: .12 });
 document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
 
-// animated logo, built from assets/logo.json (a Lottie made of 295 transparent WebP frames, 768x432).
-// That file was made as a full-frame colour wipe over lettering drawn as a faint outline, which looks rough in a white header.
-// So only two parts of it are used: the mascot's flight (its coloured pixels only) and the finished logo, which is
-// revealed left to right once the mascot has landed. The still logo.png shows between loops.
+// animated logo: the supplied Lottie (assets/logo-anim.json, 768x432, 33 fps, plays once). The still logo shows until it is ready.
 (() => {
-  const cv = document.querySelector('.logo__c');
-  if (!cv || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  const FIRST = 30, LAND = 232, FINAL = 294, SPEED = 2, REVEAL = 50, HOLD_MS = 3200;
-  const run = async () => {
-    const j = await (await fetch(cv.dataset.src)).json();
-    const byId = Object.fromEntries(j.assets.map(a => [a.id, a]));
-    const frames = j.layers.slice().sort((a, b) => a.ip - b.ip).map(l => byId[l.refId].p);
-    const fps = j.fr, ctx = cv.getContext('2d');
-    ctx.imageSmoothingQuality = 'high';
-    const bitmaps = new Map();
-    const load = i => {
-      if (!bitmaps.has(i)) bitmaps.set(i, fetch(frames[i]).then(r => r.blob()).then(b => createImageBitmap(b, 76, 60, 640, 270)));
-      return bitmaps.get(i);
-    };
-    // keep only the mascot's coloured pixels (drops the grey outline lettering that is in the same frames)
-    const tmp = document.createElement('canvas'); tmp.width = cv.width; tmp.height = cv.height;
-    const tctx = tmp.getContext('2d', { willReadFrequently: true });
-    const mascot = bmp => {
-      tctx.clearRect(0, 0, tmp.width, tmp.height);
-      tctx.drawImage(bmp, 0, 0, tmp.width, tmp.height);
-      const img = tctx.getImageData(0, 0, tmp.width, tmp.height), d = img.data;
-      for (let k = 0; k < d.length; k += 4) {
-        if (Math.max(d[k], d[k + 1], d[k + 2]) - Math.min(d[k], d[k + 1], d[k + 2]) < 36) d[k + 3] = 0;
-      }
-      tctx.putImageData(img, 0, 0);
-      return tmp;
-    };
-    const flight = LAND - FIRST;                      // frames of flying
-    const total = flight + REVEAL;                    // + frames of revealing the logo
-    const wanted = pos => {                           // frames needed around this moment
-      const i = Math.min(LAND, FIRST + Math.floor(pos));
-      return [i, i + SPEED, i + 2 * SPEED, i + 3 * SPEED].filter(x => x <= LAND).concat([LAND, FINAL]);
-    };
-    for (const i of wanted(0)) load(i);
-    await Promise.all([load(FIRST), load(LAND), load(FINAL)]);
-    let t0 = performance.now(), last = -1;
-    const tick = async now => {
-      const pos = Math.floor((now - t0) / 1000 * fps * SPEED);
-      if (pos !== last) {
-        last = pos;
-        wanted(pos).forEach(load);
-        ctx.clearRect(0, 0, cv.width, cv.height);
-        if (pos < flight) {
-          const i = Math.min(LAND, FIRST + pos);
-          ctx.drawImage(mascot(await load(i)), 0, 0);
-        } else {
-          const p = Math.min(1, (pos - flight) / REVEAL);
-          ctx.drawImage(mascot(await load(LAND)), 0, 0);
-          ctx.save(); ctx.beginPath(); ctx.rect(0, 0, cv.width * p, cv.height); ctx.clip();
-          ctx.drawImage(await load(FINAL), 0, 0, cv.width, cv.height);
-          ctx.restore();
-        }
-        cv.parentElement.classList.add('has-v');
-        for (const [k, pr] of bitmaps) if (k < FIRST + pos - 6 && k !== LAND && k !== FINAL) { pr.then(b => b.close()); bitmaps.delete(k); }
-      }
-      if (pos < total) return requestAnimationFrame(tick);
-      // finished: show the crisp still logo for a moment (it is identical to the last frame), then play again
-      cv.parentElement.classList.remove('has-v');
-      setTimeout(() => { t0 = performance.now(); last = -1; for (const i of wanted(0)) load(i); requestAnimationFrame(tick); }, HOLD_MS);
-    };
-    requestAnimationFrame(tick);
+  const box = document.querySelector('.logo__a');
+  if (!box) return;
+  const still = box.parentElement;
+  const run = () => {
+    if (!window.lottie) return;
+    fetch(box.dataset.src).then(r => r.json()).then(data => {
+      const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+      const anim = lottie.loadAnimation({ container: box, renderer: 'svg', loop: false, autoplay: false, animationData: data, rendererSettings: { preserveAspectRatio: 'xMidYMid meet' } });
+      anim.addEventListener('DOMLoaded', () => {
+        still.classList.add('has-a');
+        reduce ? anim.goToAndStop(anim.totalFrames - 1, true) : anim.play();
+      });
+      still.addEventListener('mouseenter', () => { if (anim.isPaused && !reduce) anim.goToAndPlay(0, true); });
+    }).catch(() => {});
   };
-  const start = () => run().catch(() => {});
-  document.readyState === 'complete' ? start() : addEventListener('load', start, { once: true });
+  document.readyState === 'complete' ? run() : addEventListener('load', run, { once: true });
 })();
