@@ -206,14 +206,15 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
       if (i !== last) {
         const bmp = await load(i);
         ctx.clearRect(0, 0, cv.width, cv.height);
-        ctx.filter = edge;
+        ctx.filter = i < 235 ? edge : 'none';
         ctx.drawImage(bmp, 0, 0, cv.width, cv.height);
         cv.parentElement.classList.add('has-v');
         for (const [k, p] of bitmaps) if (k < i - 1) { p.then(b => b.close()); bitmaps.delete(k); }
         last = i;
       }
       if (i < n - 1) return requestAnimationFrame(tick);
-      // finished: hold the full logo for a moment, then start again
+      // finished: show the crisp still logo for a moment (the last frame is identical), then start again
+      cv.parentElement.classList.remove('has-v');
       setTimeout(() => { t0 = performance.now(); last = -1; requestAnimationFrame(tick); }, 3000);
     };
     requestAnimationFrame(tick);
