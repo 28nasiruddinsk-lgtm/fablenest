@@ -1,5 +1,5 @@
 <?php
-// Original site header (white bar + roots). $base is the page that owns the #sections; $current marks the active link.
+// Original site header (white bar). $base is the page that owns the #sections; $current marks the active link.
 $base = $base ?? '';
 $current = $current ?? '#top';
 $link = fn($h) => str_starts_with($h, '#') ? $base . $h : $h;
@@ -36,5 +36,3 @@ $br ??= fn(array $lines) => implode('<br>', array_map(fn($l) => $l === '' ? '&nb
 <?php endforeach ?>
   </ul>
 </nav>
-
-<div class="roots" aria-hidden="true"><svg viewBox="0 0 1920 72"></svg></div>

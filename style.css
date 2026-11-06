@@ -179,16 +179,6 @@ img{display:block}
 @media (max-width:980px){.logos{--u:calc(100cqw/1100);height:calc(260*var(--u))}.logos-view{left:0;width:100%}}
 
 
-/* roots hanging from the header bar, in the white gap above the banner */
-.roots{--u:calc(100cqw/1920);position:relative;z-index:5;height:0;width:100%;pointer-events:none}
-.roots svg{position:absolute;left:0;top:0;width:100%;height:calc(72*var(--u));overflow:visible}
-.roots path{fill:none;stroke-linecap:round;stroke-linejoin:round}
-.js .root{transform:scaleY(0)}
-.js.loaded .root{animation:rgrow 1.2s var(--ease-pop) calc(.6s + var(--i)*35ms) both,rsway 5.5s ease-in-out calc(2.5s + var(--i)*.25s) infinite alternate}@keyframes rgrow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
-@keyframes rsway{from{transform:rotate(-1.3deg)}to{transform:rotate(1.3deg)}}
-@media (prefers-reduced-motion:reduce){.js .root{transform:none!important}}
-@media (max-width:980px){.roots{height:calc(100cqw*.03)}}
-
 /* ---------- sections below the hero: positions are page coordinates of the 1920 px design (1 px = --u) ---------- */
 .pg{--u:calc(100cqw/1920);position:relative;height:calc(8432*var(--u));font-family:var(--body);color:var(--ink)}
 .sec{position:absolute;left:0;width:100%;top:calc((var(--y0) - 1300)*var(--u));height:calc(var(--h)*var(--u))}
