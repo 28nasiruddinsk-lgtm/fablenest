@@ -49,32 +49,6 @@ links.addEventListener('click', e => {
   }
 });
 
-// roots hanging from the bottom edge of the header bar over the banner (random but always the same)
-(() => {
-  const svg = document.querySelector('.roots svg'); if (!svg) return;
-  let s = 11; const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647, r = (a, b) => a + rnd() * (b - a);
-  const NS = 'http://www.w3.org/2000/svg', mk = (n, at) => { const e = document.createElementNS(NS, n); for (const k in at) e.setAttribute(k, at[k]); return e; };
-  let idx = 0;
-  const grow = (g, x, y, ang, len, w, depth) => {
-    let px = x, py = y, walked = 0;
-    while (walked < len) {
-      const t = walked / len, step = 8;
-      ang += r(-.3, .3) + (Math.PI / 2 - ang) * .12;
-      const nx = px + Math.cos(ang) * step, ny = py + Math.sin(ang) * step, sw = Math.max(.9, w * (1 - t * .85));
-      g.appendChild(mk('path', { d: `M${px} ${py}L${nx} ${ny}`, stroke: '#ffffff', 'stroke-width': sw }));
-      if (sw > 3) g.appendChild(mk('path', { d: `M${px} ${py}L${nx} ${ny}`, stroke: '#b9d2c4', 'stroke-width': sw * .28, opacity: .7 }));
-      if (depth < 2 && t > .3 && t < .75 && rnd() < .22) grow(g, nx, ny, ang + (rnd() < .5 ? -1 : 1) * r(.5, 1.1), (len - walked) * r(.5, .8), sw * .75, depth + 1);
-      px = nx; py = ny; walked += step;
-    }
-  };
-  // the header bar is full width; its bottom edge is y = 0 in this box
-  for (let x = 24; x < 1900; x += r(30, 62)) {
-    const g = mk('g', { class: 'root', style: `--i:${idx++};transform-origin:${x}px -1px` });
-    grow(g, x, -1, Math.PI / 2 + r(-.3, .3), r(30, 78), r(3.5, 6.5), 0);
-    svg.appendChild(g);
-  }
-})();
-
 // Scroll-in animations, forms, story slider and the "What We Do" dot route
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -218,18 +192,21 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
     const n = frames.length, fps = j.fr, ctx = cv.getContext('2d');
     const bitmaps = new Map();
     const load = i => {
-      if (!bitmaps.has(i)) bitmaps.set(i, fetch(frames[i]).then(r => r.blob()).then(b => createImageBitmap(b, 76, 110, 640, 210)));
+      if (!bitmaps.has(i)) bitmaps.set(i, fetch(frames[i]).then(r => r.blob()).then(b => createImageBitmap(b, 76, 60, 640, 270)));
       return bitmaps.get(i);
     };
     await Promise.all([...Array(12).keys()].map(load));
     let t0 = performance.now(), last = -1;
     ctx.imageSmoothingQuality = 'high';
+    // a dark hairline around everything so the white outline lettering reads on the white header (not in Safari)
+    const edge = 'drop-shadow(0 0 .5px #17301f) drop-shadow(0 0 .5px #17301f)';
     const tick = async now => {
       const i = Math.min(n - 1, Math.floor((now - t0) / 1000 * fps));
       for (let k = i; k < Math.min(n, i + 12); k++) load(k);
       if (i !== last) {
         const bmp = await load(i);
         ctx.clearRect(0, 0, cv.width, cv.height);
+        ctx.filter = edge;
         ctx.drawImage(bmp, 0, 0, cv.width, cv.height);
         cv.parentElement.classList.add('has-v');
         for (const [k, p] of bitmaps) if (k < i - 1) { p.then(b => b.close()); bitmaps.delete(k); }
