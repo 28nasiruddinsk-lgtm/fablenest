@@ -189,13 +189,15 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
     const j = await (await fetch(cv.dataset.src)).json();
     const byId = Object.fromEntries(j.assets.map(a => [a.id, a]));
     const frames = j.layers.slice().sort((a, b) => a.ip - b.ip).map(l => byId[l.refId].p);
-    const n = frames.length, fps = j.fr, ctx = cv.getContext('2d');
+    // the first ~7 s of the file only draw the outline lettering, which is too faint and rough on a white header,
+    // so the loop starts where the mascot has landed and the colour sweeps in
+    const START = 232, n = frames.length, fps = j.fr, ctx = cv.getContext('2d');
     const bitmaps = new Map();
     const load = i => {
       if (!bitmaps.has(i)) bitmaps.set(i, fetch(frames[i]).then(r => r.blob()).then(b => createImageBitmap(b, 76, 60, 640, 270)));
       return bitmaps.get(i);
     };
-    await Promise.all([...Array(12).keys()].map(load));
+    await Promise.all([...Array(12).keys()].map(k => load(START + k)));
     let t0 = performance.now(), last = -1;
     ctx.imageSmoothingQuality = 'high';
     // While the lettering is only a white outline it is nearly invisible on the white header, so recolour just that
@@ -212,18 +214,18 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
         const r = d[k], g = d[k + 1], b = d[k + 2], mx = Math.max(r, g, b), mn = Math.min(r, g, b);
         if (mx - mn > 36) continue;
         if ((r + g + b) / 3 > 222) { d[k] = 224; d[k + 1] = 238; d[k + 2] = 204; }
-        else { d[k] = 23; d[k + 1] = 48; d[k + 2] = 31; d[k + 3] = Math.min(255, a * 2); }
+        else { d[k] = 23; d[k + 1] = 48; d[k + 2] = 31; d[k + 3] = Math.min(255, a * 1.5); }
       }
       tctx.putImageData(img, 0, 0);
       return tmp;
     };
     const tick = async now => {
-      const i = Math.min(n - 1, Math.floor((now - t0) / 1000 * fps));
+      const i = Math.min(n - 1, START + Math.floor((now - t0) / 1000 * fps));
       for (let k = i; k < Math.min(n, i + 12); k++) load(k);
       if (i !== last) {
         const bmp = await load(i);
         ctx.clearRect(0, 0, cv.width, cv.height);
-        ctx.drawImage(i < 235 ? tint(bmp) : bmp, 0, 0, cv.width, cv.height);
+        ctx.drawImage(i < 275 ? tint(bmp) : bmp, 0, 0, cv.width, cv.height);
         cv.parentElement.classList.add('has-v');
         for (const [k, p] of bitmaps) if (k < i - 1) { p.then(b => b.close()); bitmaps.delete(k); }
         last = i;
