@@ -388,3 +388,10 @@ img{display:block}
 .pg .sec#imagination>*{--u:calc(100cqw/1920)}
 .pg.solo:has(#imagination){height:calc(897*100cqw/1920)!important}
 .pg.home{margin-top:calc(80*var(--u))}
+
+/* animated logo (transparent WebM, drawn once on load): the video canvas is 1920x1080, the logo sits in a 1596x512 box of it */
+.logo{overflow:hidden}
+.logo__v{position:absolute;left:-11.9%;top:-54.1%;width:120.3%;height:auto;max-width:none;pointer-events:none;opacity:0}
+.logo.has-v .logo__v{opacity:1}
+.logo.has-v img{visibility:hidden}
+@media (prefers-reduced-motion:reduce){.logo__v{display:none}}

@@ -205,3 +205,16 @@ const sxIo = new IntersectionObserver(es => es.forEach(en => {
   sxIo.unobserve(en.target);
 }), { threshold: .12 });
 document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
+
+// animated logo: a transparent WebM (VP9 alpha). Safari cannot show its transparency, so it keeps the still logo.
+(() => {
+  const v = document.querySelector('.logo__v');
+  if (!v || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  if (/^((?!chrome|android|crios|fxios|edg).)*safari/i.test(navigator.userAgent)) return;
+  const start = () => {
+    v.src = v.dataset.src;
+    v.addEventListener('playing', () => v.parentElement.classList.add('has-v'), { once: true });
+    v.play().catch(() => {});
+  };
+  document.readyState === 'complete' ? start() : addEventListener('load', start, { once: true });
+})();

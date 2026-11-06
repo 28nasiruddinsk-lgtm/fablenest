@@ -8,7 +8,7 @@ $br ??= fn(array $lines) => implode('<br>', array_map(fn($l) => $l === '' ? '&nb
 ?>
 <nav class="nav" aria-label="Main">
   <span class="nav-bar"></span>
-  <a class="logo" href="#top"><img src="assets/logo.png" alt="<?= $e($c['logo']) ?>"></a>
+  <a class="logo" href="#top"><img src="assets/logo.png" alt="<?= $e($c['logo']) ?>"><video class="logo__v" muted playsinline preload="none" aria-hidden="true" tabindex="-1" data-src="assets/logo.webm?v=<?= filemtime(dirname(__DIR__) . '/assets/logo.webm') ?>"></video></a>
   <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
   <ul class="links" id="links">
 <?php foreach ($c['nav'] as [$label, $href, $x]): ?>
