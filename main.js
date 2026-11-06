@@ -180,60 +180,70 @@ const sxIo = new IntersectionObserver(es => es.forEach(en => {
 }), { threshold: .12 });
 document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
 
-// animated logo: assets/logo.json is a Lottie made of 295 transparent WebP frames (768x432). Only the logo's box is cropped
-// out of each frame and drawn on a canvas, in a loop; the still logo shows until the first frame is ready.
+// animated logo, built from assets/logo.json (a Lottie made of 295 transparent WebP frames, 768x432).
+// That file was made as a full-frame colour wipe over lettering drawn as a faint outline, which looks rough in a white header.
+// So only two parts of it are used: the mascot's flight (its coloured pixels only) and the finished logo, which is
+// revealed left to right once the mascot has landed. The still logo.png shows between loops.
 (() => {
   const cv = document.querySelector('.logo__c');
   if (!cv || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  const FIRST = 30, LAND = 232, FINAL = 294, SPEED = 2, REVEAL = 50, HOLD_MS = 3200;
   const run = async () => {
     const j = await (await fetch(cv.dataset.src)).json();
     const byId = Object.fromEntries(j.assets.map(a => [a.id, a]));
     const frames = j.layers.slice().sort((a, b) => a.ip - b.ip).map(l => byId[l.refId].p);
-    // the first ~7 s of the file only draw the outline lettering, which is too faint and rough on a white header,
-    // so the loop starts where the mascot has landed and the colour sweeps in
-    const START = 232, n = frames.length, fps = j.fr, ctx = cv.getContext('2d');
+    const fps = j.fr, ctx = cv.getContext('2d');
+    ctx.imageSmoothingQuality = 'high';
     const bitmaps = new Map();
     const load = i => {
       if (!bitmaps.has(i)) bitmaps.set(i, fetch(frames[i]).then(r => r.blob()).then(b => createImageBitmap(b, 76, 60, 640, 270)));
       return bitmaps.get(i);
     };
-    await Promise.all([...Array(12).keys()].map(k => load(START + k)));
-    let t0 = performance.now(), last = -1;
-    ctx.imageSmoothingQuality = 'high';
-    // While the lettering is only a white outline it is nearly invisible on the white header, so recolour just that
-    // part: white fill -> pale green, grey outline -> dark green. Coloured pixels (the chick) are left alone.
+    // keep only the mascot's coloured pixels (drops the grey outline lettering that is in the same frames)
     const tmp = document.createElement('canvas'); tmp.width = cv.width; tmp.height = cv.height;
     const tctx = tmp.getContext('2d', { willReadFrequently: true });
-    const tint = bmp => {
+    const mascot = bmp => {
       tctx.clearRect(0, 0, tmp.width, tmp.height);
       tctx.drawImage(bmp, 0, 0, tmp.width, tmp.height);
       const img = tctx.getImageData(0, 0, tmp.width, tmp.height), d = img.data;
       for (let k = 0; k < d.length; k += 4) {
-        const a = d[k + 3];
-        if (!a) continue;
-        const r = d[k], g = d[k + 1], b = d[k + 2], mx = Math.max(r, g, b), mn = Math.min(r, g, b);
-        if (mx - mn > 36) continue;
-        if ((r + g + b) / 3 > 222) { d[k] = 224; d[k + 1] = 238; d[k + 2] = 204; }
-        else { d[k] = 23; d[k + 1] = 48; d[k + 2] = 31; d[k + 3] = Math.min(255, a * 1.5); }
+        if (Math.max(d[k], d[k + 1], d[k + 2]) - Math.min(d[k], d[k + 1], d[k + 2]) < 36) d[k + 3] = 0;
       }
       tctx.putImageData(img, 0, 0);
       return tmp;
     };
+    const flight = LAND - FIRST;                      // frames of flying
+    const total = flight + REVEAL;                    // + frames of revealing the logo
+    const wanted = pos => {                           // frames needed around this moment
+      const i = Math.min(LAND, FIRST + Math.floor(pos));
+      return [i, i + SPEED, i + 2 * SPEED, i + 3 * SPEED].filter(x => x <= LAND).concat([LAND, FINAL]);
+    };
+    for (const i of wanted(0)) load(i);
+    await Promise.all([load(FIRST), load(LAND), load(FINAL)]);
+    let t0 = performance.now(), last = -1;
     const tick = async now => {
-      const i = Math.min(n - 1, START + Math.floor((now - t0) / 1000 * fps));
-      for (let k = i; k < Math.min(n, i + 12); k++) load(k);
-      if (i !== last) {
-        const bmp = await load(i);
+      const pos = Math.floor((now - t0) / 1000 * fps * SPEED);
+      if (pos !== last) {
+        last = pos;
+        wanted(pos).forEach(load);
         ctx.clearRect(0, 0, cv.width, cv.height);
-        ctx.drawImage(i < 275 ? tint(bmp) : bmp, 0, 0, cv.width, cv.height);
+        if (pos < flight) {
+          const i = Math.min(LAND, FIRST + pos);
+          ctx.drawImage(mascot(await load(i)), 0, 0);
+        } else {
+          const p = Math.min(1, (pos - flight) / REVEAL);
+          ctx.drawImage(mascot(await load(LAND)), 0, 0);
+          ctx.save(); ctx.beginPath(); ctx.rect(0, 0, cv.width * p, cv.height); ctx.clip();
+          ctx.drawImage(await load(FINAL), 0, 0, cv.width, cv.height);
+          ctx.restore();
+        }
         cv.parentElement.classList.add('has-v');
-        for (const [k, p] of bitmaps) if (k < i - 1) { p.then(b => b.close()); bitmaps.delete(k); }
-        last = i;
+        for (const [k, pr] of bitmaps) if (k < FIRST + pos - 6 && k !== LAND && k !== FINAL) { pr.then(b => b.close()); bitmaps.delete(k); }
       }
-      if (i < n - 1) return requestAnimationFrame(tick);
-      // finished: show the crisp still logo for a moment (the last frame is identical), then start again
+      if (pos < total) return requestAnimationFrame(tick);
+      // finished: show the crisp still logo for a moment (it is identical to the last frame), then play again
       cv.parentElement.classList.remove('has-v');
-      setTimeout(() => { t0 = performance.now(); last = -1; requestAnimationFrame(tick); }, 3000);
+      setTimeout(() => { t0 = performance.now(); last = -1; for (const i of wanted(0)) load(i); requestAnimationFrame(tick); }, HOLD_MS);
     };
     requestAnimationFrame(tick);
   };
