@@ -207,11 +207,10 @@ const sxIo = new IntersectionObserver(es => es.forEach(en => {
 document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
 
 // animated logo: assets/logo.json is a Lottie made of 295 transparent WebP frames (768x432). Only the logo's box is cropped
-// out of each frame and drawn on a canvas, once per visit; the still logo shows until the first frame is ready.
+// out of each frame and drawn on a canvas, in a loop; the still logo shows until the first frame is ready.
 (() => {
   const cv = document.querySelector('.logo__c');
   if (!cv || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  try { if (sessionStorage.getItem('logo-played')) return; } catch { /* storage blocked: just play */ }
   const run = async () => {
     const j = await (await fetch(cv.dataset.src)).json();
     const byId = Object.fromEntries(j.assets.map(a => [a.id, a]));
@@ -223,8 +222,8 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
       return bitmaps.get(i);
     };
     await Promise.all([...Array(12).keys()].map(load));
-    const t0 = performance.now();
-    let last = -1;
+    let t0 = performance.now(), last = -1;
+    ctx.imageSmoothingQuality = 'high';
     const tick = async now => {
       const i = Math.min(n - 1, Math.floor((now - t0) / 1000 * fps));
       for (let k = i; k < Math.min(n, i + 12); k++) load(k);
@@ -236,8 +235,9 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
         for (const [k, p] of bitmaps) if (k < i - 1) { p.then(b => b.close()); bitmaps.delete(k); }
         last = i;
       }
-      if (i < n - 1) requestAnimationFrame(tick);
-      else { try { sessionStorage.setItem('logo-played', '1'); } catch { /* ignore */ } }
+      if (i < n - 1) return requestAnimationFrame(tick);
+      // finished: hold the full logo for a moment, then start again
+      setTimeout(() => { t0 = performance.now(); last = -1; requestAnimationFrame(tick); }, 3000);
     };
     requestAnimationFrame(tick);
   };
