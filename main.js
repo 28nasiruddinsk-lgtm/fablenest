@@ -206,26 +206,41 @@ const sxIo = new IntersectionObserver(es => es.forEach(en => {
 }), { threshold: .12 });
 document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
 
-// animated logo: a transparent WebM (VP9 alpha). The still logo stays until the browser proves it really shows the
-// transparency (a corner pixel of the first frame must be see-through); otherwise the video would show a black box.
+// animated logo: assets/logo.json is a Lottie made of 295 transparent WebP frames (768x432). Only the logo's box is cropped
+// out of each frame and drawn on a canvas, once per visit; the still logo shows until the first frame is ready.
 (() => {
-  const v = document.querySelector('.logo__v');
-  if (!v || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  const start = () => {
-    v.muted = true; v.preload = 'auto';
-    v.addEventListener('loadeddata', () => {
-      let ok = false;
-      try {
-        const c = document.createElement('canvas'); c.width = c.height = 4;
-        const x = c.getContext('2d', { willReadFrequently: true });
-        x.drawImage(v, 0, 0, 4, 4);
-        ok = x.getImageData(0, 0, 1, 1).data[3] < 16;
-      } catch { /* cannot tell: keep the still logo */ }
-      if (!ok) { v.removeAttribute('src'); v.load(); return; }
-      v.addEventListener('playing', () => v.parentElement.classList.add('has-v'), { once: true });
-      v.play().catch(() => {});
-    }, { once: true });
-    v.src = v.dataset.src;
+  const cv = document.querySelector('.logo__c');
+  if (!cv || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+  try { if (sessionStorage.getItem('logo-played')) return; } catch { /* storage blocked: just play */ }
+  const run = async () => {
+    const j = await (await fetch(cv.dataset.src)).json();
+    const byId = Object.fromEntries(j.assets.map(a => [a.id, a]));
+    const frames = j.layers.slice().sort((a, b) => a.ip - b.ip).map(l => byId[l.refId].p);
+    const n = frames.length, fps = j.fr, ctx = cv.getContext('2d');
+    const bitmaps = new Map();
+    const load = i => {
+      if (!bitmaps.has(i)) bitmaps.set(i, fetch(frames[i]).then(r => r.blob()).then(b => createImageBitmap(b, 76, 110, 640, 210)));
+      return bitmaps.get(i);
+    };
+    await Promise.all([...Array(12).keys()].map(load));
+    const t0 = performance.now();
+    let last = -1;
+    const tick = async now => {
+      const i = Math.min(n - 1, Math.floor((now - t0) / 1000 * fps));
+      for (let k = i; k < Math.min(n, i + 12); k++) load(k);
+      if (i !== last) {
+        const bmp = await load(i);
+        ctx.clearRect(0, 0, cv.width, cv.height);
+        ctx.drawImage(bmp, 0, 0, cv.width, cv.height);
+        cv.parentElement.classList.add('has-v');
+        for (const [k, p] of bitmaps) if (k < i - 1) { p.then(b => b.close()); bitmaps.delete(k); }
+        last = i;
+      }
+      if (i < n - 1) requestAnimationFrame(tick);
+      else { try { sessionStorage.setItem('logo-played', '1'); } catch { /* ignore */ } }
+    };
+    requestAnimationFrame(tick);
   };
+  const start = () => run().catch(() => {});
   document.readyState === 'complete' ? start() : addEventListener('load', start, { once: true });
 })();
