@@ -206,15 +206,26 @@ const sxIo = new IntersectionObserver(es => es.forEach(en => {
 }), { threshold: .12 });
 document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
 
-// animated logo: a transparent WebM (VP9 alpha). Safari cannot show its transparency, so it keeps the still logo.
+// animated logo: a transparent WebM (VP9 alpha). The still logo stays until the browser proves it really shows the
+// transparency (a corner pixel of the first frame must be see-through); otherwise the video would show a black box.
 (() => {
   const v = document.querySelector('.logo__v');
   if (!v || matchMedia('(prefers-reduced-motion:reduce)').matches) return;
-  if (/^((?!chrome|android|crios|fxios|edg).)*safari/i.test(navigator.userAgent)) return;
   const start = () => {
+    v.muted = true; v.preload = 'auto';
+    v.addEventListener('loadeddata', () => {
+      let ok = false;
+      try {
+        const c = document.createElement('canvas'); c.width = c.height = 4;
+        const x = c.getContext('2d', { willReadFrequently: true });
+        x.drawImage(v, 0, 0, 4, 4);
+        ok = x.getImageData(0, 0, 1, 1).data[3] < 16;
+      } catch { /* cannot tell: keep the still logo */ }
+      if (!ok) { v.removeAttribute('src'); v.load(); return; }
+      v.addEventListener('playing', () => v.parentElement.classList.add('has-v'), { once: true });
+      v.play().catch(() => {});
+    }, { once: true });
     v.src = v.dataset.src;
-    v.addEventListener('playing', () => v.parentElement.classList.add('has-v'), { once: true });
-    v.play().catch(() => {});
   };
   document.readyState === 'complete' ? start() : addEventListener('load', start, { once: true });
 })();
