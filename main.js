@@ -198,16 +198,32 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
     await Promise.all([...Array(12).keys()].map(load));
     let t0 = performance.now(), last = -1;
     ctx.imageSmoothingQuality = 'high';
-    // a dark hairline around everything so the white outline lettering reads on the white header (not in Safari)
-    const edge = 'drop-shadow(0 0 .5px #17301f) drop-shadow(0 0 .5px #17301f)';
+    // While the lettering is only a white outline it is nearly invisible on the white header, so recolour just that
+    // part: white fill -> pale green, grey outline -> dark green. Coloured pixels (the chick) are left alone.
+    const tmp = document.createElement('canvas'); tmp.width = cv.width; tmp.height = cv.height;
+    const tctx = tmp.getContext('2d', { willReadFrequently: true });
+    const tint = bmp => {
+      tctx.clearRect(0, 0, tmp.width, tmp.height);
+      tctx.drawImage(bmp, 0, 0, tmp.width, tmp.height);
+      const img = tctx.getImageData(0, 0, tmp.width, tmp.height), d = img.data;
+      for (let k = 0; k < d.length; k += 4) {
+        const a = d[k + 3];
+        if (!a) continue;
+        const r = d[k], g = d[k + 1], b = d[k + 2], mx = Math.max(r, g, b), mn = Math.min(r, g, b);
+        if (mx - mn > 36) continue;
+        if ((r + g + b) / 3 > 222) { d[k] = 224; d[k + 1] = 238; d[k + 2] = 204; }
+        else { d[k] = 23; d[k + 1] = 48; d[k + 2] = 31; d[k + 3] = Math.min(255, a * 2); }
+      }
+      tctx.putImageData(img, 0, 0);
+      return tmp;
+    };
     const tick = async now => {
       const i = Math.min(n - 1, Math.floor((now - t0) / 1000 * fps));
       for (let k = i; k < Math.min(n, i + 12); k++) load(k);
       if (i !== last) {
         const bmp = await load(i);
         ctx.clearRect(0, 0, cv.width, cv.height);
-        ctx.filter = i < 235 ? edge : 'none';
-        ctx.drawImage(bmp, 0, 0, cv.width, cv.height);
+        ctx.drawImage(i < 235 ? tint(bmp) : bmp, 0, 0, cv.width, cv.height);
         cv.parentElement.classList.add('has-v');
         for (const [k, p] of bitmaps) if (k < i - 1) { p.then(b => b.close()); bitmaps.delete(k); }
         last = i;
