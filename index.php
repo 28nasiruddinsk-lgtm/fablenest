@@ -58,7 +58,7 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
 
 <?php include __DIR__ . '/inc/seo-answer.php' ?>
 
-<div class="pg" style="height:calc(7700*var(--u))">
+<div class="pg home" style="height:calc(7700*var(--u))">
 
 <section class="sec" id="about" style="--y0:1300;--h:880">
   <img class="a rv rv-r" style="--x:860;--y:1240;--w:1060;--h:770;--d:.15" src="assets/s/ladder.jpg" alt="<?= $e($c['about']['alt']) ?>" decoding="async">

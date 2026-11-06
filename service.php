@@ -40,7 +40,7 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php include __DIR__ . '/inc/svc-solution.php' ?>
 
-<?php include __DIR__ . '/inc/svc-how.php' ?>
+<?php include __DIR__ . (!empty($s['process']) ? '/inc/svc-process.php' : '/inc/svc-how.php') ?>
 
 <?php $pfTabs = $s['portfolio']; include __DIR__ . '/inc/portfolio.php' ?>
 
