@@ -206,7 +206,7 @@ const sxIo = new IntersectionObserver(es => es.forEach(en => {
 }), { threshold: .12 });
 document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
 
-// animated logo: the supplied Lottie (assets/logo-anim.json, 768x432, 33 fps, plays once). The still logo shows until it is ready.
+// animated logo: the supplied Lottie (assets/logo-anim.json, 768x432, 33 fps), looping with a pause on the finished logo. The still logo shows until it is ready.
 (() => {
   const box = document.querySelector('.logo__a');
   if (!box) return;
@@ -216,11 +216,13 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
     fetch(box.dataset.src).then(r => r.json()).then(data => {
       const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
       const anim = lottie.loadAnimation({ container: box, renderer: 'svg', loop: false, autoplay: false, animationData: data, rendererSettings: { preserveAspectRatio: 'xMidYMid meet' } });
+      box.anim = anim;
       anim.addEventListener('DOMLoaded', () => {
         still.classList.add('has-a');
         reduce ? anim.goToAndStop(anim.totalFrames - 1, true) : anim.play();
       });
-      still.addEventListener('mouseenter', () => { if (anim.isPaused && !reduce) anim.goToAndPlay(0, true); });
+      // loop: after the finished logo has been held for a moment, play it again
+      if (!reduce) anim.addEventListener('complete', () => setTimeout(() => anim.goToAndPlay(0, true), 2500));
     }).catch(() => {});
   };
   document.readyState === 'complete' ? run() : addEventListener('load', run, { once: true });
