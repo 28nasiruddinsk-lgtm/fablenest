@@ -206,11 +206,17 @@ return [
     'work' => [
         'intro' => 'A look at books, artwork, films and websites we have made with our authors.',
         'tabs' => [
-            'covers' => ['label' => 'Book Covers', 'ratio' => '470 / 540', 'items' => [
-                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
-                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
-                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
-                ['Buttercup Bunny & The Brave Beginning', 'assets/s/frame.jpg', '', 'Picture book'],
+            'covers' => ['label' => 'Book Covers', 'ratio' => '1520 / 1399', 'items' => [
+                ['Leo and The Moon Cat', 'assets/s/cover-leo-moon-cat.jpg', '', 'Oliver Bennett'],
+                ['Bolt the Little Robot and The Rooftop Garden', 'assets/s/cover-bolt-rooftop-garden.jpg', '', 'William Carter'],
+                ['Rosie the Little Pig Who Wanted to Fly', 'assets/s/cover-rosie-pig.jpg', '', 'Emma Sullivan'],
+                ['Lucy the Firefly Who Lost Her Glow', 'assets/s/cover-lucy-firefly.jpg', '', 'Lucy Reynolds'],
+                ['Bruno the Bear Who Couldn’t Sleep', 'assets/s/cover-bruno-bear.jpg', '', 'Hannah Wilson'],
+                ['Captain Maisie and the Treasure of Giggle Island', 'assets/s/cover-giggle-island.jpg', '', 'Elizabeth Walker'],
+                ['Ollie the Shy Octopus', 'assets/s/cover-ollie-octopus.jpg', '', 'Penelope James'],
+                ['Pip the Little Penguin', 'assets/s/cover-pip-penguin.jpg', '', 'Stella Marshall'],
+                ['The Brave Little Hedgehog’s Winter Party', 'assets/s/cover-hedgehog-winter-party.jpg', '', 'Victoria Collins'],
+                ['Ember the Dragon Who Was Afraid of Fire', 'assets/s/cover-ember-dragon.jpg', '', 'Sophia Anderson'],
             ]],
             'illustrations' => ['label' => 'Illustrations', 'ratio' => '4 / 3', 'items' => [
                 ['Giraffe on the run', 'assets/s/pf_ill1.jpg', '', 'Full-page spread'],

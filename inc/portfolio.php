@@ -20,7 +20,7 @@ if (!$pfTabs) return;
     <div class="pf__panel<?= $i ? '' : ' is-on' ?>" id="pf-<?= $e($t) ?>" role="tabpanel"<?= count($pfTabs) > 1 ? ' aria-labelledby="pf-tab-' . $e($t) . '"' : '' ?> data-kind="<?= $e($t) ?>"<?= $i ? ' hidden' : '' ?>>
       <div class="row g-4 justify-content-center">
 <?php foreach ($tab['items'] as $n => [$name, $img, $href, $cap]): $tag = $href ? 'a' : 'div'; ?>
-        <div class="<?= $t === 'covers' ? 'col-6 col-lg-3' : ($t === 'illustrations' ? 'col-sm-6 col-lg-4' : 'col-md-9 col-lg-6') ?> pf__cell" style="--n:<?= $n ?>">
+        <div class="<?= $t === 'covers' ? 'col-6 col-md-4 col-xl-3' : ($t === 'illustrations' ? 'col-sm-6 col-lg-4' : 'col-md-9 col-lg-6') ?> pf__cell" style="--n:<?= $n ?>">
           <<?= $tag ?> class="pf__card pf__card--<?= $e($t) ?>"<?= $href ? ' href="' . $e($href) . '"' : '' ?> style="--ratio:<?= $e($tab['ratio']) ?>">
 <?php if ($t === 'websites'): ?>
             <span class="pf__bar" aria-hidden="true"><i></i><i></i><i></i><b><?= $e($cap) ?></b></span>
