@@ -385,13 +385,18 @@ img{display:block}
 .logo.has-a img{visibility:hidden}
 @media (max-width:980px){.logo__a{left:-17.6px;top:-22.6px;width:193px;height:108.5px}}
 @media (prefers-reduced-motion:reduce){.logo__a{transition:none}}
-/* home portfolio: framed book covers drifting past (the track holds every cover twice and loops); hover pauses it */
-.pfs{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
-.pfs__track{display:flex;gap:calc(9*var(--u));width:max-content;animation:pfs calc(var(--n)*6s) linear infinite}
-.pfs:hover .pfs__track{animation-play-state:paused}
+/* home portfolio: framed book covers that drift past on their own; arrows move by one frame, hover pauses */
+.pfw{position:absolute}
+.pfs{width:100%;height:100%;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.pfs::-webkit-scrollbar{display:none}
+.pfs:focus-visible{outline:3px solid #9fbc00;outline-offset:-3px}
+.pfs__track{display:flex;gap:calc(9*var(--u));width:max-content}
 .pfs__item{position:relative;flex:none;width:calc(470*var(--u));height:calc(540*var(--u));margin:0;transform-origin:50% 3%;transition:transform .5s var(--ease-pop)}
 .pfs__item:hover{transform:rotate(2deg) translateY(calc(-6*var(--u)))}
 .pfs__frame{display:block;width:100%;height:100%}
 .pfs__cover{position:absolute;left:16.4%;top:31.5%;width:66%;height:auto;mix-blend-mode:multiply}
-@keyframes pfs{to{transform:translateX(calc(-1*var(--n)*479*var(--u)))}}
-@media (prefers-reduced-motion:reduce){.pfs{overflow-x:auto}.pfs__track{animation:none}}
+.pfw__btn{position:absolute;top:50%;width:clamp(44px,3.4vw,65px);aspect-ratio:1;margin-top:calc(clamp(44px,3.4vw,65px)/-2);display:grid;place-items:center;border:0;border-radius:50%;cursor:pointer;z-index:2;
+  background:#002a1c;color:#deff21;box-shadow:0 6px 16px rgba(0,42,28,.3);transition:transform .25s var(--ease-pop),background .25s}
+.pfw__btn svg{width:46%;height:46%}
+.pfw__btn:hover{transform:scale(1.12);background:#04402b}.pfw__btn:active{transform:scale(.94)}
+.pfw__btn--prev{left:calc(40*var(--u))}.pfw__btn--next{right:calc(40*var(--u))}

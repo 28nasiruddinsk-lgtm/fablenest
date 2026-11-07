@@ -201,3 +201,26 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
   };
   document.readyState === 'complete' ? run() : addEventListener('load', run, { once: true });
 })();
+// home portfolio: covers drift sideways on their own (paused on hover / focus / tab hidden); arrows move one frame
+(() => {
+  const box = document.querySelector('.pfs');
+  if (!box) return;
+  const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const half = () => box.scrollWidth / 2;                 // the track holds every cover twice
+  let paused = false, pos = 0, last = 0;
+  const frame = () => box.querySelector('.pfs__item').getBoundingClientRect().width + parseFloat(getComputedStyle(box.firstElementChild).columnGap || 0);
+  const wrap = () => { if (box.scrollLeft >= half()) box.scrollLeft -= half(); else if (box.scrollLeft <= 0) box.scrollLeft += half(); pos = box.scrollLeft; };
+  const tick = t => {
+    if (!paused && !document.hidden && last) { pos += (t - last) * frame() / 6000; box.scrollLeft = pos; wrap(); }
+    last = t; requestAnimationFrame(tick);
+  };
+  if (!reduce) requestAnimationFrame(tick);
+  ['mouseenter', 'focusin', 'touchstart'].forEach(e => box.addEventListener(e, () => paused = true, { passive: true }));
+  ['mouseleave', 'focusout', 'touchend'].forEach(e => box.addEventListener(e, () => { pos = box.scrollLeft; paused = false; }, { passive: true }));
+  box.addEventListener('scroll', () => { if (paused) pos = box.scrollLeft; }, { passive: true });
+  document.querySelectorAll('.pfw__btn').forEach(b => b.addEventListener('click', () => {
+    const dir = b.classList.contains('pfw__btn--next') ? 1 : -1;
+    wrap(); box.scrollBy({ left: dir * frame(), behavior: 'smooth' });
+    paused = true; clearTimeout(box._t); box._t = setTimeout(() => { pos = box.scrollLeft; paused = false; }, 2500);
+  }));
+})();

@@ -111,15 +111,19 @@ $stories = $c['stories']['items'];
   <h2 class="a mul rv rv-wipe" style="--x:350;--y:6500;--w:1220;--h:100"><img src="assets/s/h_stories.jpg" alt="Stories We've Helped Bring to Life."></h2>
   <p class="a t20 c rv" style="--x:0;--y:6599;--w:1920;--h:28;--d:.4"><?= $e($c['portfolio']['intro']) ?></p>
 <?php $covers = $c['work']['tabs']['covers']['items']; ?>
-  <div class="a pfs" style="--x:0;--y:6665;--w:1920;--h:545;--n:<?= count($covers) ?>" aria-label="Book covers we have worked on">
-    <div class="pfs__track">
+  <div class="a pfw" style="--x:0;--y:6665;--w:1920;--h:545;--n:<?= count($covers) ?>">
+    <div class="pfs" tabindex="0" role="region" aria-label="Book covers we have worked on">
+      <div class="pfs__track">
 <?php foreach ([0, 1] as $copy): foreach ($covers as [$title, $img]): ?>
-      <figure class="pfs__item"<?= $copy ? ' aria-hidden="true"' : '' ?>>
-        <img class="pfs__frame" src="assets/s/frame-empty.jpg" alt="">
-        <img class="pfs__cover" src="<?= $e($img) ?>" alt="<?= $copy ? '' : $e($title) ?>" loading="lazy">
-      </figure>
+        <figure class="pfs__item"<?= $copy ? ' aria-hidden="true"' : '' ?>>
+          <img class="pfs__frame" src="assets/s/frame-empty.jpg" alt="">
+          <img class="pfs__cover" src="<?= $e($img) ?>" alt="<?= $copy ? '' : $e($title) ?>" loading="lazy">
+        </figure>
 <?php endforeach; endforeach ?>
+      </div>
     </div>
+    <button type="button" class="pfw__btn pfw__btn--prev" aria-label="Previous books"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+    <button type="button" class="pfw__btn pfw__btn--next" aria-label="Next books"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
   </div>
 </section>
 
