@@ -39,7 +39,7 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
 
   <p class="lead" data-words><?= $br($c['hero']['lead']) ?></p>
   <a class="btn btn-fill" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a>
-  <div class="boy"><img src="assets/fig/boy-raw.png" alt="<?= $e($c['hero']['boy_alt']) ?>"></div>
+  <div class="boy"><img src="assets/fig/chick.png" alt="<?= $e($c['hero']['boy_alt']) ?>"></div>
   <a class="btn btn-line" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a>
   <a class="scroll" href="#about" aria-label="Scroll down"><svg viewBox="0 0 19 28" width="19" height="28" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 1v25M1.5 17.5l8 8.5 8-8.5"/></svg></a>
 

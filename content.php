@@ -16,9 +16,9 @@ return [
     ],
 
     'hero' => [
-        'lead' => ['Bring your children’s book to life with professional publishing,', 'illustration, design, and marketing support — all under one roof.'],
+        'lead' => ['Bring your children’s book to life with professional', 'publishing, illustration, design, and marketing support', '— all under one roof.'],
         'cta' => ['Start Your Story', 'Discuss Now'],
-        'boy_alt' => 'A boy sitting on a branch reaching into a nest of books',
+        'boy_alt' => 'A chick in a blue cap sitting on a branch, reaching into a nest of books',
     ],
 
     'brands' => [

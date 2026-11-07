@@ -70,8 +70,7 @@ img{display:block}
 .btn-line:hover{background:#fff;color:var(--ink)}
 
 /* Figma: image fill, mirrored and rotated 178.77 deg -> a flip with a 1.2 deg tilt */
-.boy{left:0;top:0;width:calc(894.1*var(--u));height:calc(596.7*var(--u));overflow:hidden;transform-origin:0 0;
-  transform:translate(calc(1562.691*var(--u)),calc(253.21*var(--u))) matrix(-1,-.021,-.021,1,0,0)}
+.boy{left:calc(658*var(--u));top:calc(279*var(--u));width:calc(786*var(--u));height:calc(533*var(--u))}
 .boy img{width:100%;height:100%;object-fit:cover}
 
 .scroll{left:calc(934*var(--u));top:calc(879*var(--u));width:calc(52*var(--u));height:calc(61*var(--u));border:calc(.887*var(--u)) solid #fff;border-radius:calc(15*var(--u))}
@@ -159,7 +158,7 @@ img{display:block}
   .lead br{display:none}
   .btn{height:50px;font-size:17px;padding:0 30px;width:auto;border-width:2px;border-radius:999px}
   .btn-fill{order:4;align-self:flex-start}.btn-line{order:5;align-self:flex-start;margin-top:-10px}
-  .boy{order:6;width:100%;max-width:520px;height:auto;aspect-ratio:894/597;transform-origin:50% 50%;transform:scaleX(-1)}
+  .boy{order:6;width:100%;max-width:520px;height:auto;aspect-ratio:1523/1033}
   .paper{order:7;width:100%;max-width:440px;height:auto;aspect-ratio:623/634}
   .scroll{display:none}
 }
