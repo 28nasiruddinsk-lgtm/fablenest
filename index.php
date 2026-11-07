@@ -3,7 +3,7 @@ $c = require __DIR__ . '/content.php';
 $e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
 $br = fn(array $lines) => implode('<br>', array_map(fn($l) => $l === '' ? '&nbsp;' : htmlspecialchars($l, ENT_NOQUOTES, 'UTF-8'), $lines));
 $stories = $c['stories']['items'];
-$books = array_slice($c['portfolio']['books'], 0, 4);
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -110,9 +110,17 @@ $books = array_slice($c['portfolio']['books'], 0, 4);
 <section class="sec" id="portfolio" style="--y0:6500;--h:710">
   <h2 class="a mul rv rv-wipe" style="--x:350;--y:6500;--w:1220;--h:100"><img src="assets/s/h_stories.jpg" alt="Stories We've Helped Bring to Life."></h2>
   <p class="a t20 c rv" style="--x:0;--y:6599;--w:1920;--h:28;--d:.4"><?= $e($c['portfolio']['intro']) ?></p>
-<?php foreach ($books as $i => [$title, $img]): ?>
-  <div class="a fr" style="--x:<?= 12 + $i * 479 ?>;--y:6665;--w:470;--h:540;--d:<?= .2 + $i * .2 ?>"><img src="<?= $e($img) ?>" alt="<?= $e($title) ?>"></div>
-<?php endforeach ?>
+<?php $covers = $c['work']['tabs']['covers']['items']; ?>
+  <div class="a pfs" style="--x:0;--y:6665;--w:1920;--h:545;--n:<?= count($covers) ?>" aria-label="Book covers we have worked on">
+    <div class="pfs__track">
+<?php foreach ([0, 1] as $copy): foreach ($covers as [$title, $img]): ?>
+      <figure class="pfs__item"<?= $copy ? ' aria-hidden="true"' : '' ?>>
+        <img class="pfs__frame" src="assets/s/frame-empty.jpg" alt="">
+        <img class="pfs__cover" src="<?= $e($img) ?>" alt="<?= $copy ? '' : $e($title) ?>" loading="lazy">
+      </figure>
+<?php endforeach; endforeach ?>
+    </div>
+  </div>
 </section>
 
 <?php include __DIR__ . '/inc/sec-stories.php' ?>

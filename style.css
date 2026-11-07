@@ -385,3 +385,13 @@ img{display:block}
 .logo.has-a img{visibility:hidden}
 @media (max-width:980px){.logo__a{left:-17.6px;top:-22.6px;width:193px;height:108.5px}}
 @media (prefers-reduced-motion:reduce){.logo__a{transition:none}}
+/* home portfolio: framed book covers drifting past (the track holds every cover twice and loops); hover pauses it */
+.pfs{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.pfs__track{display:flex;gap:calc(9*var(--u));width:max-content;animation:pfs calc(var(--n)*6s) linear infinite}
+.pfs:hover .pfs__track{animation-play-state:paused}
+.pfs__item{position:relative;flex:none;width:calc(470*var(--u));height:calc(540*var(--u));margin:0;transform-origin:50% 3%;transition:transform .5s var(--ease-pop)}
+.pfs__item:hover{transform:rotate(2deg) translateY(calc(-6*var(--u)))}
+.pfs__frame{display:block;width:100%;height:100%}
+.pfs__cover{position:absolute;left:16.4%;top:31.5%;width:66%;height:auto;mix-blend-mode:multiply}
+@keyframes pfs{to{transform:translateX(calc(-1*var(--n)*479*var(--u)))}}
+@media (prefers-reduced-motion:reduce){.pfs{overflow-x:auto}.pfs__track{animation:none}}
