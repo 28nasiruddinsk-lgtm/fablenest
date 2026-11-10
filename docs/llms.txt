@@ -3,16 +3,16 @@
 > Fablenest Publishers is a children’s book publishing service. We help authors turn a manuscript or an idea into a finished, professionally made book, with editing, illustration, cover design, formatting, a book trailer, an author website and marketing support.
 
 ## Main pages
-- [Home](https://28nasiruddinsk-lgtm.github.io/fablenest/): Fablenest Publishers helps authors publish children’s books: editing, cover design, illustration, book trailers, author websites and marketing, all in one place.
-- [About Us](https://28nasiruddinsk-lgtm.github.io/fablenest/about.html): Learn how Fablenest Publishers helps authors turn ideas into professionally crafted children’s books through design, illustration, editing and publishing support.
-- [Book Publishing](https://28nasiruddinsk-lgtm.github.io/fablenest/book-publishing.html): Professional children’s book publishing: manuscript preparation, cover design, formatting and publishing support from your first draft to a finished, published book.
-- [Book Illustrations](https://28nasiruddinsk-lgtm.github.io/fablenest/service-book-illustrations.html): Full-colour children’s book illustrations: character design, page spreads and cover artwork, prepared for print and ebook by experienced illustrators.
-- [Author Branding](https://28nasiruddinsk-lgtm.github.io/fablenest/service-author-branding.html): Build an author brand readers remember: your author story, logo and colours, bio, and a simple brand kit you can use on every book, website and social post.
-- [Author Website](https://28nasiruddinsk-lgtm.github.io/fablenest/service-author-website.html): A custom author website with book pages, newsletter sign-up and contact forms, designed for phones and easy for you to update yourself.
-- [Social Media Marketing](https://28nasiruddinsk-lgtm.github.io/fablenest/service-social-media-marketing.html): Reach parents, teachers and readers: profile setup, a content plan, launch campaigns and monthly reporting for your children’s book.
-- [Book Trailer](https://28nasiruddinsk-lgtm.github.io/fablenest/service-book-trailer.html): A short, polished book trailer for your children’s book: script, storyboard, animation, music and versions for your website and social media.
-- [Press Release](https://28nasiruddinsk-lgtm.github.io/fablenest/service-press-release.html): Professional press release writing and distribution for your children’s book launch, with a strong headline, a media list and sending support.
-- [Copyright Registration](https://28nasiruddinsk-lgtm.github.io/fablenest/service-copyright-registration.html): Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.
+- [Home](https://fablenest.28nasiruddinsk.workers.dev/): Fablenest Publishers helps authors publish children’s books: editing, cover design, illustration, book trailers, author websites and marketing, all in one place.
+- [About Us](https://fablenest.28nasiruddinsk.workers.dev/about): Learn how Fablenest Publishers helps authors turn ideas into professionally crafted children’s books through design, illustration, editing and publishing support.
+- [Book Publishing](https://fablenest.28nasiruddinsk.workers.dev/book-publishing): Professional children’s book publishing: manuscript preparation, cover design, formatting and publishing support from your first draft to a finished, published book.
+- [Book Illustrations](https://fablenest.28nasiruddinsk.workers.dev/service-book-illustrations): Full-colour children’s book illustrations: character design, page spreads and cover artwork, prepared for print and ebook by experienced illustrators.
+- [Author Branding](https://fablenest.28nasiruddinsk.workers.dev/service-author-branding): Build an author brand readers remember: your author story, logo and colours, bio, and a simple brand kit you can use on every book, website and social post.
+- [Author Website](https://fablenest.28nasiruddinsk.workers.dev/service-author-website): A custom author website with book pages, newsletter sign-up and contact forms, designed for phones and easy for you to update yourself.
+- [Social Media Marketing](https://fablenest.28nasiruddinsk.workers.dev/service-social-media-marketing): Reach parents, teachers and readers: profile setup, a content plan, launch campaigns and monthly reporting for your children’s book.
+- [Book Trailer](https://fablenest.28nasiruddinsk.workers.dev/service-book-trailer): A short, polished book trailer for your children’s book: script, storyboard, animation, music and versions for your website and social media.
+- [Press Release](https://fablenest.28nasiruddinsk.workers.dev/service-press-release): Professional press release writing and distribution for your children’s book launch, with a strong headline, a media list and sending support.
+- [Copyright Registration](https://fablenest.28nasiruddinsk.workers.dev/service-copyright-registration): Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.
 
 ## Services
 
@@ -205,4 +205,4 @@ Steps:
 4. Receive the record: The registration confirmation is sent to you and kept with your files.
 
 ## Contact
-Use the contact form at https://28nasiruddinsk-lgtm.github.io/fablenest/#contact
+Use the contact form at https://fablenest.28nasiruddinsk.workers.dev/#contact
