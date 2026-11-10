@@ -53,3 +53,7 @@
 .ab-vision .ab-p{max-width:620px}
 
 .ab-diff .row{align-items:stretch}
+
+/* picture slots filled with the chick mascots */
+.ab-pic--mascot{object-fit:contain;height:auto;max-height:clamp(320px,34vw,620px);aspect-ratio:auto;background:#fff;box-shadow:0 14px 34px rgba(0,42,28,.16),0 0 0 3px #deff21,9px 11px 0 #002a1c;transition:transform .5s var(--ease-pop)}
+.ab-pic--mascot:hover{transform:rotate(-1.5deg) scale(1.02)}

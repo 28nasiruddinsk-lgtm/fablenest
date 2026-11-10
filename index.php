@@ -137,6 +137,8 @@ $stories = $c['stories']['items'];
 
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
 
+<?php include __DIR__ . '/inc/mascot-strip.php' ?>
+
 <div class="pg solo" style="margin-top:calc(80*var(--u))">
 <?php include __DIR__ . '/inc/site-footer.php' ?>
 </div>

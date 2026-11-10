@@ -14,6 +14,7 @@ $trail = $seoKey === 'home' ? [] : ($seoKey === 'about' ? [['Home', 'index.php']
     </ol></nav>
 <?php endif ?>
     <div class="sx-answer__box sx-reveal">
+      <?php [$am, $amAlt] = seo_pic($seoKey, 2); ?><img class="sx-answer__mascot" src="<?= $e($am) ?>" alt="<?= $e($amAlt) ?>" loading="lazy">
       <div class="sx-answer__main">
         <span class="sx-chip" id="sx-short">In short</span>
         <p><?= $e($sp['answer']) ?></p>
