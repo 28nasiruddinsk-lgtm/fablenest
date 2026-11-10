@@ -47,3 +47,33 @@
 .sx-reveal.in{opacity:1;transform:none}
 @media (max-width:900px){.sx-answer__box,.sx-faq__grid{grid-template-columns:1fr}.sx-faq__intro{position:static}}
 @media (prefers-reduced-motion:reduce){.sx-reveal{opacity:1;transform:none;transition:none}.sx-q p{animation:none}}
+/* guide: what it is / who it suits / step by step / glossary, with the chick mascots */
+.sx-guide{padding:clamp(40px,5vw,100px) 0;background:linear-gradient(180deg,#fff,#f8fbe6 40%,#fff);color:#002a1c}
+.sx-guide__top{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(24px,4.5vw,90px);align-items:center}
+.sx-mascot{margin:0;position:relative}
+.sx-mascot img{display:block;width:100%;height:auto;max-height:clamp(320px,36vw,640px);object-fit:contain;border-radius:clamp(22px,2.4vw,44px);background:#fff;box-shadow:0 14px 34px rgba(0,42,28,.16),0 0 0 3px #deff21;transition:transform .5s var(--ease-pop)}
+.sx-mascot--a img{transform:rotate(-2deg)}.sx-mascot--b img{transform:rotate(2deg)}
+.sx-mascot:hover img{transform:rotate(0) scale(1.03)}
+.sx-lead{font:500 clamp(16px,1.25vw,24px)/1.5 var(--body)!important;letter-spacing:-.02em;color:#002a1c}
+.sx-guide__text p{margin:0 0 1em;max-width:720px;font:400 clamp(14px,1.05vw,20px)/1.6 var(--body);letter-spacing:-.015em}
+.sx-h3{margin:1.4em 0 .6em;font:700 clamp(18px,1.6vw,30px)/1.2 var(--logo)}
+.sx-h2{margin:0 0 clamp(14px,1.6vw,28px);font:700 clamp(24px,2.5vw,46px)/1.15 var(--logo);color:#002a1c}
+.sx-chips{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0}
+.sx-chips li{padding:8px 18px;border:2px solid #002a1c;border-radius:999px;background:#fff;font:500 clamp(13px,.95vw,17px)/1.3 var(--body);transition:background .25s,transform .25s var(--ease-pop)}
+.sx-chips li:hover{background:#deff21;transform:translateY(-3px) rotate(-1deg)}
+.sx-steps__h{margin-top:clamp(40px,5vw,96px);text-align:center}
+.sx-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(14px,1.6vw,28px);counter-reset:s}
+.sx-step{display:flex;gap:16px;padding:clamp(18px,1.8vw,32px);border:2px solid #002a1c;border-radius:clamp(16px,1.4vw,26px);background:#fff;box-shadow:5px 6px 0 #002a1c;transition:transform .3s var(--ease-pop),background .25s}
+.sx-step:hover{transform:translateY(-6px);background:#f6fbdc}
+.sx-step__n{flex:none;display:grid;place-items:center;width:clamp(40px,3vw,56px);aspect-ratio:1;border-radius:50%;background:#002a1c;color:#deff21;font:700 clamp(16px,1.3vw,24px) var(--logo)}
+.sx-step h4{margin:0 0 6px;font:700 clamp(17px,1.4vw,26px)/1.2 var(--logo)}
+.sx-step p{margin:0;font:400 clamp(13px,.95vw,17px)/1.5 var(--body);color:#33463b}
+.sx-terms{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(24px,4vw,80px);align-items:center;margin-top:clamp(40px,5vw,96px)}
+.sx-terms dl{margin:0;display:grid;gap:14px}
+.sx-terms dl div{padding:0 0 14px;border-bottom:2px dashed rgba(0,42,28,.25)}
+.sx-terms dt{font:700 clamp(16px,1.3vw,24px)/1.2 var(--logo);color:#4d6600}
+.sx-terms dd{margin:4px 0 0;font:400 clamp(13px,1vw,18px)/1.55 var(--body);max-width:760px}
+.sx-faq__mascot{display:block;width:min(100%,280px);height:auto;margin-top:clamp(18px,2vw,34px);border-radius:26px;box-shadow:0 10px 26px rgba(0,42,28,.16),0 0 0 3px #deff21;transform:rotate(-2deg)}
+.sx-reveal--late{transition-delay:.2s}
+@media (max-width:900px){.sx-guide__top,.sx-terms{grid-template-columns:1fr}.sx-mascot img{max-height:340px;margin:0 auto}.sx-mascot{max-width:380px;margin:0 auto}}
+@media (prefers-reduced-motion:reduce){.sx-mascot img,.sx-step,.sx-chips li{transition:none}}

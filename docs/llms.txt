@@ -34,6 +34,15 @@ Our book publishing service takes your manuscript through editing, cover design,
 - Q: Can I publish a book that is already written but not edited?
   A: Yes. Manuscript preparation covers editing, proofreading and content refinement, so your text is polished before it is formatted.
 
+Book publishing is the work between a finished manuscript and a book a reader can buy: editing, cover design, interior layout, file preparation and setting up the book on selling platforms.
+
+Steps:
+1. Review the manuscript: We read your text and agree what editing and proofreading it needs.
+2. Edit and proofread: The text is edited for clarity and checked for spelling, grammar and consistency.
+3. Design the cover: A cover is designed that reflects the story and is easy to read at thumbnail size.
+4. Format the interior: Text and pictures are laid out for print and for ebook readers.
+5. Publish: The finished files are uploaded to the platform you chose and the book page is set up.
+
 ### Book Illustrations
 Our book illustration service creates the characters, page illustrations and cover artwork for your children’s book. You approve the style and the sketches, then receive finished, full-colour artwork prepared for print and ebook.
 
@@ -48,6 +57,14 @@ Our book illustration service creates the characters, page illustrations and cov
 
 - Q: Will I see sketches before the final artwork?
   A: Yes. You review rough sketches first and can request changes before they become finished illustrations.
+
+Illustrating a children’s book means designing the characters and drawing the scenes that tell the story alongside the words. It is done in stages so you can guide the look before the artwork is finished.
+
+Steps:
+1. Your hand-drawn idea: You can sketch the idea on paper, as rough as you like. It only shows us what you imagine.
+2. Line art: Our artist redraws the idea with clean lines, and you can ask for changes before colour is added.
+3. Colour: After the lines are approved the artist adds colour, mood and light.
+4. Final illustration: Details, shading and background finish the picture, ready for print and screen.
 
 ### Author Branding
 Author branding gives you a consistent look, voice and story across your books, website and social media. We help you define your author story and visual identity, and deliver a simple brand kit you can reuse everywhere.
@@ -64,6 +81,14 @@ Author branding gives you a consistent look, voice and story across your books, 
 - Q: Can the brand match my existing books?
   A: Yes. We can build on the style of your current books so everything feels like it belongs together.
 
+Author branding is the look, voice and story that readers connect with your name. It covers things like your bio, colours, fonts and logo, and it makes your books, website and social media feel like they belong together.
+
+Steps:
+1. Discover: We learn about you, your books and the readers you want to reach.
+2. Explore directions: We show two or three directions for colours, fonts and tone.
+3. Refine: We polish the direction you choose.
+4. Deliver a brand kit: You receive final files and a simple guide you can reuse.
+
 ### Author Website
 An author website is your own home on the internet, where readers can learn about you, find your books and buy them. We design and build a mobile-friendly site with a page for each book, a newsletter sign-up and a contact form.
 
@@ -78,6 +103,14 @@ An author website is your own home on the internet, where readers can learn abou
 
 - Q: Can I update the website myself?
   A: Yes. We set it up so you can add a new book or a news post without needing a developer, and we show you how.
+
+An author website is a site you own where readers can learn about you, see your books and find where to buy them. Unlike social media, you control it, and it stays useful for years.
+
+Steps:
+1. Plan the pages: We agree the pages, features and the content you will provide.
+2. Design: You review the layout on desktop and on a phone.
+3. Build: We build the site and add your books and text.
+4. Launch: We test everything, publish the site and show you how to update it.
 
 ### Social Media Marketing
 Our social media marketing service helps your children’s book reach parents, teachers and readers. We set up your profiles, plan and schedule content, run a launch campaign, and report on what is working each month.
@@ -94,6 +127,14 @@ Our social media marketing service helps your children’s book reach parents, t
 - Q: How do I know whether it is working?
   A: You receive a plain-language monthly report that shows what was posted, how people responded and what we will adjust next.
 
+Social media marketing means sharing your book and your story on platforms where parents, teachers and readers already spend time, in a regular and planned way.
+
+Steps:
+1. Audit: We look at your current pages and your audience.
+2. Plan: We choose platforms and themes that suit your book and write a content calendar.
+3. Create and schedule: Posts are made, approved by you and scheduled.
+4. Review: We report what worked and adjust the plan.
+
 ### Book Trailer
 A book trailer is a short film, usually 30 to 60 seconds, that gives readers a quick taste of your story. We write the script, plan the storyboard, animate your artwork with music, and deliver versions for web and social media.
 
@@ -108,6 +149,14 @@ A book trailer is a short film, usually 30 to 60 seconds, that gives readers a q
 
 - Q: Do I need illustrations to make a trailer?
   A: Illustrations make a trailer much stronger. If you already have them we animate them. If you do not, our illustration service can create them first.
+
+A book trailer is a short video, usually 30 to 60 seconds, that shows the mood and best moments of a book without giving away the ending. It is used to make people curious about the story.
+
+Steps:
+1. Brief: You tell us the tone, the length and where the trailer will be shown.
+2. Script and storyboard: We write a short script and plan each shot for you to approve.
+3. Produce: Your artwork is animated and combined with music and, if you want, a voice.
+4. Deliver: You receive versions sized for your website and for social media.
 
 ### Press Release
 A press release is a short, formal announcement of your book sent to journalists, bloggers and librarians. We write it in the correct format, build a media list suited to children’s books, and send it at the right moment.
@@ -124,6 +173,14 @@ A press release is a short, formal announcement of your book sent to journalists
 - Q: Does a press release guarantee coverage?
   A: No. It gives your news the best chance of being noticed and picked up, but editors decide what they publish.
 
+A press release is a short, formal announcement of news. For a book it tells journalists, bloggers and librarians that the book exists, what it is about and why it is worth mentioning.
+
+Steps:
+1. Share the facts: You give us the book details, the launch date and a quote.
+2. Find the angle: We choose what is most newsworthy and write the headline.
+3. Build a media list: We choose outlets that cover children’s books.
+4. Send and follow up: The release goes out at the right time and we follow up where it makes sense.
+
 ### Copyright Registration
 Copyright registration creates an official record that you are the author of your book. We guide you through the process: checking which registration applies, preparing the application, filing it and passing you the registration record. This is not legal advice.
 
@@ -138,6 +195,14 @@ Copyright registration creates an official record that you are the author of you
 
 - Q: Which country’s office do you register with?
   A: It depends on where you live and where you publish. We confirm the right office with you before filing.
+
+Copyright registration is an official record that you are the author of a book. In many countries copyright exists automatically, but registering gives you a public record that can help if someone copies your work. This page is information, not legal advice.
+
+Steps:
+1. Check eligibility: We confirm which registration applies to your book and country.
+2. Collect the details: You confirm the title, author name and publication details.
+3. File: We complete and submit the application, including the filing fee.
+4. Receive the record: The registration confirmation is sent to you and kept with your files.
 
 ## Contact
 Use the contact form at https://28nasiruddinsk-lgtm.github.io/fablenest/#contact
