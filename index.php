@@ -133,6 +133,8 @@ $stories = $c['stories']['items'];
 
 </div>
 
+<?php include __DIR__ . '/inc/seo-guide.php' ?>
+
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
 
 <div class="pg solo" style="margin-top:calc(80*var(--u))">

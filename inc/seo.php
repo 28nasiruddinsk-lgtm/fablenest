@@ -29,6 +29,12 @@ if ($seoKey !== 'home') {
 if (!in_array($seoKey, ['home', 'about'], true)) {
     $graph[] = ['@type' => 'Service', 'name' => $seoLabel, 'description' => $seoDesc, 'serviceType' => $seoLabel, 'url' => $seoUrl, 'provider' => ['@id' => $siteBase . '/#org']];
 }
+$guideAll = require dirname(__DIR__) . '/content-guide.php';
+$gd = $guideAll[$seoKey] ?? null;
+if ($gd) {
+    $graph[] = ['@type' => 'HowTo', 'name' => $gd['title'], 'description' => $gd['lead'], 'step' => array_map(fn($st, $i) => ['@type' => 'HowToStep', 'position' => $i + 1, 'name' => $st[0], 'text' => $st[1]], $gd['steps'], array_keys($gd['steps']))];
+    $graph[] = ['@type' => 'DefinedTermSet', 'name' => $seoLabel . ' glossary', 'hasDefinedTerm' => array_map(fn($t) => ['@type' => 'DefinedTerm', 'name' => $t[0], 'description' => $t[1]], $gd['terms'])];
+}
 if (!empty($sp['faq'])) {
     $graph[] = ['@type' => 'FAQPage', 'mainEntity' => array_map(fn($f) => ['@type' => 'Question', 'name' => $f[0], 'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f[1]]], $sp['faq'])];
 }

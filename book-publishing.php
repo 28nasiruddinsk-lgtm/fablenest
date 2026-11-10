@@ -31,6 +31,8 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php $pfTabs = ['covers']; include __DIR__ . '/inc/portfolio.php' ?>
 
+<?php include __DIR__ . '/inc/seo-guide.php' ?>
+
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
 
 <?php include __DIR__ . '/inc/seo-related.php' ?>
