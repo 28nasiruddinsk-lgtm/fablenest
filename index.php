@@ -18,6 +18,7 @@ $stories = $c['stories']['items'];
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <link rel="stylesheet" href="style.css?v=<?= filemtime(__DIR__ . '/style.css') ?>">
 <link rel="stylesheet" href="seo.css?v=<?= filemtime(__DIR__ . '/seo.css') ?>">
+<link rel="stylesheet" href="service.css?v=<?= filemtime(__DIR__ . '/service.css') ?>">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -96,7 +97,7 @@ $stories = $c['stories']['items'];
   </svg>
 </section>
 
-<?php include __DIR__ . '/inc/sec-imagination.php' ?>
+<div class="sec imag-wrap" style="--y0:4440;--h:955"><?php include __DIR__ . '/inc/book-imagination.php' ?></div>
 
 <section class="sec" id="why" style="--y0:5515;--h:825">
   <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">

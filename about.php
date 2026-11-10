@@ -6,7 +6,7 @@ $title = $a['title'];
 $current = 'about.php';
 $seoKey = 'about';
 $bootstrap = true;
-$css = ['about.css'];
+$css = ['about.css', 'service.css'];
 $js = ['about.js'];
 $base = 'index.php';
 $bn = ['title' => $a['title'], 'sub' => $a['subtitle'], 'img' => 'assets/s/h_about.png'];
@@ -33,9 +33,7 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
 
-<div class="pg solo" style="height:calc(897*var(--u))">
-<?php include __DIR__ . '/inc/sec-imagination.php' ?>
-</div>
+<?php include __DIR__ . '/inc/book-imagination.php' ?>
 
 <div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(60*var(--u))">
 <?php include __DIR__ . '/inc/sec-stories.php' ?>

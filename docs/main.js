@@ -224,3 +224,9 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
     paused = true; clearTimeout(box._t); box._t = setTimeout(() => { pos = box.scrollLeft; paused = false; }, 2500);
   }));
 })();
+
+// imagination banner (shared include): settle animation starts when it scrolls into view
+(() => {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .2 });
+  document.querySelectorAll('.bk-img').forEach(el => io.observe(el));
+})();
