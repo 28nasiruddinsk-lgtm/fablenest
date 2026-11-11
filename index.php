@@ -59,7 +59,7 @@ $stories = $c['stories']['items'];
 
 <?php include __DIR__ . '/inc/seo-answer.php' ?>
 
-<div class="pg home" style="height:calc(7700*var(--u))">
+<div class="pg home" style="height:calc(3054*var(--u))">
 
 <section class="sec" id="about" style="--y0:1300;--h:880">
   <?php [$ms, $msAlt] = seo_mascot('music'); ?><div class="a rv rv-r about-mascot" style="--x:1000;--y:1300;--w:760;--h:700;--d:.15"><img src="<?= $e(seo_cut($ms)) ?>" alt="<?= $e($msAlt) ?>" decoding="async"></div>
@@ -97,8 +97,13 @@ $stories = $c['stories']['items'];
   </svg>
 </section>
 
-<div class="sec imag-wrap" style="--y0:4440;--h:955"><?php include __DIR__ . '/inc/book-imagination.php' ?></div>
+</div>
 
+<div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(94*var(--u))">
+<?php include __DIR__ . '/inc/sec-stories.php' ?>
+</div>
+
+<div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(120*var(--u))">
 <section class="sec" id="why" style="--y0:5515;--h:825">
   <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
   <h2 class="a lit rv rv-pop" style="--x:720;--y:5565;--w:560;--h:95;--d:.2"><img src="assets/s/h_why.png" alt="Why Choose Us?"></h2>
@@ -107,7 +112,9 @@ $stories = $c['stories']['items'];
   <div class="a card rv rv-<?= $side ?>" style="--x:<?= $x ?>;--y:<?= $y ?>;--w:<?= $w ?>;--h:226;--d:<?= .6 + $i * .2 ?>"><img src="assets/s/card<?= $i + 1 ?>.jpg" alt="<?= $e($c['why']['cards'][$i]) ?>"></div>
 <?php endforeach ?>
 </section>
+</div>
 
+<div class="pg solo" style="height:calc(710*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="portfolio" style="--y0:6500;--h:710">
   <h2 class="a mul rv rv-wipe" style="--x:350;--y:6500;--w:1220;--h:100"><img src="assets/s/h_stories.jpg" alt="Stories We've Helped Bring to Life."></h2>
   <p class="a t20 c rv" style="--x:0;--y:6599;--w:1920;--h:28;--d:.4"><?= $e($c['portfolio']['intro']) ?></p>
@@ -126,16 +133,17 @@ $stories = $c['stories']['items'];
     <button type="button" class="pfw__btn pfw__btn--next" aria-label="Next books"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
   </div>
 </section>
-
-<?php include __DIR__ . '/inc/sec-stories.php' ?>
-
-<?php include __DIR__ . '/inc/sec-contact.php' ?>
-
 </div>
 
 <?php include __DIR__ . '/inc/seo-guide.php' ?>
 
+<?php include __DIR__ . '/inc/book-imagination.php' ?>
+
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
+
+<div class="pg solo" style="height:calc(740*var(--u));margin-top:calc(147*var(--u))">
+<?php include __DIR__ . '/inc/sec-contact.php' ?>
+</div>
 
 <div class="pg solo" style="margin-top:calc(80*var(--u))">
 <?php include __DIR__ . '/inc/site-footer.php' ?>
