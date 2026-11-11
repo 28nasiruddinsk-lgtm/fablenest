@@ -99,7 +99,9 @@ $stories = $c['stories']['items'];
 
 </div>
 
-<div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(94*var(--u))">
+<?php include __DIR__ . '/inc/seo-guide.php' ?>
+
+<div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(60*var(--u))">
 <?php include __DIR__ . '/inc/sec-stories.php' ?>
 </div>
 
@@ -134,8 +136,6 @@ $stories = $c['stories']['items'];
   </div>
 </section>
 </div>
-
-<?php include __DIR__ . '/inc/seo-guide.php' ?>
 
 <?php include __DIR__ . '/inc/book-imagination.php' ?>
 
