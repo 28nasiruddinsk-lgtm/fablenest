@@ -25,7 +25,7 @@ if (!$gd) return;
     </div>
 
     <h3 class="sx-h2 sx-steps__h sx-reveal">Step by step</h3>
-    <ol class="sx-steps">
+    <ol class="sx-steps sx-steps--n<?= count($gd['steps']) ?>">
 <?php foreach ($gd['steps'] as $i => [$name, $text]): ?>
       <li class="sx-step sx-reveal" style="--i:<?= $i ?>">
         <span class="sx-step__n"><?= $i + 1 ?></span>

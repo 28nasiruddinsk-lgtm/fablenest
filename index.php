@@ -117,7 +117,6 @@ $stories = $c['stories']['items'];
       <div class="pfs__track">
 <?php foreach ([0, 1] as $copy): foreach ($covers as [$title, $img]): ?>
         <figure class="pfs__item"<?= $copy ? ' aria-hidden="true"' : '' ?>>
-          <img class="pfs__frame" src="assets/s/frame-empty.jpg" alt="">
           <img class="pfs__cover" src="<?= $e($img) ?>" alt="<?= $copy ? '' : $e($title) ?>" loading="lazy">
         </figure>
 <?php endforeach; endforeach ?>

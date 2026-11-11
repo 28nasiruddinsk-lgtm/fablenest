@@ -65,7 +65,7 @@
 .sx-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(14px,1.6vw,28px);counter-reset:s}
 .sx-step{display:flex;gap:16px;padding:clamp(18px,1.8vw,32px);border:2px solid #002a1c;border-radius:clamp(16px,1.4vw,26px);background:#fff;box-shadow:5px 6px 0 #002a1c;transition:transform .3s var(--ease-pop),background .25s}
 .sx-step:hover{transform:translateY(-6px);background:#f6fbdc}
-.sx-step__n{flex:none;display:grid;place-items:center;width:clamp(40px,3vw,56px);aspect-ratio:1;border-radius:50%;background:#002a1c;color:#deff21;font:700 clamp(16px,1.3vw,24px) var(--logo)}
+.sx-step__n{flex:none;align-self:flex-start;display:grid;place-items:center;width:clamp(40px,3vw,56px);height:clamp(40px,3vw,56px);border-radius:50%;background:#002a1c;color:#deff21;font:700 clamp(16px,1.3vw,24px) var(--logo)}
 .sx-step h4{margin:0 0 6px;font:700 clamp(17px,1.4vw,26px)/1.2 var(--logo)}
 .sx-step p{margin:0;font:400 clamp(13px,.95vw,17px)/1.5 var(--body);color:#33463b}
 .sx-terms{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(24px,4vw,80px);align-items:center;margin-top:clamp(40px,5vw,96px)}
@@ -92,3 +92,6 @@
 .mst__i:hover{transform:translateY(-12px) rotate(0) scale(1.08)}
 .mst__i img{display:block;width:100%;height:100%;object-fit:cover}
 @media (prefers-reduced-motion:reduce){.mst__i{transition:none}}
+
+/* 6 steps sit in two even rows of three; 5 or 4 flow naturally */
+@media (min-width:900px){.sx-steps--n6{grid-template-columns:repeat(3,1fr)}}
