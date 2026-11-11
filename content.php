@@ -221,10 +221,10 @@ return [
             'illustrations' => ['label' => 'Illustrations', 'ratio' => '4 / 3', 'items' => [
                 ['Giraffe on the run', 'assets/s/pf_ill1.jpg', '', 'Full-page spread'],
                 ['The big bike race', 'assets/s/pf_ill2.jpg', '', 'Full-page spread'],
-                ['The curly ladder', 'assets/s/pf_ill3.jpg', '', 'Cover art'],
+                ['Bubbles on a sunny day', 'assets/s/mascot-bubbles.jpg', '', 'Full-page spread'],
             ]],
             'trailers' => ['label' => 'Book Trailer', 'ratio' => '16 / 10', 'items' => [
-                ['The Curly Ladder, trailer', 'assets/s/pf_trl1.jpg', '', '0:45'],
+                ['The Little Chick Takes Flight, trailer', 'assets/s/mascot-flying.jpg', '', '0:45'],
             ]],
             'websites' => ['label' => 'Author Website', 'ratio' => '16 / 10', 'items' => [
                 ['Author site, home page', 'assets/s/pf_web1.jpg', '', 'authorname.com'],

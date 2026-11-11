@@ -60,10 +60,11 @@
 .bk-img__box{position:relative;container-type:inline-size;overflow:hidden;border-radius:clamp(20px,1.6vw,30px)}
 .bk-img__art{display:block;width:100%;height:auto;transform-origin:50% 100%;animation:bk-settle 1.8s var(--ease-out) both;animation-play-state:paused}
 .bk-img.in .bk-img__art{animation-play-state:running}
-.bk-img__btn{position:absolute;top:58.9%;height:3.1cqw;min-height:34px;padding:0;font-size:max(12px,.95cqw)}
+.bk-img__btn{position:absolute;top:56.2%;height:3.1cqw;min-height:34px;padding:0;font-size:max(12px,.95cqw)}
+.bk-img__p{position:absolute;left:22%;top:45%;width:36.5%;margin:0;text-align:center;font:400 1.04cqw/1.4 var(--body);letter-spacing:-.032em;color:#002a1c}
 @keyframes bk-settle{from{transform:scale(1.08);opacity:.2}to{transform:none;opacity:1}}
 @media (prefers-reduced-motion:reduce){.bk-img__art,.bk-step__dot{animation:none}.bk-step:not(:last-child)::after{transform:none!important;transition:none}}
-@media (max-width:700px){.bk-img__btn{font-size:11px}}
+@media (max-width:700px){.bk-img__btn{font-size:11px}.bk-img__p{font-size:max(9px,1.5cqw)}}
 /* portfolio (shared): tabs for covers, illustrations, trailer, website */
 .pfo{padding:clamp(40px,5vw,96px) 0;background:#fff;color:#002a1c;text-align:center}
 .pfo__h{margin:0 auto 12px;width:min(92%,1220px)}
