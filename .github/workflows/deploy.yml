@@ -1,0 +1,25 @@
+# Every push to main rebuilds the static site (docs/) from the PHP pages and deploys it to Cloudflare.
+# One-time setup in GitHub: repo Settings > Secrets and variables > Actions > add
+#   CLOUDFLARE_API_TOKEN (Cloudflare: My Profile > API Tokens > "Edit Cloudflare Workers" template)
+#   CLOUDFLARE_ACCOUNT_ID (Cloudflare dashboard > Workers & Pages, right-hand side)
+name: Deploy to Cloudflare
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+      - name: Build the static copy
+        run: PHP=php sh tools/export.sh
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
