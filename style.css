@@ -398,11 +398,7 @@ img{display:block}
 .pfw__btn svg{width:46%;height:46%}
 .pfw__btn:hover{transform:scale(1.12);background:#04402b}.pfw__btn:active{transform:scale(.94)}
 .pfw__btn--prev{left:calc(40*var(--u))}.pfw__btn--next{right:calc(40*var(--u))}
-/* extra mascots on the home page: cut-outs that float gently */
-.hm{position:absolute;z-index:5;left:calc(var(--x)*var(--u));top:calc((var(--y) - 1300)*var(--u));width:calc(var(--w)*var(--u));height:auto;transform-origin:50% 0;transform:rotate(var(--t,0deg));animation:hm-float 4.6s ease-in-out infinite alternate;filter:drop-shadow(0 12px 14px rgba(0,42,28,.3));pointer-events:none}
-@keyframes hm-float{from{transform:translateY(calc(-6*var(--u))) rotate(calc(var(--t,0deg) - 2deg))}to{transform:translateY(calc(6*var(--u))) rotate(calc(var(--t,0deg) + 2deg))}}
-@media (max-width:760px){.hm{display:none}}
-@media (prefers-reduced-motion:reduce){.hm{animation:none}}
+
 /* contact fields stay see-through on the parchment */
 input.pf,textarea.pf{background-color:transparent!important}
 input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!important}
