@@ -6,7 +6,7 @@
         <?php if (!empty($a['vision']['image'])): ?>
         <img class="ab-pic" src="<?= $e($a['vision']['image']) ?>" alt="">
         <?php else: ?>
-        <?php [$pic, $picAlt] = seo_pic($seoKey, 1); ?><img class="ab-pic ab-pic--mascot" src="<?= $e($pic) ?>" alt="<?= $e($picAlt) ?>" loading="lazy">
+        <?php [$pic, $picAlt] = seo_pic($seoKey, 1); ?><img class="ab-pic ab-pic--mascot" src="<?= $e(seo_cut($pic)) ?>" alt="<?= $e($picAlt) ?>" loading="lazy">
         <?php endif ?>
       </div>
       <div class="col-lg-6 ab-reveal ab-reveal--late">

@@ -12,7 +12,7 @@
         <?php if (!empty($a['intro']['image'])): ?>
         <img class="ab-pic" src="<?= $e($a['intro']['image']) ?>" alt="">
         <?php else: ?>
-        <?php [$pic, $picAlt] = seo_pic($seoKey, 0); ?><img class="ab-pic ab-pic--mascot" src="<?= $e($pic) ?>" alt="<?= $e($picAlt) ?>" loading="lazy">
+        <?php [$pic, $picAlt] = seo_pic($seoKey, 0); ?><img class="ab-pic ab-pic--mascot" src="<?= $e(seo_cut($pic)) ?>" alt="<?= $e($picAlt) ?>" loading="lazy">
         <?php endif ?>
       </div>
     </div>

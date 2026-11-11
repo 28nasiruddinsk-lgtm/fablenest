@@ -8,7 +8,7 @@ if (!$gd) return;
 <section class="sx-guide" id="guide" aria-labelledby="guide-h">
   <div class="sx-wrap">
     <div class="sx-guide__top">
-      <figure class="sx-mascot sx-mascot--a sx-reveal"><img src="<?= $e($mg[0]) ?>" alt="<?= $e($mg[1]) ?>" loading="lazy"></figure>
+      <figure class="sx-mascot sx-mascot--a sx-reveal"><img src="<?= $e(seo_cut($mg[0])) ?>" alt="<?= $e($mg[1]) ?>" loading="lazy"></figure>
       <div class="sx-guide__text sx-reveal sx-reveal--late">
         <h2 class="sx-h" id="guide-h"><?= $e($gd['title']) ?></h2>
         <p class="sx-lead"><?= $e($gd['lead']) ?></p>
@@ -43,7 +43,7 @@ if (!$gd) return;
 <?php endforeach ?>
         </dl>
       </div>
-      <figure class="sx-mascot sx-mascot--b sx-reveal sx-reveal--late"><img src="<?= $e($mt[0]) ?>" alt="<?= $e($mt[1]) ?>" loading="lazy"></figure>
+      <figure class="sx-mascot sx-mascot--b sx-reveal sx-reveal--late"><img src="<?= $e(seo_cut($mt[0])) ?>" alt="<?= $e($mt[1]) ?>" loading="lazy"></figure>
     </div>
   </div>
 </section>

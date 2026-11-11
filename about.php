@@ -42,8 +42,6 @@ include __DIR__ . '/inc/site-header.php';
 <div class="pg solo" style="height:calc(740*var(--u));margin-top:calc(147*var(--u))">
 <?php include __DIR__ . '/inc/sec-contact.php' ?>
 </div>
-<?php include __DIR__ . '/inc/mascot-strip.php' ?>
-
 <div class="pg solo" style="margin-top:calc(80*var(--u))">
 <?php include __DIR__ . '/inc/site-footer.php' ?>
 </div>

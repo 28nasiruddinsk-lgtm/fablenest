@@ -6,7 +6,6 @@ $rel = array_slice($rel, 0, 4);
 ?>
 <section class="sx-rel" aria-labelledby="rel-h">
   <div class="sx-wrap">
-    <?php [$rm, $rmAlt] = seo_pic($seoKey, 3); ?><img class="sx-rel__mascot" src="<?= $e($rm) ?>" alt="<?= $e($rmAlt) ?>" loading="lazy">
     <h2 class="sx-h sx-h--sm" id="rel-h">More ways we can <span class="sx-acc">help</span></h2>
     <div class="sx-rel__grid">
 <?php foreach ($rel as $i => [$name, $line]): ?>

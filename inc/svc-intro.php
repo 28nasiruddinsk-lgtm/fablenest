@@ -9,7 +9,7 @@
 <?php endforeach ?>
       </div>
       <div class="col-lg-5 ab-reveal ab-reveal--late">
-        <?php [$pic, $picAlt] = seo_pic($seoKey, 0); ?><img class="ab-pic ab-pic--mascot" src="<?= $e($pic) ?>" alt="<?= $e($picAlt) ?>" loading="lazy">
+        <?php [$pic, $picAlt] = seo_pic($seoKey, 0); ?><img class="ab-pic ab-pic--mascot" src="<?= $e(seo_cut($pic)) ?>" alt="<?= $e($picAlt) ?>" loading="lazy">
       </div>
     </div>
   </div>

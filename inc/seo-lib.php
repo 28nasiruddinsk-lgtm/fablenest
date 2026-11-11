@@ -69,3 +69,9 @@ function seo_pic(string $key, int $slot = 0): array
     $i = array_search($key, $pages, true);
     return seo_mascot($free[((($i === false ? 0 : $i) + $slot) % count($free))]);
 }
+// cut-out (no background) version of a mascot picture
+function seo_cut(string $src): string
+{
+    if (str_contains($src, 'mascot-flying')) return 'assets/s/mascot-flying-cut.png';
+    return preg_replace('#mascot-([a-z]+)\.jpg$#', 'mc-$1.png', $src);
+}

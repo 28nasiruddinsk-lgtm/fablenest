@@ -398,11 +398,8 @@ img{display:block}
 .pfw__btn svg{width:46%;height:46%}
 .pfw__btn:hover{transform:scale(1.12);background:#04402b}.pfw__btn:active{transform:scale(.94)}
 .pfw__btn--prev{left:calc(40*var(--u))}.pfw__btn--next{right:calc(40*var(--u))}
-/* extra mascots on the home page: they float gently; round badges for pictures with a background, cut-outs for the rest */
-.hm{position:absolute;z-index:5;left:calc(var(--x)*var(--u));top:calc((var(--y) - 1300)*var(--u));width:calc(var(--w)*var(--u));height:auto;transform:rotate(var(--t,0deg));animation:hm-float 4.6s ease-in-out var(--d,0s) infinite alternate;transition:scale .4s var(--ease-pop)}
-.hm--c{aspect-ratio:1;object-fit:cover;object-position:50% 28%;border-radius:50%;background:#fff;box-shadow:0 10px 24px rgba(0,0,0,.28),0 0 0 calc(5*var(--u)) #deff21}
-.hm--cut{filter:drop-shadow(0 12px 14px rgba(0,42,28,.28))}
-.hm:hover{scale:1.1}
-@keyframes hm-float{from{transform:translateY(calc(-8*var(--u))) rotate(var(--t,0deg))}to{transform:translateY(calc(8*var(--u))) rotate(calc(var(--t,0deg)*-1))}}
+/* extra mascots on the home page: cut-outs that float gently */
+.hm{position:absolute;z-index:5;left:calc(var(--x)*var(--u));top:calc((var(--y) - 1300)*var(--u));width:calc(var(--w)*var(--u));height:auto;transform-origin:50% 0;transform:rotate(var(--t,0deg));animation:hm-float 4.6s ease-in-out infinite alternate;filter:drop-shadow(0 12px 14px rgba(0,42,28,.3));pointer-events:none}
+@keyframes hm-float{from{transform:translateY(calc(-6*var(--u))) rotate(calc(var(--t,0deg) - 2deg))}to{transform:translateY(calc(6*var(--u))) rotate(calc(var(--t,0deg) + 2deg))}}
 @media (max-width:760px){.hm{display:none}}
 @media (prefers-reduced-motion:reduce){.hm{animation:none}}
