@@ -406,3 +406,8 @@ img{display:block}
 /* contact fields stay see-through on the parchment */
 input.pf,textarea.pf{background-color:transparent!important}
 input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!important}
+
+/* "Every great story" section: a big storybook-hugging mascot instead of the ladder picture */
+.about-mascot{display:grid;place-items:center}
+.about-mascot img{display:block;height:100%;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(0,42,28,.25));animation:hm-float 5s ease-in-out infinite alternate;--t:0deg}
+@media (prefers-reduced-motion:reduce){.about-mascot img{animation:none}}

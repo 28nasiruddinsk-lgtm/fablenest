@@ -62,7 +62,7 @@ $stories = $c['stories']['items'];
 <div class="pg home" style="height:calc(7700*var(--u))">
 
 <section class="sec" id="about" style="--y0:1300;--h:880">
-  <img class="a rv rv-r" style="--x:860;--y:1240;--w:1060;--h:770;--d:.15" src="assets/s/ladder.jpg" alt="<?= $e($c['about']['alt']) ?>" decoding="async">
+  <?php [$ms, $msAlt] = seo_mascot('book'); ?><div class="a rv rv-r about-mascot" style="--x:1000;--y:1300;--w:760;--h:700;--d:.15"><img src="<?= $e(seo_cut($ms)) ?>" alt="<?= $e($msAlt) ?>" decoding="async"></div>
   <h2 class="a mul rv rv-wipe" style="--x:140;--y:1312;--w:725;--h:200"><img src="assets/s/h_story.jpg" alt="<?= $e($c['about']['heading_alt']) ?>"></h2>
   <p class="a t20 rv-lines stag" style="--x:157;--y:1517;--w:760;--h:340;--d:.5"><?= $br($c['about']['lines']) ?></p>
   <a class="a b2 fill rv rv-pop" style="--x:162;--y:1931;--w:216;--h:59;--d:1.5" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a>

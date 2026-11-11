@@ -44,7 +44,7 @@ return [
             'exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure',
             'dolor in reprehenderit in',
         ],
-        'alt' => 'A boy climbing a curling ladder through the clouds',
+        'alt' => 'A chick in a cap and round glasses hugging a storybook',
         'heading_alt' => 'Every great story has a beginning',
     ],
 
