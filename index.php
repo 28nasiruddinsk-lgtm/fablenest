@@ -132,6 +132,7 @@ $stories = $c['stories']['items'];
 
 <?php include __DIR__ . '/inc/sec-contact.php' ?>
 
+<?php include __DIR__ . '/inc/home-mascots.php' ?>
 </div>
 
 <?php include __DIR__ . '/inc/seo-guide.php' ?>
