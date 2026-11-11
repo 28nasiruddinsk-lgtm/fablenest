@@ -101,11 +101,7 @@ $stories = $c['stories']['items'];
 
 <?php include __DIR__ . '/inc/seo-guide.php' ?>
 
-<div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(60*var(--u))">
-<?php include __DIR__ . '/inc/sec-stories.php' ?>
-</div>
-
-<div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(120*var(--u))">
+<div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(40*var(--u))">
 <section class="sec" id="why" style="--y0:5515;--h:825">
   <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
   <h2 class="a lit rv rv-pop" style="--x:720;--y:5565;--w:560;--h:95;--d:.2"><img src="assets/s/h_why.png" alt="Why Choose Us?"></h2>
@@ -140,6 +136,10 @@ $stories = $c['stories']['items'];
 <?php include __DIR__ . '/inc/book-imagination.php' ?>
 
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
+
+<div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(60*var(--u))">
+<?php include __DIR__ . '/inc/sec-stories.php' ?>
+</div>
 
 <div class="pg solo" style="height:calc(740*var(--u));margin-top:calc(147*var(--u))">
 <?php include __DIR__ . '/inc/sec-contact.php' ?>
