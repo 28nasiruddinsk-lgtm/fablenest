@@ -44,7 +44,7 @@ return [
             'exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure',
             'dolor in reprehenderit in',
         ],
-        'alt' => 'A chick in a cap and round glasses hugging a storybook',
+        'alt' => 'A chick in headphones dancing to music',
         'heading_alt' => 'Every great story has a beginning',
     ],
 
@@ -221,10 +221,10 @@ return [
             'illustrations' => ['label' => 'Illustrations', 'ratio' => '4 / 3', 'items' => [
                 ['Giraffe on the run', 'assets/s/pf_ill1.jpg', '', 'Full-page spread'],
                 ['The big bike race', 'assets/s/pf_ill2.jpg', '', 'Full-page spread'],
-                ['Bubbles on a sunny day', 'assets/s/mascot-bubbles.jpg', '', 'Full-page spread'],
+                ['Off on a reading adventure', 'assets/s/mascot-flying.jpg', '', 'Full-page spread'],
             ]],
             'trailers' => ['label' => 'Book Trailer', 'ratio' => '16 / 10', 'items' => [
-                ['The Little Chick Takes Flight, trailer', 'assets/s/mascot-flying.jpg', '', '0:45'],
+                ['Seeds for the Little Birds, trailer', 'assets/s/mascot-seeds.jpg', '', '0:45'],
             ]],
             'websites' => ['label' => 'Author Website', 'ratio' => '16 / 10', 'items' => [
                 ['Author site, home page', 'assets/s/pf_web1.jpg', '', 'authorname.com'],

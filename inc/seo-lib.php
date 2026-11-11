@@ -35,7 +35,7 @@ function seo_mascots(string $key): array
         'bubbles' => ['assets/s/mascot-bubbles.jpg', 'A chick in a blue cap blowing soap bubbles'],
     ];
     $set = [
-        'home' => ['book', 'flying', 'seeds'], 'about' => ['seeds', 'hanging', 'bubbles'], 'book-publishing' => ['flying', 'book', 'music'],
+        'home' => ['book', 'puddle', 'seeds'], 'about' => ['seeds', 'hanging', 'bubbles'], 'book-publishing' => ['flying', 'book', 'music'],
         'book-illustrations' => ['puddle', 'bubbles', 'hanging'], 'author-branding' => ['music', 'seeds', 'puddle'], 'author-website' => ['hanging', 'music', 'flying'],
         'social-media-marketing' => ['bubbles', 'puddle', 'book'], 'book-trailer' => ['music', 'flying', 'bubbles'], 'press-release' => ['seeds', 'book', 'hanging'],
         'copyright-registration' => ['book', 'puddle', 'seeds'],
