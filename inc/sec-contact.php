@@ -1,5 +1,5 @@
 <section class="sec" id="contact" style="--y0:8220;--h:740">
-  <h2 class="a mul rv rv-wipe" style="--x:170;--y:8246;--w:580;--h:168"><img src="assets/s/h_contact.jpg" alt="Let's Bring Your Story to Life"></h2>
+  <h2 class="a th rv rv-wipe" style="--x:170;--y:8252;--w:640;--h:168;--fs:76">Let&rsquo;s <em>Bring Your</em><br>Story to Life</h2>
   <p class="a t20 rv-lines stag" style="--x:177;--y:8424;--w:620;--h:140;--d:.4"><?= $br($c['contact']['lines']) ?></p>
 <?php foreach ([['phone', 8620], ['email', 8712], ['address', 8807]] as $i => [$k, $y]): ?>
   <div class="a crow rv rv-l" style="--x:175;--y:<?= $y ?>;--w:420;--h:60;--d:<?= .6 + $i * .15 ?>"><img class="mul" src="assets/s/c<?= $i + 1 ?>.png" alt=""><span><?= $e($c['contact'][$k]) ?></span></div>

@@ -1,7 +1,7 @@
 <section class="sec ft" id="footer" style="--y0:9040;--h:692">
   <div class="a" style="--x:0;--y:9040;--w:1920;--h:692;background:#002a1c"></div>
   <img class="a rv" style="--x:21;--y:9043;--w:1878;--h:669" src="assets/s/footer.jpg" alt="" decoding="async" loading="lazy">
-  <h2 class="a lit rv rv-pop" style="--x:150;--y:9142;--w:560;--h:152;--d:.2"><img src="assets/s/h_footer.png" alt="Bringing Stories to Life."></h2>
+  <h2 class="a th th--dark rv rv-pop" style="--x:150;--y:9148;--w:600;--h:152;--d:.2;--fs:70">Bringing<br><em>Stories</em> to Life.</h2>
   <p class="a t20 rv-lines stag" style="--x:160;--y:9322;--w:520;--h:120;--d:.5"><?= $br($c['footer']['lines']) ?></p>
   <form class="a pill rv" action="submit.php" method="post" style="--x:160;--y:9477;--w:418;--h:72;--d:.8" data-form>
     <input type="hidden" name="form" value="newsletter"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">

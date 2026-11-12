@@ -3,7 +3,7 @@
 // The same steps and terms are published as HowTo and DefinedTermSet data in the <head>.
 $gd = ($guideAll ?? [])[$seoKey] ?? null;
 if (!$gd) return;
-[$mg, $mt] = seo_mascots($seoKey);
+[$mg] = seo_mascots($seoKey);
 ?>
 <section class="sx-guide" id="guide" aria-labelledby="guide-h">
   <div class="sx-wrap">
@@ -34,7 +34,7 @@ if (!$gd) return;
 <?php endforeach ?>
     </ol>
 
-    <div class="sx-terms">
+    <div class="sx-terms sx-terms--solo">
       <div class="sx-terms__list sx-reveal">
         <h3 class="sx-h2">Key terms, in plain words</h3>
         <dl>
@@ -43,7 +43,6 @@ if (!$gd) return;
 <?php endforeach ?>
         </dl>
       </div>
-      <figure class="sx-mascot sx-mascot--b sx-reveal sx-reveal--late"><img src="<?= $e(seo_cut($mt[0])) ?>" alt="<?= $e($mt[1]) ?>" loading="lazy"></figure>
     </div>
   </div>
 </section>

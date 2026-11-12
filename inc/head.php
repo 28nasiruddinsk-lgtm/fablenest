@@ -7,7 +7,7 @@
 <?php include __DIR__ . '/seo.php' ?>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@700&family=Figtree:wght@400;500&family=Caveat:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Comic+Relief:wght@700&family=Figtree:wght@400;500&family=Caveat:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="assets/favicon.png">
 <?php if (!empty($bootstrap)): ?>
 <link rel="stylesheet" href="assets/vendor/bootstrap-grid.min.css">

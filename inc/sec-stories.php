@@ -1,6 +1,6 @@
 <section class="sec" id="stories" style="--y0:7345;--h:728">
   <img class="a rv" style="--x:18;--y:7345;--w:1884;--h:728" src="assets/s/author.jpg" alt="" decoding="async" loading="lazy">
-  <h2 class="a lit rv rv-pop" style="--x:650;--y:7410;--w:630;--h:80;--d:.2"><img src="assets/s/h_author.png" alt="Author Stories"></h2>
+  <h2 class="a th th--dark th--c rv rv-pop" style="--x:560;--y:7412;--w:800;--h:80;--d:.2;--fs:76">Author <em>Stories</em></h2>
   <p class="a t20 c rv" style="--x:0;--y:7489;--w:1920;--h:28;--d:.45;color:#fff"><?= $e($c['stories']['intro']) ?></p>
 <?php foreach ($stories as $i => $s): ?>
   <div class="a tst" style="--x:0;--y:7345;--w:1920;--h:728;--dir:1;pointer-events:none"<?= $i ? ' hidden' : '' ?>>

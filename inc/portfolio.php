@@ -7,7 +7,7 @@ if (!$pfTabs) return;
 ?>
 <section class="pfo" id="portfolio" data-pfo>
   <div class="container-fluid ab-wrap">
-    <h2 class="pfo__h ab-reveal"><img src="assets/s/h_stories.jpg" alt="Stories We've Helped Bring to Life."></h2>
+    <h2 class="sv-h sv-h--center pfo__h ab-reveal">Stories <span class="sv-acc">We&rsquo;ve Helped</span> Bring to Life.</h2>
     <p class="pfo__lead ab-reveal"><?= $e($work['intro']) ?></p>
 <?php if (count($pfTabs) > 1): ?>
     <div class="pfo__tabs ab-reveal" role="tablist" aria-label="Portfolio">
