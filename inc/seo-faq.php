@@ -8,7 +8,7 @@ if (!$sp || empty($sp['faq'])) return;
     <div class="sx-faq__intro sx-reveal">
       <h2 class="sx-h" id="faq-h"><span class="sx-acc">Questions</span> Authors Ask</h2>
       <p>Quick, honest answers about <?= $seoKey === 'home' || $seoKey === 'about' ? 'working with us' : $e(strtolower($seoLabel)) ?>. Can’t see yours? Send us a message and we’ll reply.</p>
-      <a class="sx-btn" href="<?= $e(($seoKey === 'home' ? '' : 'index.php') . '#contact') ?>">Ask a question</a>" loading="lazy">
+      <a class="sx-btn" href="<?= $e(($seoKey === 'home' ? '' : 'index.php') . '#contact') ?>">Ask a question</a>
     </div>
     <div class="sx-faq__list">
 <?php foreach ($sp['faq'] as $i => [$q, $a]): ?>

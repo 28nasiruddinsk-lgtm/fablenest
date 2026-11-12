@@ -121,3 +121,37 @@
 .sx-q[open] summary::after{background:#002a1c;color:#deff21}
 .sx-q p{padding-left:0}
 @media (max-width:900px){.sx-steps,.sx-terms--solo dl{grid-template-columns:1fr!important}}
+
+/* ---------- guide + FAQ with real backgrounds ---------- */
+.sx-guide,.sx-faq{--leaf:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220' viewBox='0 0 220 220' fill='%23deff21'%3E%3Cpath opacity='.07' d='M30 60c30-40 70-40 90-10-30 30-70 40-90 10z'/%3E%3Cpath opacity='.05' d='M140 150c10-45 50-60 75-40-10 35-45 55-75 40z'/%3E%3Cpath opacity='.06' d='M60 170c-5-25 15-40 35-35 0 22-15 38-35 35z'/%3E%3C/svg%3E")}
+.sx-h,.sx-h2,.sx-h3{font-family:var(--logo);font-weight:400}
+.sx-h2{font-size:clamp(34px,3.6vw,68px);line-height:1.1}
+.sx-h3{font-size:clamp(26px,2.4vw,44px)}
+.sx-guide{background:#002a1c var(--leaf);color:#fff}
+.sx-guide::before,.sx-guide::after{background:#fff}
+.sx-guide .sx-h,.sx-guide .sx-h2,.sx-guide .sx-h3{color:#fff}
+.sx-guide .sx-h em,.sx-guide .sx-acc{color:#deff21}
+.sx-guide .sx-lead,.sx-guide__text p{color:#e6efe0}
+.sx-guide .sx-chips li{background:rgba(222,255,33,.12);border-color:#deff21;color:#fff}
+.sx-guide .sx-chips li:hover{background:#deff21;color:#002a1c}
+.sx-steps{gap:clamp(14px,1.6vw,26px)!important;grid-template-columns:repeat(3,1fr)!important}
+.sx-step{flex-direction:column;border:1px solid rgba(222,255,33,.25);border-radius:clamp(18px,1.6vw,28px);padding:clamp(20px,2vw,34px);background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.03));backdrop-filter:blur(4px);position:relative;overflow:hidden}
+.sx-step::after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border-radius:50%;background:radial-gradient(#deff21,transparent 70%);opacity:.12}
+.sx-step:hover{transform:translateY(-6px);background:linear-gradient(160deg,rgba(222,255,33,.18),rgba(255,255,255,.05))}
+.sx-step__n{font-size:clamp(44px,4.4vw,80px);color:#deff21;margin-bottom:6px}
+.sx-step h4{color:#fff;font-size:clamp(20px,1.7vw,32px)}
+.sx-step p{color:#cfe0d2}
+.sx-terms dt{color:#deff21;font-size:clamp(18px,1.6vw,30px)}
+.sx-terms dd{color:#e6efe0}
+.sx-terms--solo dl div{border-top-color:rgba(222,255,33,.25)}
+.sx-terms dt::before{background:#deff21}
+.sx-faq{background:#f5f9e4 var(--leaf);position:relative}
+.sx-faq__intro{background:#002a1c var(--leaf);color:#fff;border-radius:clamp(22px,2vw,36px);padding:clamp(26px,3vw,56px);box-shadow:0 14px 34px rgba(0,42,28,.18)}
+.sx-faq__intro .sx-h{color:#fff}.sx-faq__intro .sx-acc{color:#deff21}
+.sx-faq__intro p{color:#e6efe0}
+.sx-faq__intro .sx-btn{background:#deff21;color:#002a1c}
+.sx-q,.sx-q:last-child{border:0;border-radius:clamp(16px,1.4vw,24px);background:#fff;margin:0 0 12px;box-shadow:0 4px 18px rgba(0,42,28,.07)}
+.sx-q summary{padding:clamp(16px,1.5vw,26px) clamp(18px,1.8vw,32px)}
+.sx-q p{padding:0 clamp(18px,1.8vw,32px) clamp(18px,1.6vw,28px)}
+.sx-q[open]{background:#fff;box-shadow:0 8px 26px rgba(0,42,28,.14);outline:2px solid #deff21}
+@media (max-width:900px){.sx-steps{grid-template-columns:1fr!important}}
