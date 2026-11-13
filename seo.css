@@ -155,3 +155,10 @@
 .sx-q p{padding:0 clamp(18px,1.8vw,32px) clamp(18px,1.6vw,28px)}
 .sx-q[open]{background:#fff;box-shadow:0 8px 26px rgba(0,42,28,.14);outline:2px solid #deff21}
 @media (max-width:900px){.sx-steps{grid-template-columns:1fr!important}}
+
+/* guide breathing room + light bridge between the two green sections */
+.sx-guide{padding:clamp(90px,9vw,190px) 0}
+.sx-bridge{padding:clamp(60px,7vw,140px) 0;background:#fff;color:#002a1c;text-align:center}
+.sx-bridge .sx-wrap{max-width:980px;margin:0 auto}
+.sx-bridge__k{margin:0 0 12px;font:500 clamp(12px,.85vw,15px)/1 var(--body);text-transform:uppercase;letter-spacing:.14em;color:#5f7700}
+.sx-bridge p:not(.sx-bridge__k){margin:0 auto 26px;max-width:700px;font:400 clamp(15px,1.15vw,22px)/1.6 var(--body)}

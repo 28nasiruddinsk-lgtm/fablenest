@@ -99,18 +99,16 @@ $stories = $c['stories']['items'];
 
 </div>
 
-<?php include __DIR__ . '/inc/seo-guide.php' ?>
-
-<div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(40*var(--u))">
-<section class="sec" id="why" style="--y0:5515;--h:825">
-  <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
-  <h2 class="a th th--dark th--c rv rv-pop" style="--x:660;--y:5568;--w:600;--h:95;--d:.2;--fs:78">Why <em>Choose</em> Us?</h2>
-  <p class="a t20 c rv" style="--x:0;--y:5658;--w:1920;--h:28;--d:.5;color:#fff"><?= $e($c['why']['intro']) ?></p>
-<?php foreach ([[298, 5708, 262, 'l'], [1362, 5708, 262, 'r'], [437, 6046, 264, 'l'], [1238, 6046, 264, 'r']] as $i => [$x, $y, $w, $side]): ?>
-  <div class="a card rv rv-<?= $side ?>" style="--x:<?= $x ?>;--y:<?= $y ?>;--w:<?= $w ?>;--h:226;--d:<?= .6 + $i * .2 ?>"><img src="assets/s/card<?= $i + 1 ?>.jpg" alt="<?= $e($c['why']['cards'][$i]) ?>"></div>
-<?php endforeach ?>
+<section class="sx-bridge" aria-label="How we work">
+  <div class="sx-wrap">
+    <p class="sx-bridge__k">One team, one plan</p>
+    <h2 class="sx-h">Every book is different.<br><span class="sx-acc">Your plan</span> should be too.</h2>
+    <p>We start by listening: who the book is for, where you want it sold and how much you want us to handle. Then we build a simple step-by-step plan, so you always know what happens next.</p>
+    <a class="sx-btn" href="#contact">Talk to us</a>
+  </div>
 </section>
-</div>
+
+<?php include __DIR__ . '/inc/seo-guide.php' ?>
 
 <div class="pg solo" style="height:calc(710*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="portfolio" style="--y0:6500;--h:710">
@@ -130,6 +128,17 @@ $stories = $c['stories']['items'];
     <button type="button" class="pfw__btn pfw__btn--prev" aria-label="Previous books"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
     <button type="button" class="pfw__btn pfw__btn--next" aria-label="Next books"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
   </div>
+</section>
+</div>
+
+<div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(160*var(--u))">
+<section class="sec" id="why" style="--y0:5515;--h:825">
+  <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
+  <h2 class="a th th--dark th--c rv rv-pop" style="--x:660;--y:5568;--w:600;--h:95;--d:.2;--fs:78">Why <em>Choose</em> Us?</h2>
+  <p class="a t20 c rv" style="--x:0;--y:5658;--w:1920;--h:28;--d:.5;color:#fff"><?= $e($c['why']['intro']) ?></p>
+<?php foreach ([[298, 5708, 262, 'l'], [1362, 5708, 262, 'r'], [437, 6046, 264, 'l'], [1238, 6046, 264, 'r']] as $i => [$x, $y, $w, $side]): ?>
+  <div class="a card rv rv-<?= $side ?>" style="--x:<?= $x ?>;--y:<?= $y ?>;--w:<?= $w ?>;--h:226;--d:<?= .6 + $i * .2 ?>"><img src="assets/s/card<?= $i + 1 ?>.jpg" alt="<?= $e($c['why']['cards'][$i]) ?>"></div>
+<?php endforeach ?>
 </section>
 </div>
 
