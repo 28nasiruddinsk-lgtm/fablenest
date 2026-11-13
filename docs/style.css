@@ -424,9 +424,9 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 }
 
 /* ---------- header bottom edge: a rolling leaf-green wave under the white bar ---------- */
-.hero::before{content:"";position:absolute;left:0;right:0;top:0;height:calc(38*var(--u));z-index:5;pointer-events:none;
-  background:radial-gradient(circle calc(30*var(--u)) at 50% 0,#fff 97%,transparent 100%) 0 0/calc(60*var(--u)) calc(30*var(--u)) repeat-x,
-  radial-gradient(circle calc(34*var(--u)) at 50% 0,#deff21 97%,transparent 100%) 0 0/calc(60*var(--u)) calc(34*var(--u)) repeat-x}
+.hero::before{content:"";position:absolute;left:0;top:0;width:calc(100% + 900*var(--u));height:calc(56*var(--u));z-index:5;pointer-events:none;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201200%2075%22%3E%3Cpath%20d%3D%22M-300%2044Q-150%2084%200%2044T300%2044T600%2044T900%2044T1200%2044T1500%2044V0H-300Z%22%20fill%3D%22%23deff21%22%20transform%3D%22translate(150%200)%22%2F%3E%3Cpath%20d%3D%22M-300%2030Q-150%2070%200%2030T300%2030T600%2030T900%2030T1200%2030T1500%2030V0H-300Z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fsvg%3E") 0 0/calc(900*var(--u)) calc(56*var(--u)) repeat-x;animation:wave-drift 16s linear infinite}
+@keyframes wave-drift{to{transform:translateX(calc(-900*var(--u)))}}
+@media (prefers-reduced-motion:reduce){.hero::before{animation:none}}
 .nav{box-shadow:none}
 @media (max-width:980px){.hero::before{display:none}}
 @media (min-width:981px){.hero>*:not(.layer){margin-top:calc(var(--H)/2 - 530*var(--u))}}
