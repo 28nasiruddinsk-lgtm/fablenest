@@ -59,7 +59,7 @@ $stories = $c['stories']['items'];
 
 <?php include __DIR__ . '/inc/seo-answer.php' ?>
 
-<div class="pg home" style="height:calc(3054*var(--u))">
+<div class="pg home" style="height:calc(3134*var(--u))">
 
 <section class="sec" id="about" style="--y0:1300;--h:880">
   <?php [$ms, $msAlt] = seo_mascot('music'); ?><div class="a rv rv-r about-mascot" style="--x:1000;--y:1300;--w:760;--h:700;--d:.15"><img src="<?= $e(seo_cut($ms)) ?>" alt="<?= $e($msAlt) ?>" decoding="async"></div>
@@ -131,7 +131,7 @@ $stories = $c['stories']['items'];
 </section>
 </div>
 
-<div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(160*var(--u))">
+<div class="pg solo" style="height:calc(905*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="why" style="--y0:5515;--h:825">
   <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
   <h2 class="a th th--dark th--c rv rv-pop" style="--x:660;--y:5568;--w:600;--h:95;--d:.2;--fs:78">Why <em>Choose</em> Us?</h2>
@@ -146,7 +146,7 @@ $stories = $c['stories']['items'];
 
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
 
-<div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(60*var(--u))">
+<div class="pg solo" style="height:calc(808*var(--u));margin-top:calc(60*var(--u))">
 <?php include __DIR__ . '/inc/sec-stories.php' ?>
 </div>
 

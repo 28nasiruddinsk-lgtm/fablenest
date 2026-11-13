@@ -435,5 +435,10 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
   background:radial-gradient(ellipse 60% 100% at 50% 0,var(--cv,#fff) 99%,transparent 100.5%) top/100% clamp(20px,2.4vw,44px) no-repeat,
   radial-gradient(ellipse 60% 100% at 50% 100%,#fff 99%,transparent 100.5%) bottom/100% clamp(20px,2.4vw,44px) no-repeat}
 .sx-faq+.pg #stories{--cv:#f5f9e4}
-#services>img.a,#why>img.a,#stories>img.a{-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+
 .dim{display:none}
+/* the scene images run the full width of their band: no dark side bars, no faded edges */
+.pg .sec#services>img.a:first-child,.pg .sec#why>img.a:first-child,.pg .sec#stories>img.a:first-child{left:calc(-1*var(--inset));width:calc(100% + 2*var(--inset));height:100%;object-fit:cover;-webkit-mask-image:none;mask-image:none}
+/* equal breathing room: every dark band gets 40u more at the top and bottom than the artboard had */
+.pg .sec#services,.pg .sec#why,.pg .sec#stories{height:calc((var(--h) + 80)*var(--u))}
+.pg .sec#services>.a:not(:first-child),.pg .sec#why>.a:not(:first-child),.pg .sec#stories>.a:not(:first-child),.pg .sec#why>.card{margin-top:calc(40*var(--u))}

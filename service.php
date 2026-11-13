@@ -52,7 +52,7 @@ include __DIR__ . '/inc/site-header.php';
 
 <?php include __DIR__ . '/inc/book-imagination.php' ?>
 
-<div class="pg solo" style="height:calc(728*var(--u));margin-top:calc(60*var(--u))">
+<div class="pg solo" style="height:calc(808*var(--u));margin-top:calc(60*var(--u))">
 <?php include __DIR__ . '/inc/sec-stories.php' ?>
 </div>
 
