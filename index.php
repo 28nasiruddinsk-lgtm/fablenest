@@ -131,7 +131,7 @@ $stories = $c['stories']['items'];
 </section>
 </div>
 
-<div class="pg solo" style="height:calc(905*var(--u));margin-top:calc(160*var(--u))">
+<div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="why" style="--y0:5515;--h:825">
   <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
   <h2 class="a th th--dark th--c rv rv-pop" style="--x:660;--y:5568;--w:600;--h:95;--d:.2;--fs:78">Why <em>Choose</em> Us?</h2>

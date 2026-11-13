@@ -438,7 +438,14 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 
 .dim{display:none}
 /* the scene images run the full width of their band: no dark side bars, no faded edges */
-.pg .sec#services>img.a:first-child,.pg .sec#why>img.a:first-child,.pg .sec#stories>img.a:first-child{left:calc(-1*var(--inset));width:calc(100% + 2*var(--inset));height:100%;object-fit:cover;-webkit-mask-image:none;mask-image:none}
+.pg .sec#services>img.a:first-child,.pg .sec#stories>img.a:first-child{left:calc(-1*var(--inset));width:calc(100% + 2*var(--inset));height:100%;object-fit:cover;-webkit-mask-image:none;mask-image:none}
 /* equal breathing room: every dark band gets 40u more at the top and bottom than the artboard had */
-.pg .sec#services,.pg .sec#why,.pg .sec#stories{height:calc((var(--h) + 80)*var(--u))}
-.pg .sec#services>.a:not(:first-child),.pg .sec#why>.a:not(:first-child),.pg .sec#stories>.a:not(:first-child),.pg .sec#why>.card{margin-top:calc(40*var(--u))}
+.pg .sec#services,.pg .sec#stories{height:calc((var(--h) + 80)*var(--u))}
+.pg .sec#services>.a:not(:first-child),.pg .sec#stories>.a:not(:first-child){margin-top:calc(40*var(--u))}
+/* Why Choose Us is the Figma card: inset, rounded, scene and cards exactly as drawn */
+.pg .sec#why::before,.pg .sec#why::after{display:none}
+.pg .sec#why{left:0;width:100%;background:#002a1c;border-radius:clamp(14px,1.5vw,28px);overflow:hidden}
+.pg .sec#why>img.a:first-child{-webkit-mask-image:none;mask-image:none}
+/* the exported scene has smeared (stretched) edges: show only its clean middle and let the dark band carry the rest */
+.pg .sec#why{background:#002a1c url(assets/tex-dark2.jpg) 0 0/1500px auto repeat}
+.pg .sec#why>img.a:first-child{-webkit-mask-image:radial-gradient(ellipse 36% 56% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 36% 56% at 50% 50%,#000 55%,transparent 100%)}
