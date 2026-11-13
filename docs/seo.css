@@ -195,3 +195,4 @@
 .sx-band--terms dt::before{display:none}
 .sx-band--terms dd{color:#e6efe0;margin-top:8px}
 @media (max-width:900px){.sx-band--terms dl{grid-template-columns:1fr!important}}
+.sx-guide::after{background:#f5f9e4}
