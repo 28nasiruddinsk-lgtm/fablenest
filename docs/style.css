@@ -416,7 +416,7 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 
 /* ---------- hero fits the screen: gently shrink the artboard on short windows, crop the rest ---------- */
 @media (min-width:981px){
-  .hero{--u:max(calc(100cqw/1920*.86),min(calc(100cqw/1920),calc((100svh - 100cqw*140/1920)/996)));--off:calc((100cqw - 1920*var(--u))/2);height:max(calc(830*var(--u)),min(calc(996*var(--u)),calc(100svh - 100cqw*140/1920)))}
+  .hero{--u:max(calc(100cqw/1920*.86),min(calc(100cqw/1920),calc((100svh - 100cqw*140/1920)/996)));--off:calc((100cqw - 1920*var(--u))/2);--H:max(calc(830*var(--u)),min(calc(996*var(--u)),calc(100svh - 100cqw*140/1920)));height:var(--H)}
   .hero>*{margin-left:calc(18*var(--u) + var(--off))}
   .hero>.canopy{left:calc(-18*var(--u) - var(--off));width:100cqw;background-size:cover}
   .hero>.fade-bottom,.hero>.fade-top{left:calc(-18*var(--u) - var(--off));width:100cqw}
@@ -427,4 +427,4 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 .hero::before{content:"";position:absolute;left:0;right:0;top:0;height:calc(34*var(--u));pointer-events:none;z-index:5;
 .nav{box-shadow:none}
 @media (max-width:980px){.hero::before{display:none}}
-@media (min-width:981px){.hero>*:not(.layer){margin-top:calc(-34*var(--u))}}
+@media (min-width:981px){.hero>*:not(.layer){margin-top:calc(var(--H)/2 - 498*var(--u))}}
