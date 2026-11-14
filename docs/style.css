@@ -447,4 +447,4 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 /* the exported scene has smeared (stretched) edges: show only its clean middle and let the dark band carry the rest */
 .pg .sec#why{background:#002a1c url(assets/tex-dark2.jpg) 0 0/1500px auto repeat}
 .pg .sec#why>img.a:first-child{-webkit-mask-image:radial-gradient(ellipse 36% 56% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 36% 56% at 50% 50%,#000 55%,transparent 100%)}
-.pg .sec#why>img.a:first-child{-webkit-mask-image:radial-gradient(ellipse 30% 56% at 50% 52%,#000 45%,transparent 100%);mask-image:radial-gradient(ellipse 30% 56% at 50% 52%,#000 45%,transparent 100%)}
+.pg .sec#why>img.a:first-child{-webkit-mask-image:radial-gradient(ellipse 24% 44% at 50% 46%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 24% 44% at 50% 46%,#000 40%,transparent 100%)}
