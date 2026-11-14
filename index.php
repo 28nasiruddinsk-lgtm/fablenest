@@ -137,7 +137,7 @@ $stories = $c['stories']['items'];
   <h2 class="a th th--dark th--c rv rv-pop" style="--x:660;--y:5568;--w:600;--h:95;--d:.2;--fs:78">Why <em>Choose</em> Us?</h2>
   <p class="a t20 c rv" style="--x:0;--y:5658;--w:1920;--h:28;--d:.5;color:#fff"><?= $e($c['why']['intro']) ?></p>
 <?php foreach ([[298, 5708, 262, 'l'], [1362, 5708, 262, 'r'], [437, 6046, 264, 'l'], [1238, 6046, 264, 'r']] as $i => [$x, $y, $w, $side]): ?>
-  <div class="a card rv rv-<?= $side ?>" style="--x:<?= $x ?>;--y:<?= $y ?>;--w:<?= $w ?>;--h:226;--d:<?= .6 + $i * .2 ?>"><img src="assets/s/card<?= $i + 1 ?>.jpg" alt="<?= $e($c['why']['cards'][$i]) ?>"></div>
+  <div class="a card rv rv-<?= $side ?>" style="--x:<?= $x ?>;--y:<?= $y ?>;--w:<?= $w ?>;--h:226;--d:<?= .6 + $i * .2 ?>"><img src="assets/s/card<?= $i + 1 ?>.png" alt="<?= $e($c['why']['cards'][$i]) ?>"></div>
 <?php endforeach ?>
 </section>
 </div>
