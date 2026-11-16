@@ -486,3 +486,4 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
   .glow{left:calc(1010*var(--u));top:calc(330*var(--u));width:calc(520*var(--u));height:calc(440*var(--u))}
   .js.loaded .glow{opacity:.3}
 }
+@media (min-width:981px){.glow{left:calc(1210*var(--u));top:calc(360*var(--u))}}
