@@ -474,3 +474,9 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
   .glow{left:calc(930*var(--u));top:calc(300*var(--u));width:calc(440*var(--u));height:calc(390*var(--u));background:#c6f01c}
   .js.loaded .glow{opacity:.9}
 }
+/* chick as tall as the form, body touching the paper edge */
+@media (min-width:981px){
+  .boy{left:calc(811*var(--u));top:calc(112*var(--u));width:calc(504*var(--u));height:calc(751*var(--u))}
+  .glow{left:calc(830*var(--u));top:calc(290*var(--u))}
+}
+@media (min-width:981px){.boy{left:calc(872*var(--u));top:calc(150*var(--u));width:calc(437*var(--u));height:calc(651*var(--u))}.glow{left:calc(880*var(--u));top:calc(300*var(--u))}}
