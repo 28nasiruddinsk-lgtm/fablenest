@@ -448,3 +448,14 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 .pg .sec#why{background:#002a1c url(assets/tex-dark2.jpg) 0 0/1500px auto repeat}
 .pg .sec#why>img.a:first-child{-webkit-mask-image:radial-gradient(ellipse 36% 56% at 50% 50%,#000 55%,transparent 100%);mask-image:radial-gradient(ellipse 36% 56% at 50% 50%,#000 55%,transparent 100%)}
 .pg .sec#why>img.a:first-child{-webkit-mask-image:radial-gradient(ellipse 24% 44% at 50% 46%,#000 40%,transparent 100%);mask-image:radial-gradient(ellipse 24% 44% at 50% 46%,#000 40%,transparent 100%)}
+
+/* ---------- the denim chick peeks out from behind the form (it sits under .paper and slides out) ---------- */
+@media (min-width:981px){
+  .boy{left:calc(912*var(--u));top:calc(228*var(--u));width:calc(430*var(--u));height:calc(640*var(--u))}
+  .boy img{object-fit:contain;filter:drop-shadow(0 calc(14*var(--u)) calc(18*var(--u)) rgba(0,0,0,.35))}
+  .glow{left:calc(880*var(--u));top:calc(330*var(--u))}
+  .js .boy img{transform:translateX(calc(300*var(--u)));opacity:0}
+  .js.loaded .boy img{transform:none;opacity:1;transition:transform 1.1s var(--ease-pop) 1.6s,opacity .35s ease 1.55s}
+}
+@media (max-width:980px){.boy{aspect-ratio:464/691;max-width:300px}.boy img{object-fit:contain}}
+@media (prefers-reduced-motion:reduce){.js .boy img{transform:none!important;opacity:1!important}}
