@@ -468,3 +468,9 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
   .js.loaded .glow{opacity:.45}
 }
 @media (prefers-reduced-motion:reduce){.js.loaded .boy{animation:none;z-index:3}}
+/* match the Figma hero: bigger chick tucked into the form, bright lime glow behind it */
+@media (min-width:981px){
+  .boy{left:calc(872*var(--u));top:calc(150*var(--u));width:calc(482*var(--u));height:calc(718*var(--u))}
+  .glow{left:calc(930*var(--u));top:calc(300*var(--u));width:calc(440*var(--u));height:calc(390*var(--u));background:#c6f01c}
+  .js.loaded .glow{opacity:.9}
+}
