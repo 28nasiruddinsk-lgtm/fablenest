@@ -459,3 +459,12 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 }
 @media (max-width:980px){.boy{aspect-ratio:464/691;max-width:300px}.boy img{object-fit:contain}}
 @media (prefers-reduced-motion:reduce){.js .boy img{transform:none!important;opacity:1!important}}
+/* chick slides out from behind the form, then settles in front so its hand rests on the paper edge */
+@media (min-width:981px){
+  .boy{left:calc(900*var(--u))}
+  .js.loaded .boy{animation:boy-front .01s linear 2.7s forwards}
+  @keyframes boy-front{to{z-index:3}}
+  .glow{left:calc(900*var(--u));top:calc(400*var(--u));width:calc(300*var(--u));height:calc(260*var(--u))}
+  .js.loaded .glow{opacity:.45}
+}
+@media (prefers-reduced-motion:reduce){.js.loaded .boy{animation:none;z-index:3}}
