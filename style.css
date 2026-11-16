@@ -480,3 +480,4 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
   .glow{left:calc(830*var(--u));top:calc(290*var(--u))}
 }
 @media (min-width:981px){.boy{left:calc(872*var(--u));top:calc(150*var(--u));width:calc(437*var(--u));height:calc(651*var(--u))}.glow{left:calc(880*var(--u));top:calc(300*var(--u))}}
+@media (min-width:981px){.boy{left:calc(944*var(--u))}.glow{left:calc(950*var(--u))}}
