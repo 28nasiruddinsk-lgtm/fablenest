@@ -150,26 +150,26 @@ links.addEventListener('click', e => {
   };
   const activate = i => { stops[i].forEach(s => { s.classList.remove('on'); void s.getBoundingClientRect(); s.classList.add('on'); }); burst(i); };
 
-  let started = false;
-  const run = () => {
-    if (started) return; started = true;
-    let seg = 0, state = 'wait', t0 = performance.now() + 250, len = 0;
-    const tick = now => {
-      if (state === 'wait') { if (now >= t0) { activate(0); state = 'pause'; t0 = now + 550; } }
-      else if (state === 'pause') { if (now >= t0) { state = 'move'; t0 = now; } }
-      else if (state === 'move') {
-        const a = at[seg], b = at[seg + 1], dur = Math.max(900, (b - a) / 1.05);
-        const k = Math.min(1, (now - t0) / dur);
-        len = a + (b - a) * ease(k); show(len, -Math.sin(k * Math.PI) * 30);
-        if (k >= 1) { seg++; activate(seg); show(b, 0);
-          if (seg === stops.length - 1) { state = 'idle'; t0 = now + 1600; len = 0; show(total, 0); tracer.style.opacity = 0; }
-          else { state = 'pause'; t0 = now + 550; } }
-      } else if (now >= t0) { len += 9; if (len > total + 160) { len = 0; t0 = now + 2400; tracer.style.opacity = 0; } else { tracer.style.opacity = 1; place(Math.min(len, total)); } }
-      requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
+  // scroll-driven: the dot travels as the section scrolls through the screen (and back when scrolling up)
+  const lit = [false, false, false, false];
+  let raf = 0;
+  const update = () => {
+    raf = 0;
+    const r = sec.getBoundingClientRect(), vh = innerHeight;
+    const p = Math.min(1, Math.max(0, (vh * .55 - r.top - r.height * .04) / (r.height * .78)));
+    const len = p * total;
+    show(len, 0);
+    tracer.style.opacity = p > 0 && p < 1 ? 1 : 0;
+    for (let i = 0; i < stops.length; i++) {
+      const on = len >= at[i] - 1 && p > 0;
+      if (on && !lit[i]) { lit[i] = true; activate(i); }
+      else if (!on && lit[i]) { lit[i] = false; stops[i].forEach(x => x.classList.remove('on')); }
+    }
   };
-  sec.addEventListener('enter', run);
+  const queue = () => { if (!raf) raf = requestAnimationFrame(update); };
+  addEventListener('scroll', queue, { passive: true });
+  addEventListener('resize', queue);
+  update();
 })();
 
 // answer / FAQ / related blocks fade in when they scroll into view

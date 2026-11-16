@@ -189,3 +189,7 @@
 .pr[data-stage="1"] .pr__bar i{width:25%}.pr[data-stage="2"] .pr__bar i{width:50%}.pr[data-stage="3"] .pr__bar i{width:75%}.pr[data-stage="4"] .pr__bar i{width:100%}
 @media (prefers-reduced-motion:reduce){.pr *{transition:none!important;animation:none!important}}
 @media (max-width:991px){.pr__stage{transform:none}}
+/* the imagination banner sits on the swirl pattern (the art's white shows it through) */
+.bk-img__box{background:#fff url(assets/tex-swirl.jpg) center/cover}
+.bk-img__art{mix-blend-mode:multiply}
+.bk-img__box{background:linear-gradient(rgba(255,255,255,.5),rgba(255,255,255,.5)),#fff url(assets/tex-swirl.jpg) center/cover}
