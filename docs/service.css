@@ -203,5 +203,5 @@
 .bk-img__art{mix-blend-mode:normal}
 .bk-img__box{background:linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.45)),#fff url(assets/tex-swirl.jpg) center/cover}
 .bk-img__h{text-transform:uppercase;position:absolute;left:0;right:0;top:8%;margin:0;text-align:center;font:400 1em/1 var(--logo);color:#002a1c;pointer-events:none}
-.bk-img__h span{display:block;font-size:5cqw;letter-spacing:.01em}
-.bk-img__h b{display:block;margin-top:.5cqw;font-weight:400;font-size:13.6cqw;line-height:.95;color:#aed40f;letter-spacing:.01em;-webkit-text-stroke:.25cqw #fff;paint-order:stroke fill}
+.bk-img__h span{display:block;font-size:3.6cqw;letter-spacing:.01em}
+.bk-img__h b{display:block;margin-top:.5cqw;font-weight:400;font-size:9cqw;line-height:.95;color:#aed40f;letter-spacing:.01em;-webkit-text-stroke:.25cqw #fff;paint-order:stroke fill}
