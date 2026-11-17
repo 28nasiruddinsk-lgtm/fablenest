@@ -210,3 +210,6 @@
 .sx-faq::before{top:-1px;background:#fff;clip-path:ellipse(60% 100% at 50% 0)}
 .sx-faq::after{bottom:-1px;background:#fff;clip-path:ellipse(60% 100% at 50% 100%)}
 .sx-band--terms+.sx-faq::before{display:none}
+/* FAQ flows straight into the dark band below it: no white curve, no white gap */
+.sx-faq::after{display:none}
+.sx-faq+.pg{margin-top:0!important}
