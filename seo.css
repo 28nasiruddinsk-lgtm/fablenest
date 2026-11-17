@@ -213,3 +213,4 @@
 /* FAQ flows straight into the dark band below it: no white curve, no white gap */
 .sx-faq::after{display:none}
 .sx-faq+.pg{margin-top:0!important}
+.sx-faq::before{display:none}
