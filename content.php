@@ -81,7 +81,7 @@ return [
     ],
 
     'stories' => [
-        'intro' => 'See what authors have to say about their publishing experience with Storytime Publishers.',
+        'intro' => 'See what authors have to say about their publishing experience with Fablenest Publishers.',
         'items' => [
             [
                 'name' => 'Freya Hargreaves',

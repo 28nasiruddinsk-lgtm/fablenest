@@ -35,7 +35,7 @@ $stories = $c['stories']['items'];
   <div class="layer fade-bottom"></div>
   <div class="layer fade-top"></div>
 
-  <h1 class="sr"><?= $e($c['title']) ?></h1>
+  <h1 class="sr">Children’s Book Publishing Services That Grow With Your Story</h1>
 <?php readfile(__DIR__ . '/parts/headline.html') ?>
 
   <p class="lead" data-words><?= $br($c['hero']['lead']) ?></p>

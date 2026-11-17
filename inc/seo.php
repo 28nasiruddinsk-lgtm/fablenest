@@ -13,6 +13,7 @@ $seoUrl = $seoPath === '' ? $siteBase . '/' : $siteBase . '/' . $seoPath;
 $orgName = $c['logo'];
 $org = ['@type' => 'Organization', '@id' => $siteBase . '/#org', 'name' => $orgName, 'url' => $siteBase . '/', 'logo' => $siteBase . '/assets/logo.png',
     'description' => $c['description']];
+$org['knowsAbout'] = ['Children\x27s book publishing', 'Picture book illustration', 'Book cover design', 'Author branding', 'Author websites', 'Book trailers', 'Book launch press releases', 'Copyright registration', 'Book marketing'];
 $same = array_values(array_filter(array_map(fn($s) => $s[1] !== '#' ? $s[1] : null, $c['footer']['social'])));
 if ($same) $org['sameAs'] = $same;
 $graph = [

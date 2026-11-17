@@ -3,14 +3,14 @@
 > Fablenest Publishers is a children’s book publishing service. We help authors turn a manuscript or an idea into a finished, professionally made book, with editing, illustration, cover design, formatting, a book trailer, an author website and marketing support.
 
 ## Main pages
-- [Home](https://fablenest.28nasiruddinsk.workers.dev/): Fablenest Publishers helps authors publish children’s books: editing, cover design, illustration, book trailers, author websites and marketing, all in one place.
-- [About Us](https://fablenest.28nasiruddinsk.workers.dev/about): Learn how Fablenest Publishers helps authors turn ideas into professionally crafted children’s books through design, illustration, editing and publishing support.
-- [Book Publishing](https://fablenest.28nasiruddinsk.workers.dev/book-publishing): Professional children’s book publishing: manuscript preparation, cover design, formatting and publishing support from your first draft to a finished, published book.
-- [Book Illustrations](https://fablenest.28nasiruddinsk.workers.dev/service-book-illustrations): Full-colour children’s book illustrations: character design, page spreads and cover artwork, prepared for print and ebook by experienced illustrators.
+- [Home](https://fablenest.28nasiruddinsk.workers.dev/): Fablenest helps authors publish children’s books: editing, illustration, cover design, trailers, websites and marketing. Start your story today.
+- [About Us](https://fablenest.28nasiruddinsk.workers.dev/about): Meet the team behind Fablenest Publishers and how we guide authors from first idea to a finished, professionally made children’s book.
+- [Book Publishing](https://fablenest.28nasiruddinsk.workers.dev/book-publishing): Self-publish your picture book with expert help: editing, illustration, layout, print files and launch support in one team. Get started.
+- [Book Illustrations](https://fablenest.28nasiruddinsk.workers.dev/service-book-illustrations): From hand-drawn idea to finished full-colour spreads, with characters that stay consistent on every page. See how the process works.
 - [Author Branding](https://fablenest.28nasiruddinsk.workers.dev/service-author-branding): Build an author brand readers remember: your author story, logo and colours, bio, and a simple brand kit you can use on every book, website and social post.
-- [Author Website](https://fablenest.28nasiruddinsk.workers.dev/service-author-website): A custom author website with book pages, newsletter sign-up and contact forms, designed for phones and easy for you to update yourself.
-- [Social Media Marketing](https://fablenest.28nasiruddinsk.workers.dev/service-social-media-marketing): Reach parents, teachers and readers: profile setup, a content plan, launch campaigns and monthly reporting for your children’s book.
-- [Book Trailer](https://fablenest.28nasiruddinsk.workers.dev/service-book-trailer): A short, polished book trailer for your children’s book: script, storyboard, animation, music and versions for your website and social media.
+- [Author Website](https://fablenest.28nasiruddinsk.workers.dev/service-author-website): A clear, fast author website with book pages, newsletter sign-up and a contact form, built for parents, teachers and librarians. See what is included.
+- [Social Media Marketing](https://fablenest.28nasiruddinsk.workers.dev/service-social-media-marketing): Reach parents, teachers and librarians with a simple launch plan: profile set-up, content, campaigns and monthly reporting, explained.
+- [Book Trailer](https://fablenest.28nasiruddinsk.workers.dev/service-book-trailer): Short, shareable book trailers for your website and social media. See how we script, storyboard, animate and deliver yours.
 - [Press Release](https://fablenest.28nasiruddinsk.workers.dev/service-press-release): Professional press release writing and distribution for your children’s book launch, with a strong headline, a media list and sending support.
 - [Copyright Registration](https://fablenest.28nasiruddinsk.workers.dev/service-copyright-registration): Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.
 

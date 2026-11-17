@@ -9,7 +9,7 @@ $base = 'index.php';
 $bootstrap = true;
 $css = ['about.css', 'service.css'];
 $js = ['about.js'];
-$bn = ['title' => $b['title'], 'sub' => $b['subtitle'], 'img' => 'assets/s/bk_h_book.jpg', 'w' => 'clamp(280px,34.4vw,660px)', 'sw' => '900px'];
+$bn = ['title' => $b['title'], 'sub' => $b['subtitle'], 'sw' => '900px'];
 include __DIR__ . '/inc/head.php';
 include __DIR__ . '/inc/site-header.php';
 ?>
