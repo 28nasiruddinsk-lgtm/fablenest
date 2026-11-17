@@ -487,3 +487,4 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
   .js.loaded .glow{opacity:.3}
 }
 @media (min-width:981px){.glow{left:calc(1210*var(--u));top:calc(360*var(--u))}}
+.glow{display:none!important}

@@ -25,9 +25,9 @@ return [
         'process' => ['title' => ['From Idea', 'to Illustration'], 'intro' => 'You do not need to draw well. A few lines on paper is enough: our artists take it from there, one clear stage at a time.',
             'steps' => [
                 ['Your Hand-Drawn Idea', 'Sketch your idea on paper, as rough as you like. This is only to show us what you imagine, so it never needs to be neat.', 'Your sketch'],
-                ['Line Art', 'Our artist redraws your idea with clean, confident lines. You review it and ask for changes before any colour is added.', 'Artist draws'],
-                ['Colour', 'Once the lines are approved, the artist adds colour: the palette, the mood and the light you agreed on.', 'Colour added'],
-                ['Final Illustration', 'Details, shading and the background come together into the finished picture, ready for print and screen.', 'Final art'],
+                ['Sketch', 'Our artist turns your idea into a loose pencil sketch: who is in the picture, where they stand and how the page is laid out.', 'Artist sketches'],
+                ['Line Art', 'The sketch is redrawn with clean, confident lines. You review it and ask for changes before any colour is added.', 'Line art'],
+                ['Colour & Final Illustration', 'Colour, light and detail are added until the picture is finished and ready for print and screen.', 'Final art'],
             ]],
         'portfolio' => ['illustrations'],
     ],
