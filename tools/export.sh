@@ -4,7 +4,7 @@
 set -e
 cd "$(dirname "$0")/.."
 PHP=${PHP:-/d/Xampp/php/php.exe}
-HOST=${HOST:-fablenest.28nasiruddinsk.workers.dev}
+HOST=${HOST:-fablenestpublishers.com}
 OUT=docs
 rm -rf $OUT && mkdir -p $OUT
 cp -r assets $OUT/assets

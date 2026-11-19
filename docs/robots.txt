@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fablenest.28nasiruddinsk.workers.dev/sitemap.xml
+Sitemap: https://fablenestpublishers.com/sitemap.xml

@@ -15,7 +15,9 @@ $stories = $c['stories']['items'];
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Comic+Relief:wght@700&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="stylesheet" href="style.css?v=<?= filemtime(__DIR__ . '/style.css') ?>">
 <link rel="stylesheet" href="seo.css?v=<?= filemtime(__DIR__ . '/seo.css') ?>">
 <link rel="stylesheet" href="service.css?v=<?= filemtime(__DIR__ . '/service.css') ?>">
