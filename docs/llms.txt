@@ -13,6 +13,7 @@
 - [Book Trailer](https://fablenestpublishers.com/service-book-trailer): Short, shareable book trailers for your website and social media. See how we script, storyboard, animate and deliver yours.
 - [Press Release](https://fablenestpublishers.com/service-press-release): Professional press release writing and distribution for your children’s book launch, with a strong headline, a media list and sending support.
 - [Copyright Registration](https://fablenestpublishers.com/service-copyright-registration): Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.
+- [Cost to Publish a Children’s Book](https://fablenestpublishers.com/cost-to-publish-a-childrens-book): Real price ranges for illustration, editing, cover design, printing and marketing, with ISBN and copyright notes by country. Request a quote.
 
 ## Services
 
@@ -203,6 +204,27 @@ Steps:
 2. Collect the details: You confirm the title, author name and publication details.
 3. File: We complete and submit the application, including the filing fee.
 4. Receive the record: The registration confirmation is sent to you and kept with your files.
+
+### Cost to Publish a Children’s Book
+Most self-published children’s picture books cost between about $1,500 and $8,000, with illustration usually more than half of the total. A lean DIY book can cost under $1,000; a fully illustrated, edited, designed and promoted book can pass $10,000.
+
+- Q: How much does it cost to publish a children’s book?
+  A: Most self-published picture books cost between about $1,500 and $8,000, with illustration the largest cost. A lean DIY book can cost under $1,000, and a fully illustrated, designed and promoted book can pass $10,000.
+
+- Q: How much does a children’s book illustrator cost?
+  A: Public guides put a full-page illustration at about $35 to $350, and a 24-page picture book at roughly $1,500 to $5,000 with a freelance illustrator. Style, page count and revisions change the price.
+
+- Q: Can I publish a children’s book for under $1,000?
+  A: Yes, if you illustrate it yourself or use simple art, do your own layout and use print-on-demand, which has no upfront printing cost. Expect to trade some polish and time for the lower price.
+
+- Q: How many pages should a picture book have?
+  A: Most picture books have 24, 32 or 40 pages. 32 is the standard because printers bind pages in multiples of eight, and it keeps illustration cost predictable.
+
+- Q: Do I need an ISBN?
+  A: You need one for each format if you want retailers and libraries to track your book. Amazon KDP can assign a free one for print, but then Amazon is listed as the publisher, so many authors buy their own.
+
+- Q: Who keeps the rights to the book?
+  A: You do. Self-publishing keeps the copyright with you, and a written agreement with any illustrator or editor should say who owns the artwork and text before work begins.
 
 ## Contact
 Use the contact form at https://fablenestpublishers.com/#contact

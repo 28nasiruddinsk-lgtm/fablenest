@@ -1,7 +1,7 @@
 <?php
 // <title>, meta tags, Open Graph, canonical and JSON-LD for the page named in $seoKey.
 require_once __DIR__ . '/seo-lib.php';
-$seoAll = require dirname(__DIR__) . '/content-seo.php';
+$seoAll = seo_all();
 $seoPages = seo_pages($c);
 $seoKey = $seoKey ?? 'home';
 $sp = $seoAll[$seoKey] ?? null;
@@ -22,12 +22,15 @@ $graph = [
 ];
 $crumbs = [['Home', $siteBase . '/']];
 if ($seoKey === 'about') $crumbs[] = ['About Us', $seoUrl];
+elseif (str_starts_with($seoKey, 'guide-')) $crumbs[] = [$seoLabel, $seoUrl];
 elseif ($seoKey !== 'home') { $crumbs[] = ['Services', $siteBase . '/#services']; $crumbs[] = [$seoLabel, $seoUrl]; }
 $graph[] = ['@type' => 'WebPage', '@id' => $seoUrl . '#page', 'url' => $seoUrl, 'name' => $seoTitle, 'description' => $seoDesc, 'isPartOf' => ['@id' => $siteBase . '/#site'], 'about' => ['@id' => $siteBase . '/#org'], 'inLanguage' => 'en'];
 if ($seoKey !== 'home') {
     $graph[] = ['@type' => 'BreadcrumbList', 'itemListElement' => array_map(fn($i, $cr) => ['@type' => 'ListItem', 'position' => $i + 1, 'name' => $cr[0], 'item' => $cr[1]], array_keys($crumbs), $crumbs)];
 }
-if (!in_array($seoKey, ['home', 'about'], true)) {
+if (str_starts_with($seoKey, 'guide-')) {
+    $graph[] = ['@type' => 'Article', 'headline' => $seoLabel, 'description' => $seoDesc, 'url' => $seoUrl, 'dateModified' => (require dirname(__DIR__) . '/content-articles.php')[substr($seoKey, 6)]['updated'], 'author' => ['@id' => $siteBase . '/#org'], 'publisher' => ['@id' => $siteBase . '/#org'], 'mainEntityOfPage' => $seoUrl];
+} elseif (!in_array($seoKey, ['home', 'about'], true)) {
     $graph[] = ['@type' => 'Service', 'name' => $seoLabel, 'description' => $seoDesc, 'serviceType' => $seoLabel, 'url' => $seoUrl, 'provider' => ['@id' => $siteBase . '/#org']];
 }
 $guideAll = require dirname(__DIR__) . '/content-guide.php';

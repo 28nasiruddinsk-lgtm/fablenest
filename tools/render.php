@@ -5,5 +5,5 @@ $_SERVER['HTTP_HOST'] = $argv[3] ?? 'fablenestpublishers.com';
 $_SERVER['HTTPS'] = 'on';
 $_SERVER['SCRIPT_NAME'] = '/' . $argv[1];
 $_SERVER['REQUEST_METHOD'] = 'GET';
-if (!empty($argv[2])) $_GET['s'] = $argv[2];
+if (!empty($argv[2])) $_GET['s'] = $_GET['g'] = $argv[2];
 include $argv[1];

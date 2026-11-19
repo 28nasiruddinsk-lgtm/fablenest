@@ -15,7 +15,15 @@ function seo_pages(array $c): array
 {
     $pages = ['home' => ['', 'Home'], 'about' => ['about.php', 'About Us'], 'book-publishing' => ['book-publishing.php', 'Book Publishing']];
     foreach ((require __DIR__ . '/../content-services.php') as $slug => $s) $pages[$slug] = ['service.php?s=' . $slug, $s['name']];
+    foreach ((require __DIR__ . '/../content-articles.php') as $slug => $g) $pages['guide-' . $slug] = ['guide.php?g=' . $slug, $g['name']];
     return $pages;
+}
+// the words for every page: content-seo.php plus the title, description, answer and FAQ of each long-form guide
+function seo_all(): array
+{
+    $all = require __DIR__ . '/../content-seo.php';
+    foreach ((require __DIR__ . '/../content-articles.php') as $slug => $g) $all['guide-' . $slug] = $g['seo'] + ['faq' => $g['faq']];
+    return $all;
 }
 
 function seo_url(array $c, string $path): string

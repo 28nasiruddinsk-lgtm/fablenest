@@ -12,6 +12,8 @@ cp style.css about.css service.css seo.css main.js about.js $OUT/
 sed -i "s/let msg = 'Please try again';/let msg = 'Preview only: form is off';/" $OUT/main.js
 touch $OUT/.nojekyll
 fix() { sed -E \
+  -e 's#(href="|https://[^/"]+/|<loc>https://[^<]*/)guide\.php\?g=([a-z-]+)#\1\2#g' \
+  -e 's#guide\.php\?g=([a-z-]+)#/\1#g' \
   -e 's#href="index\.php(\#[a-z-]*)?"#href="/\1"#g' \
   -e 's#href="(about|book-publishing)\.php(\#[a-z-]*)?"#href="/\1\2"#g' \
   -e 's#(href="|https://[^/"]+/|<loc>https://[^<]*/)service\.php\?s=([a-z-]+)#\1service-\2#g' \
@@ -22,6 +24,9 @@ r() { $PHP tools/render.php "$@" "$HOST" ; }
 $PHP tools/render.php index.php "" $HOST | fix > $OUT/index.html
 $PHP tools/render.php about.php "" $HOST | fix > $OUT/about.html
 $PHP tools/render.php book-publishing.php "" $HOST | fix > $OUT/book-publishing.html
+for g in $($PHP -r '$a=require "content-articles.php"; echo implode(" ",array_keys($a));'); do
+  $PHP tools/render.php guide.php $g $HOST | fix > $OUT/$g.html
+done
 for s in $($PHP -r '$a=require "content-services.php"; echo implode(" ",array_keys($a));'); do
   $PHP tools/render.php service.php $s $HOST | fix > $OUT/service-$s.html
 done

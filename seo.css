@@ -214,3 +214,22 @@
 .sx-faq::after{display:none}
 .sx-faq+.pg{margin-top:0!important}
 .sx-faq::before{display:none}
+
+/* ---------- long-form guides ---------- */
+.gd{padding:clamp(30px,4vw,80px) 0 clamp(20px,3vw,60px);background:#fff;color:#002a1c}
+.gd__wrap{max-width:1100px;margin:0 auto}
+.gd__meta{margin:0 0 clamp(18px,2vw,34px);font:500 clamp(12px,.85vw,15px)/1.4 var(--body);color:#5a6a62}
+.gd__sec{margin:0 0 clamp(26px,3vw,56px)}
+.gd__sec p{max-width:820px;margin:0 0 1em;font:400 clamp(15px,1.1vw,20px)/1.7 var(--body);letter-spacing:-.01em}
+.gd__tbl{overflow-x:auto;margin:14px 0 18px;border-radius:16px;box-shadow:0 2px 16px rgba(40,50,100,.08)}
+.gd__tbl table{width:100%;min-width:560px;border-collapse:collapse;font:400 clamp(13px,.95vw,17px)/1.45 var(--body)}
+.gd__tbl th,.gd__tbl td{padding:12px 16px;text-align:left;vertical-align:top;border-bottom:1px solid #e7efd2}
+.gd__tbl thead th{background:#002a1c;color:#fff;font-weight:500;white-space:nowrap}
+.gd__tbl tbody th{font-weight:500;color:#002a1c;background:#f5f9e4}
+.gd__tbl tbody tr:last-child th,.gd__tbl tbody tr:last-child td{border-bottom:0}
+.gd__list{margin:0 0 1em;padding-left:1.2em;max-width:820px}
+.gd__list li{margin:.4em 0;font:400 clamp(15px,1.1vw,20px)/1.6 var(--body)}
+.gd__note{padding:12px 16px;border-left:4px solid #9fbc00;background:#f5f9e4;border-radius:0 12px 12px 0;font-size:.95em!important}
+.gd__cta{padding:clamp(24px,3vw,50px);border-radius:24px;background:#002a1c url(assets/tex-dark2.jpg) 0 0/1500px auto repeat;color:#fff;text-align:center}
+.gd__cta .sx-h2{color:#fff;margin-bottom:10px}.gd__cta p{margin:0 auto 20px;color:#e6efe0}.gd__cta .sx-btn{background:#deff21;color:#002a1c}
+.gd__src{margin-top:clamp(24px,3vw,44px);font-size:clamp(12px,.9vw,15px)}.gd__src ul{padding-left:1.1em}.gd__src a{color:#2f5d3a}

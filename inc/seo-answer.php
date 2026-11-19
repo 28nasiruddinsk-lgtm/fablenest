@@ -2,7 +2,7 @@
 // Breadcrumbs + "In short" answer box + four quick facts. Needs $seoKey (and $seoAll from seo.php).
 $sp = $seoAll[$seoKey] ?? null;
 if (!$sp) return;
-$trail = $seoKey === 'home' ? [] : ($seoKey === 'about' ? [['Home', 'index.php'], ['About Us', null]] : [['Home', 'index.php'], ['Services', 'index.php#services'], [$seoLabel, null]]);
+$trail = $seoKey === 'home' ? [] : (str_starts_with($seoKey, 'guide-') ? [['Home', 'index.php'], [$seoLabel, null]] : ($seoKey === 'about' ? [['Home', 'index.php'], ['About Us', null]] : [['Home', 'index.php'], ['Services', 'index.php#services'], [$seoLabel, null]]));
 ?>
 <section class="sx-answer" aria-labelledby="sx-short">
   <div class="sx-wrap">

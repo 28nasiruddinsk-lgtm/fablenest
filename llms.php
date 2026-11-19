@@ -2,7 +2,7 @@
 // /llms.txt: a short, plain-text description of the site for AI assistants (answer engines).
 require __DIR__ . '/inc/seo-lib.php';
 $c = require __DIR__ . '/content.php';
-$seo = require __DIR__ . '/content-seo.php';
+$seo = seo_all();
 $guide = require __DIR__ . '/content-guide.php';
 header('Content-Type: text/plain; charset=utf-8');
 $name = $c['logo'];
