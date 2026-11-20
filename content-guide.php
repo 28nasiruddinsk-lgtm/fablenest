@@ -34,6 +34,7 @@ return [
         'body' => [
             'Our starting point is always the author’s idea. We ask about the story, the child it is for and what you hope the book will do, and then suggest the services that fit. Nothing is added that you do not need.',
             'Because the same team handles the words, the pictures and the cover, the finished book feels like one piece of work rather than several parts joined together.',
+            'Fablenest Publishers is built around children’s books. Because the same team handles editing, illustration, cover design, formatting and marketing, authors get one clear point of contact instead of managing separate freelancers.',
         ],
         'who' => ['Authors who want a guide, not just a printer', 'People who prefer to be involved in the creative choices', 'Authors who want text, pictures and cover to match'],
         'steps' => [
@@ -101,6 +102,7 @@ return [
         'body' => [
             'Parents, teachers and librarians usually choose children’s books from authors they recognise. A clear, consistent brand makes you easier to remember and easier to recommend.',
             'A brand does not have to be complicated. For most authors a short story about who they are, a few colours and fonts, and a simple logo is enough to start.',
+            'For a children’s author, a recognisable brand also helps the people who buy your books: parents, teachers and librarians remember an author whose books, website and social pages look and sound the same.',
         ],
         'who' => ['Authors with more than one book', 'Authors starting a website or social media pages', 'Authors who visit schools and events'],
         'steps' => [
@@ -122,6 +124,7 @@ return [
         'body' => [
             'A good author site is simple. It has a page for each book, a short bio, a way to contact you and a sign-up form for news. Search engines also use it to understand who you are and what you write.',
             'Most visitors will use a phone, so the site needs to load quickly and be easy to read on a small screen.',
+            'A children’s author website works best when it is simple: each book has its own page, buying a copy is one click away, and the newsletter sign-up is easy to find on every page.',
         ],
         'who' => ['Authors with a published or soon-to-be-published book', 'Authors who want readers to find them online', 'Authors who run events or school visits'],
         'steps' => [
@@ -143,6 +146,7 @@ return [
         'body' => [
             'Children rarely buy their own books, so your audience is mostly the adults around them. Content that helps those adults, such as reading ideas, behind-the-scenes pictures and book news, tends to be more useful than constant sales posts.',
             'A simple plan that you can keep up is better than a large one that stops after a month. We plan content at a pace that suits you.',
+            'Because children’s books are bought by adults, social media marketing speaks to parents, teachers and librarians. A short, steady plan of posts you approve beforehand keeps your book visible without taking over your week.',
         ],
         'who' => ['Authors launching a new book', 'Authors who already have books and want more readers', 'Authors who do not have time to plan posts'],
         'steps' => [
@@ -164,6 +168,7 @@ return [
         'body' => [
             'Video is easy to share. A trailer can sit on your book page, go in an email to schools and libraries, and play on social media, all from one file.',
             'For picture books the trailer is usually built from the illustrations with gentle movement, music and a few lines of text.',
+            'A book trailer is a short video that introduces your children’s book in a few scenes. It gives parents and teachers a fast way to see the style and story before they decide to read or buy.',
         ],
         'who' => ['Authors with illustrated books', 'Authors planning a launch', 'Authors who present at schools or events'],
         'steps' => [
@@ -185,6 +190,7 @@ return [
         'body' => [
             'Editors receive many announcements, so a release should be clear in the first lines, factual and easy to copy into an article. It usually includes a headline, the key facts, a quote from the author and contact details.',
             'A release gives your news the best chance of being noticed, but it cannot guarantee coverage. That is why a good media list matters as much as the writing.',
+            'A press release for a children’s book gives journalists, bloggers and schools the facts they need in one page: what the book is, who it is for, who wrote it and where to find it.',
         ],
         'who' => ['Authors with a launch date', 'Authors with an award, event or milestone to announce', 'Authors who want local media attention'],
         'steps' => [
@@ -206,6 +212,7 @@ return [
         'body' => [
             'Rules differ by country, including what can be registered, the fees and the forms. That is why we first confirm which office applies to you.',
             'We help with the administrative steps: gathering details, completing the application and submitting it. For legal questions about your rights, please speak with a qualified lawyer.',
+            'Copyright registration is the official record of who made a book and when. For a children’s book with illustrations, it helps to be clear from the start who owns the text and who owns the artwork.',
         ],
         'who' => ['Authors who want an official record of authorship', 'Authors preparing to publish', 'Authors who are not sure which forms apply to them'],
         'steps' => [
