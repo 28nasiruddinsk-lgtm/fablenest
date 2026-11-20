@@ -3,7 +3,7 @@
   <div class="bk-sol__box container-fluid p-0">
     <div class="row g-0">
       <div class="col-lg-5 bk-sol__side ab-reveal">
-        <h2 class="bk-sol__h"><img src="assets/s/bk_h_sol.png" alt="Our Publishing Solution"></h2>
+        <h2 class="bk-sol__h"><img src="assets/s/bk_h_sol.png" alt="Our Children’s Book Publishing Solution"></h2>
         <p><?= $e($b['solution']['text']) ?></p>
         <div class="bk-btns">
           <a class="bk-btn bk-btn--fill" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a>

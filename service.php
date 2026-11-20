@@ -47,6 +47,7 @@ include __DIR__ . '/inc/site-header.php';
 <?php include __DIR__ . '/inc/seo-guide.php' ?>
 
 <?php include __DIR__ . '/inc/seo-faq.php' ?>
+<?php include __DIR__ . '/inc/seo-guides.php' ?>
 
 <?php include __DIR__ . '/inc/seo-related.php' ?>
 

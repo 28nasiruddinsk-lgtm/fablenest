@@ -1,7 +1,7 @@
 <?php // "How Publishing Works": four steps joined by a dashed line. ?>
 <section class="bk-how" id="how">
   <div class="bk-how__panel">
-    <h2 class="bk-how__h"><img src="assets/s/bk_h_how.png" alt="How Publishing Works"></h2>
+    <h2 class="bk-how__h"><img src="assets/s/bk_h_how.png" alt="How Children’s Book Publishing Works"></h2>
     <p class="bk-how__lead"><?= $e($b['how']['intro']) ?></p>
     <div class="container-fluid ab-wrap">
       <div class="row bk-steps justify-content-center">
