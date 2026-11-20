@@ -7,7 +7,7 @@
 // Draft copy: check it before it goes live (no prices or turnaround times are promised on purpose).
 return [
     'home' => [
-        'title' => 'Children’s Book Publishing & Illustration | Fablenest Publishers',
+        'title' => 'Children’s Book Publishing & Illustration | Fablenest',
         'description' => 'Fablenest helps authors publish children’s books: editing, illustration, cover design, trailers, websites and marketing. Start your story today.',
         'answer' => 'Fablenest Publishers is a children’s book publishing service. We help authors turn a manuscript or an idea into a finished, professionally made book, with editing, illustration, cover design, formatting, a book trailer, an author website and marketing support.',
         'glance' => [['Best for', 'First-time and experienced children’s authors'], ['Services', 'Publishing, illustration, branding, website, marketing'], ['You provide', 'A manuscript, or just the idea'], ['You receive', 'A print- and ebook-ready book']],
