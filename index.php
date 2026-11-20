@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . '/inc/clean.php';
 $c = require __DIR__ . '/content.php';
 $e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
 $br = fn(array $lines) => implode('<br>', array_map(fn($l) => $l === '' ? '&nbsp;' : htmlspecialchars($l, ENT_NOQUOTES, 'UTF-8'), $lines));

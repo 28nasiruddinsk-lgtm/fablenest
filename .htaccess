@@ -1,9 +1,49 @@
 RewriteEngine On
+
+# one address only: no www (the www copy used to answer 200 and duplicated every page; https is already forced by the host)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://fablenestpublishers.com%{REQUEST_URI} [R=301,L]
+
+# old .php addresses -> clean addresses (only when asked for directly, so the internal rewrites below do not loop)
+RewriteCond %{THE_REQUEST} \s/+(?:index|about|book-publishing)\.php[\s?]
+RewriteRule ^index\.php$ / [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+about\.php[\s?]
+RewriteRule ^about\.php$ /about [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+book-publishing\.php[\s?]
+RewriteRule ^book-publishing\.php$ /book-publishing [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+service\.php\?s=([a-z0-9-]+)[\s&]
+RewriteRule ^service\.php$ /service-%1? [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+guide\.php\?g=([a-z0-9-]+)[\s&]
+RewriteRule ^guide\.php$ /%1? [R=301,L]
+
+# clean addresses -> the PHP files
+RewriteRule ^about/?$ about.php [L]
+RewriteRule ^book-publishing/?$ book-publishing.php [L]
+RewriteRule ^service-([a-z0-9-]+)/?$ service.php?s=$1 [L,QSA]
+RewriteRule ^(cost-to-publish-a-childrens-book)/?$ guide.php?g=$1 [L]
 RewriteRule ^sitemap\.xml$ sitemap.php [L]
 RewriteRule ^robots\.txt$ robots.php [L]
 RewriteRule ^llms\.txt$ llms.php [L]
+
+ErrorDocument 404 /404.php
 
 # word files are only for the pages to read, not for visitors
 <FilesMatch "^content.*\.php$">
   Require all denied
 </FilesMatch>
+
+# caching: pages are re-checked after 5 minutes (they used to be cached for a week), scripts and styles for a day, pictures for 30 days
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  <FilesMatch "\.php$">
+    Header set Cache-Control "public, max-age=300, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+  <FilesMatch "\.(png|jpg|jpeg|webp|svg|json|woff2?|ico)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>

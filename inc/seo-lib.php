@@ -13,9 +13,9 @@ function seo_base(array $c): string
 // every page of the site: key => [path, label]
 function seo_pages(array $c): array
 {
-    $pages = ['home' => ['', 'Home'], 'about' => ['about.php', 'About Us'], 'book-publishing' => ['book-publishing.php', 'Book Publishing']];
-    foreach ((require __DIR__ . '/../content-services.php') as $slug => $s) $pages[$slug] = ['service.php?s=' . $slug, $s['name']];
-    foreach ((require __DIR__ . '/../content-articles.php') as $slug => $g) $pages['guide-' . $slug] = ['guide.php?g=' . $slug, $g['name']];
+    $pages = ['home' => ['', 'Home'], 'about' => ['about', 'About Us'], 'book-publishing' => ['book-publishing', 'Book Publishing']];
+    foreach ((require __DIR__ . '/../content-services.php') as $slug => $s) $pages[$slug] = ['service-' . $slug, $s['name']];
+    foreach ((require __DIR__ . '/../content-articles.php') as $slug => $g) $pages['guide-' . $slug] = [$slug, $g['name']];
     return $pages;
 }
 // the words for every page: content-seo.php plus the title, description, answer and FAQ of each long-form guide

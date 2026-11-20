@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/clean.php';
 // Shared setup for the About Us page: the content and the small helpers the shared sections use.
 $c = require dirname(__DIR__) . '/content.php';
 $e = fn($s) => htmlspecialchars($s, ENT_QUOTES, 'UTF-8');
