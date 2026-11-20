@@ -1,6 +1,7 @@
 <?php
 // Long-form home page content (words in content-deep.php), styled like the guide articles.
-$deep = require __DIR__ . '/../content-deep.php';
+$deep = (require __DIR__ . '/../content-deep.php')[$seoKey] ?? [];
+if (!$deep) return;
 ?>
 <article class="gd" aria-label="About children’s book publishing">
   <div class="sx-wrap gd__wrap">

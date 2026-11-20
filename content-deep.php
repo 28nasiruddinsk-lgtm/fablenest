@@ -1,6 +1,6 @@
 <?php
 // Long-form home page section. Each block: h = heading, p = paragraphs, list = bullets, links = [text, href] pairs.
-return [
+$home = [
     ['h' => 'Children’s book publishing services, in plain words',
      'p' => ['Fablenest Publishers is a children’s book publishing service for authors who want a professional picture book, early reader or storybook without managing a dozen separate freelancers. We help with editing support, children’s book illustration, cover design, interior layout, a book trailer, an author website and marketing, so the words, the pictures and the launch come from one team.',
              'If you are asking how to publish a children’s book, the short answer is: finish and edit the story, plan the pages, commission the illustrations, design the cover and interior, choose your publishing route, proof and print, then market it. Each stage affects the next, which is why the order matters.'],
@@ -31,3 +31,35 @@ return [
                 'Will the book accounts (such as Amazon KDP) and the files be in my name?',
                 'Can I speak to authors they have worked with before?']],
 ];
+
+$bp = [
+    ['h' => 'What our children’s book publishing services include',
+     'p' => ['Our children’s book publishing services take a manuscript or an idea to a finished picture book, early reader or storybook. You can use the whole service, or only the parts you need.'],
+     'list' => ['Editing and proofreading, so the text reads well aloud and suits the age group.',
+                'Children’s book illustration: characters, page illustrations and cover artwork.',
+                'Cover design and interior layout, prepared to the printer’s trim size, margins and bleed.',
+                'File preparation and set-up for Amazon KDP, IngramSpark and other platforms.',
+                'ISBN guidance and copyright registration support.',
+                'Launch support: an author website, a book trailer, a press release and social media.'],
+     'links' => [['Illustration services', 'service.php?s=book-illustrations'], ['Author website', 'service.php?s=author-website'], ['Book trailer', 'service.php?s=book-trailer'], ['Press release', 'service.php?s=press-release'], ['Social media marketing', 'service.php?s=social-media-marketing'], ['Copyright registration', 'service.php?s=copyright-registration']]],
+    ['h' => 'The children’s book publishing process, from manuscript to finished book',
+     'list' => ['Talk: you tell us about the story, the readers and the platforms you want to sell on.',
+                'Plan: we agree the services, the page count and the order of work in writing.',
+                'Edit: the text is tightened and proofread before any artwork is paid for.',
+                'Illustrate and design: you approve sketches, line art, the cover and the layout.',
+                'Proof: you check a proof copy for colour, margins and typos.',
+                'Publish: the files are uploaded to the platforms you chose, with the accounts in your name.',
+                'Launch: you share the book through your website, trailer and social media.']],
+    ['h' => 'Where your published children’s book can be sold',
+     'p' => ['Once the files are ready, a self-published children’s book can be sold as a print book and an ebook through Amazon KDP, IngramSpark and other platforms, and from your own author website. Print on demand means copies are printed only when someone orders one, so no stock has to be stored.']],
+    ['h' => 'Page counts and formats for children’s picture books',
+     'p' => ['Most picture books are 32 pages, though 24 or 40 pages also occur. Printers bind in set page multiples, so the page count should be confirmed with your printer before the illustrations are planned. Paperback, hardcover and ebook are separate formats, and each format needs its own ISBN.']],
+    ['h' => 'Rights, ISBNs and accounts: what to expect',
+     'p' => ['Before work starts you should have a written agreement that says who owns the copyright in the text and the illustrations, and who holds the ISBN and the platform accounts. We provide a clear written agreement for every project; read any publisher’s agreement the same way before you sign.'],
+     'links' => [['How to copyright a children’s book', 'guide.php?g=how-to-copyright-a-childrens-book']]],
+    ['h' => 'Is our children’s book publishing service right for you?',
+     'p' => ['It suits authors who want to publish their own children’s book with professional help and stay involved in the creative choices. It is not a route to a traditional publisher’s advance: if you want an agent and a traditional deal, a different path is a better fit.'],
+     'links' => [['Compare the publishing routes', 'guide.php?g=how-to-publish-a-childrens-book']]],
+];
+
+return ['home' => $home, 'book-publishing' => $bp];

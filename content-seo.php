@@ -44,9 +44,9 @@ return [
     ],
 
     'book-publishing' => [
-        'title' => 'Publish a Children’s Book, Start to Finish | Fablenest',
-        'description' => 'Self-publish your picture book with expert help: editing, illustration, layout, print files and launch support in one team. Get started.',
-        'answer' => 'Our book publishing service takes your manuscript through editing, cover design, interior formatting and publication, so you end up with a professionally made book that is ready to reach readers in print and as an ebook.',
+        'title' => 'Children’s Book Publishing Services for Authors | Fablenest',
+        'description' => 'Children’s book publishing services from editing support and illustration to cover design, formatting and launch. Tell us about your book.',
+        'answer' => 'Our children’s book publishing services take your manuscript or idea through editing, illustration, cover design, interior formatting and publication, so you end up with a professionally made picture book ready to reach readers in print and as an ebook.',
         'glance' => [['Best for', 'Authors with a manuscript ready to publish'], ['Includes', 'Editing, cover design, formatting, publishing'], ['You provide', 'Your manuscript and your goals'], ['You receive', 'Print-ready and ebook-ready files']],
         'faq' => [
             ['What is included in your book publishing service?', 'Manuscript preparation (editing and proofreading), book cover design, interior formatting, and support with submitting your book to the publishing platform you choose.'],
