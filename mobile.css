@@ -11,7 +11,7 @@
   .pg .sec:not(.wd) .a{position:relative;left:auto;top:auto;width:auto;height:auto;flex:1 1 100%;min-width:0}
   .pg .th{white-space:normal;font-size:clamp(28px,8.6vw,44px);line-height:1.1}
   .pg .t20{font-size:16px;line-height:1.65;white-space:normal;letter-spacing:0}
-  .pg .sec:not(.wd) .a.b2{flex:0 0 auto;min-width:150px;height:52px;font-size:17px;padding:0 26px;width:auto}
+  .pg .sec:not(.wd) .a.b2{flex:1 1 calc(50% - 7px);min-width:140px;height:52px;font-size:16px;padding:0 14px;width:auto}
 
   .pg .t20 .ln,.pg .rv-lines .ln{display:inline}
   .pg .t20 .ln::after{content:" "}
@@ -30,9 +30,20 @@
   #cta .cta-btn{position:relative;left:auto;top:auto;width:100%;height:54px;font-size:17px;border-width:2px}
 
   /* services map: keep the picture and its animation (it is drawn on the 1920 canvas), just make the heading readable */
-  .pg .wd{--u:calc(100cqw/1920);position:relative;left:auto;top:auto;width:100%;height:calc(var(--h)*var(--u))}
-  .wd .th{font-size:clamp(18px,5.6vw,28px)!important;white-space:normal;left:2.5%!important;width:95%!important;top:calc(30*var(--u))!important;height:auto!important}
-  .wd .wwd-sub{left:5%!important;width:90%!important;top:calc(205*var(--u))!important;height:auto!important;font-size:11px;line-height:1.35;white-space:normal}
+  .pg .wd{--u:calc(100cqw/1920);position:relative;left:auto;top:auto;width:100%;height:calc(var(--h)*var(--u) + 74px)}
+  .wd>img.a,.wd>svg.a,.wd .wd-edit{margin-top:74px}
+  .wd .th{font-size:clamp(20px,6vw,30px)!important;white-space:normal;left:2.5%!important;width:95%!important;top:12px!important;height:auto!important;line-height:1.15}
+  .wd .wwd-sub{left:6%!important;width:88%!important;top:46px!important;height:auto!important;font-size:13px;line-height:1.4;white-space:normal;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+
+  /* the desktop sheet pins #why, #stories and #services with id rules, so these need the same weight */
+  .pg .sec#why,.pg .sec#stories{left:auto;width:auto;height:auto;overflow:hidden}
+  .pg .sec#why::before,.pg .sec#why::after,.pg .sec#stories::before,.pg .sec#stories::after{display:none}
+  .pg .sec#why>img.a:first-child,.pg .sec#stories>img.a:first-child{display:none}
+  .pg .sec#stories>.a{margin-top:0}
+  .pg .sec#why{background:#00281a url(assets/s/why.jpg) center/cover}
+  .pg .sec#stories{background:#00281a url(assets/s/author.jpg) center/cover}
+  .pg .sec#services{height:calc((var(--h) + 80)*var(--u) + 74px)}
+  .pg .sec#services>img.a,.pg .sec#services>svg.a,.pg .sec#services>.wd-edit{margin-top:calc(40*var(--u) + 74px)}
 
   /* books we have published: swipeable row */
   #portfolio{padding:30px 0 20px}
@@ -47,7 +58,9 @@
   /* why authors choose us: scene behind, four cards in two columns */
   #why{margin:8px 12px;border-radius:22px;background:#00281a url(assets/s/why.jpg) center/cover;padding:34px 16px 28px}
   #why>img.a{display:none}
-  #why .card{flex:0 0 calc(50% - 7px)!important;max-width:calc(50% - 7px)}
+  #why{justify-content:center;text-align:center}
+  #why .th,#why .t20{text-align:center}
+  #why .card{flex:0 0 calc(50% - 7px)!important;max-width:calc(50% - 7px);margin:0}
   #why .t20{color:#fff}
 
   /* what authors say */
@@ -115,6 +128,8 @@
 /* keep the page short: compact SEO bands, accordion for the long text */
 @media (max-width:980px){
   .boy{display:none!important}
+  .hero .btn-fill,.hero .btn-line{align-self:center!important;width:100%;max-width:340px;height:54px!important;margin:0!important;font-size:17px;display:flex;align-items:center;justify-content:center}
+  .hero .btn-line{margin-top:-8px!important}
   .sx-answer{padding-top:16px}
 }
 @media (max-width:700px){
@@ -123,11 +138,14 @@
   .sx-band{padding:30px 0}
   .sx-bridge{padding:34px 0}
   .sx-steps__h{margin-top:0}
-  .sx-steps{gap:0!important}
-  .sx-step{padding:12px 0!important;gap:12px}
-  .sx-step__n{font-size:28px!important;min-width:1.2em}
-  .sx-step h4{font-size:17px}.sx-step p{font-size:14px;line-height:1.45}
-  .sx-band--terms dl{gap:10px!important}
+  .sx-h,.sx-h2{font-size:clamp(24px,7vw,30px);text-wrap:balance}
+  .sx-steps__h,.sx-band--terms .sx-h2{text-align:center}
+  .sx-steps,.sx-band--terms dl{display:flex!important;grid-template-columns:none!important;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 calc(-1*clamp(18px,8.4vw,200px));padding:6px clamp(18px,8.4vw,200px) 14px;scroll-padding-left:clamp(18px,8.4vw,200px)}
+  .sx-steps::-webkit-scrollbar,.sx-band--terms dl::-webkit-scrollbar{display:none}
+  .sx-steps>.sx-step,.sx-band--terms dl>div{flex:0 0 78%;scroll-snap-align:start;box-sizing:border-box}
+  .sx-band--steps .sx-step{padding:18px 18px 20px!important;border-radius:18px;flex-direction:column;gap:6px;border-top:0}
+  .sx-step__n{font-size:34px!important;min-width:0;line-height:1}
+  .sx-step h4{font-size:18px}.sx-step p{font-size:14px;line-height:1.5}
   .sx-band--terms dl div{padding:14px 16px!important}
   .sx-band--terms dl div::before{display:none}
   .sx-band--terms dt{font-size:18px}
