@@ -49,7 +49,7 @@ $stories = $c['stories']['items'];
 
   <form class="paper" action="submit.php" method="post" data-form>
     <div class="paper-crop"><img src="assets/fig/paper-raw.png" alt=""></div>
-    <img class="paper-title" src="assets/fig/paper-title.svg" alt="Start Your Publishing Journey">
+    <h2 class="paper-title">Start Your<br>Publishing Journey</h2>
     <input type="hidden" name="form" value="hero"><input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
     <label class="f f-name"><span>Name</span><input type="text" name="name" autocomplete="name" required></label>
     <label class="f f-email"><span>Email</span><input type="email" name="email" autocomplete="email" required></label>

@@ -82,7 +82,7 @@ img{display:block}
 /* Figma: crop of the full paper image, stretched to 100% x 91% of the visible height, 5% from the top */
 .paper-crop{left:0;top:0;width:100%;height:100%;overflow:hidden}
 .paper-crop img{position:absolute;left:0;top:calc(-34.8*var(--pu));width:100%;height:calc(696.7*var(--pu))}
-.paper-title{left:calc(161.9*var(--pu));top:calc(107.5*var(--pu));width:calc(305*var(--pu));height:calc(71*var(--pu))}
+.paper-title{position:absolute;margin:0;left:calc(161.9*var(--pu));top:calc(107.5*var(--pu));width:calc(305*var(--pu));height:calc(71*var(--pu));display:flex;align-items:center;justify-content:center;text-align:center;font:400 calc(30*var(--pu))/1.1 var(--logo);color:#4a2a10}
 .f{left:calc(130*var(--pu));width:calc(363*var(--pu));border-bottom:calc(1*var(--pu)) solid var(--ink);display:block}
 .f-name{top:calc(212*var(--pu));height:calc(38*var(--pu))}
 .f-email{top:calc(300*var(--pu));height:calc(38*var(--pu))}
@@ -201,7 +201,7 @@ img{display:block}
 /* CTA bar */
 .cta-bar{box-sizing:border-box;border:calc(4*var(--u)) solid var(--ink);border-radius:calc(28*var(--u));box-shadow:calc(7*var(--u)) calc(11*var(--u)) 0 var(--ink);
   background:linear-gradient(95deg,rgba(255,228,190,.6),rgba(255,228,190,0) 45%),linear-gradient(180deg,#ffd9a4,#ffc169)}
-.cta-h{font:500 calc(40*var(--u))/calc(48*var(--u)) var(--body);letter-spacing:-.025em;white-space:nowrap}
+.cta-h{font:400 calc(40*var(--u))/calc(48*var(--u)) var(--logo);letter-spacing:0;white-space:nowrap}
 .fld{display:block;box-sizing:border-box;border:0;border-bottom:calc(2*var(--u)) solid var(--ink);background:transparent;color:var(--ink);outline:0;
   font:400 calc(20*var(--u))/1 var(--body);letter-spacing:-.02em;padding:0 calc(12*var(--u))}
 .fld::placeholder{color:rgba(0,42,28,.52)}
