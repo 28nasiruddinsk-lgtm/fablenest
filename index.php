@@ -113,6 +113,7 @@ $stories = $c['stories']['items'];
 </section>
 
 <?php include __DIR__ . '/inc/seo-guide.php' ?>
+<?php include __DIR__ . '/inc/seo-deep.php' ?>
 
 <div class="pg solo" style="height:calc(710*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="portfolio" style="--y0:6500;--h:710">
