@@ -18,7 +18,7 @@
 
   /* about on the home page: text first, mascot below */
   #about{padding-top:34px}
-  #about .about-mascot{order:5;max-width:420px;margin:6px auto 0}
+  #about .about-mascot{order:5;max-width:230px;margin:0 auto}
 
   /* quote strip */
   #cta{margin:8px 12px;padding:30px 22px;border-radius:22px}
@@ -110,6 +110,46 @@
   .gd__tbl tbody th{padding:12px 16px;font-size:16px}
   .gd__tbl td{padding:10px 16px;font-size:15px;line-height:1.5;border-bottom:1px solid #eef3dc}
   .gd__tbl td::before{content:attr(data-l);display:block;margin-bottom:2px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#4d6600;font-weight:600}
+}
+
+/* keep the page short: compact SEO bands, accordion for the long text */
+@media (max-width:980px){
+  .boy{display:none!important}
+  .sx-answer{padding-top:16px}
+}
+@media (max-width:700px){
+  .sx-guide__top .sx-mascot,.sx-faq__mascot,.sx-rel__mascot{display:none}
+  .sx-guide{padding:34px 0}
+  .sx-band{padding:30px 0}
+  .sx-bridge{padding:34px 0}
+  .sx-steps__h{margin-top:0}
+  .sx-steps{gap:0!important}
+  .sx-step{padding:12px 0!important;gap:12px}
+  .sx-step__n{font-size:28px!important;min-width:1.2em}
+  .sx-step h4{font-size:17px}.sx-step p{font-size:14px;line-height:1.45}
+  .sx-band--terms dl{gap:10px!important}
+  .sx-band--terms dl div{padding:14px 16px!important}
+  .sx-band--terms dl div::before{display:none}
+  .sx-band--terms dt{font-size:18px}
+  .sx-band--terms dd{font-size:14px;margin-top:4px}
+  .sx-band--terms .sx-h2{margin-bottom:18px}
+  .sx-faq{padding:28px 0}
+  .sx-faq__intro p{margin-bottom:14px}
+  .sx-rel{padding:22px 0 28px}
+  .sx-rel__grid{gap:10px}
+  .sx-card{flex-direction:row;align-items:center;gap:12px;padding:14px 16px}
+  .sx-card span:not(.sx-card__n){display:none}
+  .sx-card__n{margin:0;flex:none;width:34px}
+  .sx-card strong{flex:1;font-size:17px}
+  .sx-card em{margin:0;padding:0}
+  .gd__acc>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid #d8e6b4;cursor:pointer}
+  .gd__acc>summary .sx-h2{margin:0;font-size:19px;line-height:1.25}
+  .gd__acc>summary::after{content:'+';flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#deff21;color:#002a1c;font:700 18px/1 var(--body)}
+  .gd__acc[open]>summary::after{content:'–';background:#002a1c;color:#deff21}
+  .gd__acc[open]>summary{margin-bottom:10px}
+  .gd__sec{margin:0}
+  .sx-q[hidden]{display:none}
+  .sx-more{display:block;width:100%;margin-top:6px;padding:14px;border:2px solid #002a1c;border-radius:999px;background:#fff;color:#002a1c;font:500 16px/1 var(--body);cursor:pointer}
 }
 
 @media (max-width:420px){

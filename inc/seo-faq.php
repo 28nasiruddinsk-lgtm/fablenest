@@ -19,4 +19,16 @@ if (!$sp || empty($sp['faq'])) return;
 <?php endforeach ?>
     </div>
   </div>
-</section>
+</section><script>
+// phones: show the first five questions, the rest sit behind one button (they stay in the page for search engines)
+(function () {
+  if (!matchMedia('(max-width:700px)').matches) return;
+  var list = document.querySelector('.sx-faq__list'), qs = list ? list.querySelectorAll('.sx-q') : [];
+  if (qs.length <= 6) return;
+  for (var i = 5; i < qs.length; i++) qs[i].hidden = true;
+  var b = document.createElement('button');
+  b.type = 'button'; b.className = 'sx-more'; b.textContent = 'Show ' + (qs.length - 5) + ' more questions';
+  b.onclick = function () { for (var i = 5; i < qs.length; i++) qs[i].hidden = false; b.remove(); };
+  list.appendChild(b);
+})();
+</script>

@@ -30,8 +30,8 @@
 <link rel="stylesheet" href="style.css?v=1795214622">
 <link rel="stylesheet" href="about.css?v=1794613344">
 <link rel="stylesheet" href="service.css?v=1794954104">
-<link rel="stylesheet" href="seo.css?v=1795215541">
-<link rel="stylesheet" href="mobile.css?v=1795216922">
+<link rel="stylesheet" href="seo.css?v=1795217745">
+<link rel="stylesheet" href="mobile.css?v=1795217773">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -244,7 +244,20 @@
       </details>
     </div>
   </div>
-</section>
+</section><script>
+// phones: show the first five questions, the rest sit behind one button (they stay in the page for search engines)
+(function () {
+  if (!matchMedia('(max-width:700px)').matches) return;
+  var list = document.querySelector('.sx-faq__list'), qs = list ? list.querySelectorAll('.sx-q') : [];
+  if (qs.length <= 6) return;
+  for (var i = 5; i < qs.length; i++) qs[i].hidden = true;
+  var b = document.createElement('button');
+  b.type = 'button'; b.className = 'sx-more'; b.textContent = 'Show ' + (qs.length - 5) + ' more questions';
+  b.onclick = function () { for (var i = 5; i < qs.length; i++) qs[i].hidden = false; b.remove(); };
+  list.appendChild(b);
+})();
+</script>
+
 <section class="sx-rel" aria-labelledby="rel-h">
   <div class="sx-wrap">
     <h2 class="sx-h sx-h--sm" id="rel-h">Keep <span class="sx-acc">reading</span></h2>

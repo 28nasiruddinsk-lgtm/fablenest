@@ -234,3 +234,4 @@
 .gd__cta .sx-h2{color:#fff;margin-bottom:10px}.gd__cta p{margin:0 auto 20px;color:#e6efe0}.gd__cta .sx-btn{background:#deff21;color:#002a1c}
 .gd__src{margin-top:clamp(24px,3vw,44px);font-size:clamp(12px,.9vw,15px)}.gd__src ul{padding-left:1.1em}.gd__src a{color:#2f5d3a}
 .gd__more{margin-top:14px;font-size:.95em}.gd__more a{color:#4d6600;font-weight:600;text-decoration:underline;text-underline-offset:3px}.gd__more a:hover{color:#002a1c}
+.gd__acc>summary{list-style:none;cursor:default}.gd__acc>summary::-webkit-details-marker{display:none}
