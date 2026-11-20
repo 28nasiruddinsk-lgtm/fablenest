@@ -1,6 +1,6 @@
 /* Every size is a pixel of the 1920 px design; --u turns one design pixel into the current screen size. */
 :root{
-  --ink:#002a1c; --body:'Figtree',system-ui,sans-serif; --logo:'Bagel Fat One','Comic Relief',cursive;
+  --ink:#002a1c; --body:'Figtree',system-ui,sans-serif; --logo:'Lilita One','Fredoka','Comic Relief',cursive;
   --ease-pop:cubic-bezier(.34,1.56,.64,1); --ease-out:cubic-bezier(.22,1,.36,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -408,7 +408,7 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 .about-mascot img{display:block;height:100%;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(0,42,28,.25));animation:hm-float 5s ease-in-out infinite alternate;--t:0deg}
 @media (prefers-reduced-motion:reduce){.about-mascot img{animation:none}}
 
-/* ---------- headings drawn as text (one font everywhere: Bagel Fat One) ---------- */
+/* ---------- headings drawn as text (one font everywhere: Lilita One) ---------- */
 .th{margin:0;font:400 calc(var(--fs,80)*var(--u))/1.08 var(--logo);color:#002a1c;white-space:nowrap;letter-spacing:.005em}
 .th em{font-style:normal;color:#9fbc00}
 .th--dark{color:#fff}.th--dark em{color:#deff21}
