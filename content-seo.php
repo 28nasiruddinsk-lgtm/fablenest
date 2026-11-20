@@ -8,7 +8,7 @@
 return [
     'home' => [
         'title' => 'Children’s Book Publishing & Illustration | Fablenest',
-        'description' => 'Fablenest helps authors publish children’s books: editing, illustration, cover design, trailers, websites and marketing. Start your story today.',
+        'description' => 'Children’s book publishing from first idea to launch: editing, illustration, cover design, trailers and marketing. Tell us about your book.',
         'answer' => 'Fablenest Publishers is a children’s book publishing service. We help authors turn a manuscript or an idea into a finished, professionally made book, with editing, illustration, cover design, formatting, a book trailer, an author website and marketing support.',
         'glance' => [['Best for', 'First-time and experienced children’s authors'], ['Services', 'Publishing, illustration, branding, website, marketing'], ['You provide', 'A manuscript, or just the idea'], ['You receive', 'A print- and ebook-ready book']],
         'faq' => [
@@ -62,9 +62,9 @@ return [
     ],
 
     'book-illustrations' => [
-        'title' => 'Children’s Book Illustration Services | Fablenest',
-        'description' => 'From hand-drawn idea to finished full-colour spreads, with characters that stay consistent on every page. See how the process works.',
-        'answer' => 'Our book illustration service creates the characters, page illustrations and cover artwork for your children’s book. You approve the style and the sketches, then receive finished, full-colour artwork prepared for print and ebook.',
+        'title' => 'Children’s Book Illustration Services | Fablenest Publishers',
+        'description' => 'Children’s book illustration services: characters, full-colour spreads and cover art drawn to your story. See the process and get started.',
+        'answer' => 'Our children’s book illustration services create the characters, page illustrations and cover artwork for your book. You approve the style and the sketches, then receive finished, full-colour artwork prepared for print and ebook.',
         'glance' => [['Best for', 'Authors who need pictures for their story'], ['Includes', 'Characters, spreads, cover artwork'], ['You provide', 'Your manuscript and style ideas'], ['You receive', 'Print- and web-ready artwork']],
         'faq' => [
             ['What does a children’s book illustration service include?', 'Character design, illustrations for each page or spread, cover artwork, rounds of revisions, and final files prepared for print and ebook.'],
@@ -79,9 +79,9 @@ return [
     ],
 
     'author-branding' => [
-        'title' => 'Author Branding for Children’s Authors | Fablenest',
-        'description' => 'Build an author brand readers remember: your author story, logo and colours, bio, and a simple brand kit you can use on every book, website and social post.',
-        'answer' => 'Author branding gives you a consistent look, voice and story across your books, website and social media. We help you define your author story and visual identity, and deliver a simple brand kit you can reuse everywhere.',
+        'title' => 'Author Branding Services for Children’s Authors | Fablenest',
+        'description' => 'Author branding services that give children’s authors a logo, colours, bio and brand kit readers remember. See what is included and start today.',
+        'answer' => 'Our author branding services give you a consistent look, voice and story across your books, website and social media. We help you define your author story and visual identity, and deliver a simple brand kit you can reuse everywhere.',
         'glance' => [['Best for', 'Authors who want to be recognised'], ['Includes', 'Author story, logo, colours, bio, brand kit'], ['You provide', 'Your story and your readers in mind'], ['You receive', 'A one-page brand guide and files']],
         'faq' => [
             ['What is author branding?', 'It is the look, voice and story that make you recognisable as an author, such as your colours, fonts, logo, bio and the way you talk to readers.'],
@@ -97,8 +97,8 @@ return [
 
     'author-website' => [
         'title' => 'Author Website Design for Children’s Authors | Fablenest',
-        'description' => 'A clear, fast author website with book pages, newsletter sign-up and a contact form, built for parents, teachers and librarians. See what is included.',
-        'answer' => 'An author website is your own home on the internet, where readers can learn about you, find your books and buy them. We design and build a mobile-friendly site with a page for each book, a newsletter sign-up and a contact form.',
+        'description' => 'Author website design for children’s authors: book pages, newsletter sign-up and contact form, built for parents and teachers. Get started.',
+        'answer' => 'Our author website design service builds your own home on the internet, where readers can learn about you, find your books and buy them. We design a mobile-friendly site with a page for each book, a newsletter sign-up and a contact form.',
         'glance' => [['Best for', 'Authors who want a home for their books'], ['Includes', 'Design, book pages, forms, launch'], ['You provide', 'Book details, bio and images'], ['You receive', 'A live, mobile-friendly website']],
         'faq' => [
             ['Do I need an author website?', 'It is not required, but it is the one place online that you fully control. It helps readers, parents and schools find your books, and gives you somewhere to send people from social media.'],
@@ -113,9 +113,9 @@ return [
     ],
 
     'social-media-marketing' => [
-        'title' => 'Social Media Marketing for Children’s Books | Fablenest',
-        'description' => 'Reach parents, teachers and librarians with a simple launch plan: profile set-up, content, campaigns and monthly reporting, explained.',
-        'answer' => 'Our social media marketing service helps your children’s book reach parents, teachers and readers. We set up your profiles, plan and schedule content, run a launch campaign, and report on what is working each month.',
+        'title' => 'Book Social Media Marketing for Authors | Fablenest',
+        'description' => 'Book social media marketing that reaches parents, teachers and librarians: profile set-up, content, launch campaigns and monthly reports.',
+        'answer' => 'Our book social media marketing helps your children’s book reach parents, teachers and readers. We set up your profiles, plan and schedule content, run a launch campaign, and report on what is working each month.',
         'glance' => [['Best for', 'Authors launching or promoting a book'], ['Includes', 'Profiles, content plan, launch push, reports'], ['You provide', 'Your book, brand and approvals'], ['You receive', 'A steady posting plan and monthly reports']],
         'faq' => [
             ['Which social platforms do you work with?', 'We choose platforms based on where your readers are, which for children’s books often means Instagram and Facebook, and sometimes others. We recommend the best fit during the audit.'],
@@ -130,9 +130,9 @@ return [
     ],
 
     'book-trailer' => [
-        'title' => 'Book Trailer Production for Children’s Books | Fablenest',
-        'description' => 'Short, shareable book trailers for your website and social media. See how we script, storyboard, animate and deliver yours.',
-        'answer' => 'A book trailer is a short film, usually 30 to 60 seconds, that gives readers a quick taste of your story. We write the script, plan the storyboard, animate your artwork with music, and deliver versions for web and social media.',
+        'title' => 'Book Trailer Services for Children’s Books | Fablenest',
+        'description' => 'Book trailer services: script, storyboard, animation and music for a short, shareable trailer for your children’s book. See how it works.',
+        'answer' => 'Our book trailer services produce a short film, usually 30 to 60 seconds, that gives readers a quick taste of your story. We write the script, plan the storyboard, animate your artwork with music, and deliver versions for web and social media.',
         'glance' => [['Best for', 'Authors who want to promote a new book'], ['Includes', 'Script, storyboard, animation, music'], ['You provide', 'Your book and its artwork'], ['You receive', 'A finished trailer in web and social sizes']],
         'faq' => [
             ['What is a book trailer?', 'A short promotional film for a book, similar to a movie trailer. It shows the mood and the best moments of the story without giving away the ending.'],
@@ -147,9 +147,9 @@ return [
     ],
 
     'press-release' => [
-        'title' => 'Book Launch Press Release Writing | Fablenest',
-        'description' => 'Professional press release writing and distribution for your children’s book launch, with a strong headline, a media list and sending support.',
-        'answer' => 'A press release is a short, formal announcement of your book sent to journalists, bloggers and librarians. We write it in the correct format, build a media list suited to children’s books, and send it at the right moment.',
+        'title' => 'Book Press Release Writing for Authors | Fablenest',
+        'description' => 'Book press release writing and sending for your children’s book launch: strong headline, media list and distribution support. Ask us how.',
+        'answer' => 'Our book press release writing service produces a short, formal announcement of your book for journalists, bloggers and librarians. We write it in the correct format, build a media list suited to children’s books, and send it at the right moment.',
         'glance' => [['Best for', 'Authors announcing a launch'], ['Includes', 'Writing, headline, media list, sending'], ['You provide', 'Book facts and a quote'], ['You receive', 'A release ready to send and share']],
         'faq' => [
             ['What is a press release for a book?', 'A news announcement about your book, written in a standard format so editors, bloggers and librarians can quickly see what the book is and why it matters.'],
@@ -164,9 +164,9 @@ return [
     ],
 
     'copyright-registration' => [
-        'title' => 'Book Copyright Registration Help | Fablenest',
-        'description' => 'Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.',
-        'answer' => 'Copyright registration creates an official record that you are the author of your book. We guide you through the process: checking which registration applies, preparing the application, filing it and passing you the registration record. This is not legal advice.',
+        'title' => 'Book Copyright Registration Help for Authors | Fablenest',
+        'description' => 'Book copyright registration help: checking eligibility, preparing and filing your application and passing you the record. Not legal advice.',
+        'answer' => 'Our book copyright registration help creates an official record that you are the author of your book. We guide you through the process: checking which registration applies, preparing the application, filing it and passing you the registration record. This is not legal advice.',
         'glance' => [['Best for', 'Authors protecting a book before or at launch'], ['Includes', 'Eligibility check, preparation, filing'], ['You provide', 'Authorship and publication details'], ['You receive', 'Your registration record and a file copy']],
         'faq' => [
             ['Is my book protected by copyright without registering?', 'In many countries copyright exists automatically when you create the work. Registration adds an official public record, which can be useful if you ever need to prove or enforce your rights.'],

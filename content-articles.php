@@ -82,7 +82,7 @@ return [
         ],
         'seo' => [
             'title' => 'Cost to Publish a Children’s Book (2026) | Fablenest',
-            'description' => 'Real price ranges for illustration, editing, cover design, printing and marketing, with ISBN and copyright notes by country. Request a quote.',
+            'description' => 'Cost to publish a children’s book: typical ranges for editing, illustration, design and printing, and what changes the total. Read the guide.',
             'answer' => 'Most self-published children’s picture books cost between about $1,500 and $8,000, with illustration usually more than half of the total. A lean DIY book can cost under $1,000; a fully illustrated, edited, designed and promoted book can pass $10,000.',
             'glance' => [['Typical range', '$1,500–$8,000'], ['Biggest cost', 'Illustration'], ['Cheapest route', 'Print-on-demand'], ['Updated', 'November 2026']],
         ],
@@ -148,7 +148,7 @@ return [
         ],
         'seo' => [
             'title' => 'How to Copyright a Children’s Book (2026) | Fablenest',
-            'description' => 'What copyright covers, whether to register, and who owns the illustrations in a picture book, with rules for the US, UK, Canada and Australia.',
+            'description' => 'How to copyright a children’s book: what copyright covers, whether to register and who owns the illustrations in the US, UK, Canada and Australia.',
             'answer' => 'Your children’s book is protected by copyright automatically when you write or draw it. Registration is optional in most countries; in the United States it is needed before you can sue. If you hire an illustrator, get a written agreement that says who owns the artwork.',
             'glance' => [['Is it automatic?', 'Yes, in most countries'], ['Register?', 'Optional; US lawsuits need it'], ['Illustrations', 'Illustrator owns unless agreed'], ['Updated', 'November 2026']],
         ],
@@ -215,7 +215,7 @@ return [
         ],
         'seo' => [
             'title' => 'How to Publish a Children’s Book: 8 Steps (2026) | Fablenest',
-            'description' => 'A clear step-by-step guide to publishing a children’s book: manuscript, illustrations, ISBN, self vs hybrid vs traditional, printing and marketing.',
+            'description' => 'How to publish a children’s book in 8 steps: manuscript, illustrations, ISBN, self vs hybrid vs traditional, printing and marketing.',
             'answer' => 'To publish a children’s book, finish and edit the manuscript, plan and commission the illustrations, design the cover and interior, get an ISBN, choose self, hybrid or traditional publishing, proof and print, then market it. Illustrations are the biggest cost, so fix the text first.',
             'glance' => [['Steps', '8, from draft to launch'], ['Biggest cost', 'Illustrations and design'], ['Routes', 'Self, hybrid or traditional'], ['Updated', 'November 2026']],
         ],

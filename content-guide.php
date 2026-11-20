@@ -75,7 +75,7 @@ return [
     ],
 
     'book-illustrations' => [
-        'title' => 'How Children’s Book Illustration Works',
+        'title' => 'How Children’s Book Illustration Services Work',
         'lead' => 'Illustrating a children’s book means designing the characters and drawing the scenes that tell the story alongside the words. It is done in stages so you can guide the look before the artwork is finished.',
         'body' => [
             'In a picture book the illustrations show things the words do not say, such as how a character feels or what is happening in the background. Good illustration also keeps a child interested from one page to the next.',
@@ -97,7 +97,7 @@ return [
     ],
 
     'author-branding' => [
-        'title' => 'What Author Branding Means',
+        'title' => 'What Author Branding Services Include',
         'lead' => 'Author branding is the look, voice and story that readers connect with your name. It covers things like your bio, colours, fonts and logo, and it makes your books, website and social media feel like they belong together.',
         'body' => [
             'Parents, teachers and librarians usually choose children’s books from authors they recognise. A clear, consistent brand makes you easier to remember and easier to recommend.',
@@ -119,7 +119,7 @@ return [
     ],
 
     'author-website' => [
-        'title' => 'What an Author Website Does',
+        'title' => 'What Author Website Design Includes',
         'lead' => 'An author website is a site you own where readers can learn about you, see your books and find where to buy them. Unlike social media, you control it, and it stays useful for years.',
         'body' => [
             'A good author site is simple. It has a page for each book, a short bio, a way to contact you and a sign-up form for news. Search engines also use it to understand who you are and what you write.',
@@ -141,7 +141,7 @@ return [
     ],
 
     'social-media-marketing' => [
-        'title' => 'How Social Media Marketing Helps a Children’s Book',
+        'title' => 'How Book Social Media Marketing Helps a Children’s Book',
         'lead' => 'Social media marketing means sharing your book and your story on platforms where parents, teachers and readers already spend time, in a regular and planned way.',
         'body' => [
             'Children rarely buy their own books, so your audience is mostly the adults around them. Content that helps those adults, such as reading ideas, behind-the-scenes pictures and book news, tends to be more useful than constant sales posts.',
@@ -163,7 +163,7 @@ return [
     ],
 
     'book-trailer' => [
-        'title' => 'What a Book Trailer Is and When to Use One',
+        'title' => 'What Book Trailer Services Are and When to Use One',
         'lead' => 'A book trailer is a short video, usually 30 to 60 seconds, that shows the mood and best moments of a book without giving away the ending. It is used to make people curious about the story.',
         'body' => [
             'Video is easy to share. A trailer can sit on your book page, go in an email to schools and libraries, and play on social media, all from one file.',
@@ -185,7 +185,7 @@ return [
     ],
 
     'press-release' => [
-        'title' => 'What a Press Release Does for a New Book',
+        'title' => 'What Book Press Release Writing Does for a New Book',
         'lead' => 'A press release is a short, formal announcement of news. For a book it tells journalists, bloggers and librarians that the book exists, what it is about and why it is worth mentioning.',
         'body' => [
             'Editors receive many announcements, so a release should be clear in the first lines, factual and easy to copy into an article. It usually includes a headline, the key facts, a quote from the author and contact details.',

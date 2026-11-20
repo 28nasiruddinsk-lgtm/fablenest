@@ -3,19 +3,19 @@
 > Fablenest Publishers is a children’s book publishing service. We help authors turn a manuscript or an idea into a finished, professionally made book, with editing, illustration, cover design, formatting, a book trailer, an author website and marketing support.
 
 ## Main pages
-- [Home](https://fablenestpublishers.com/): Fablenest helps authors publish children’s books: editing, illustration, cover design, trailers, websites and marketing. Start your story today.
+- [Home](https://fablenestpublishers.com/): Children’s book publishing from first idea to launch: editing, illustration, cover design, trailers and marketing. Tell us about your book.
 - [About Us](https://fablenestpublishers.com/about): Meet the team behind Fablenest Publishers and how we guide authors from first idea to a finished, professionally made children’s book.
-- [Book Publishing](https://fablenestpublishers.com/book-publishing): Children’s book publishing services from editing support and illustration to cover design, formatting and launch. Tell us about your book.
-- [Children’s Book Illustration Services](https://fablenestpublishers.com/service-book-illustrations): From hand-drawn idea to finished full-colour spreads, with characters that stay consistent on every page. See how the process works.
-- [Author Branding Services](https://fablenestpublishers.com/service-author-branding): Build an author brand readers remember: your author story, logo and colours, bio, and a simple brand kit you can use on every book, website and social post.
-- [Author Website Design](https://fablenestpublishers.com/service-author-website): A clear, fast author website with book pages, newsletter sign-up and a contact form, built for parents, teachers and librarians. See what is included.
-- [Book Social Media Marketing](https://fablenestpublishers.com/service-social-media-marketing): Reach parents, teachers and librarians with a simple launch plan: profile set-up, content, campaigns and monthly reporting, explained.
-- [Book Trailer Production](https://fablenestpublishers.com/service-book-trailer): Short, shareable book trailers for your website and social media. See how we script, storyboard, animate and deliver yours.
-- [Book Press Release Writing](https://fablenestpublishers.com/service-press-release): Professional press release writing and distribution for your children’s book launch, with a strong headline, a media list and sending support.
-- [Book Copyright Registration](https://fablenestpublishers.com/service-copyright-registration): Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.
-- [Cost to Publish a Children’s Book](https://fablenestpublishers.com/cost-to-publish-a-childrens-book): Real price ranges for illustration, editing, cover design, printing and marketing, with ISBN and copyright notes by country. Request a quote.
-- [How to Copyright a Children’s Book](https://fablenestpublishers.com/how-to-copyright-a-childrens-book): What copyright covers, whether to register, and who owns the illustrations in a picture book, with rules for the US, UK, Canada and Australia.
-- [How to Publish a Children’s Book](https://fablenestpublishers.com/how-to-publish-a-childrens-book): A clear step-by-step guide to publishing a children’s book: manuscript, illustrations, ISBN, self vs hybrid vs traditional, printing and marketing.
+- [Book Publishing](https://fablenestpublishers.com/childrens-book-publishing-services): Children’s book publishing services from editing support and illustration to cover design, formatting and launch. Tell us about your book.
+- [Children’s Book Illustration Services](https://fablenestpublishers.com/childrens-book-illustration-services): Children’s book illustration services: characters, full-colour spreads and cover art drawn to your story. See the process and get started.
+- [Author Branding Services](https://fablenestpublishers.com/author-branding-services): Author branding services that give children’s authors a logo, colours, bio and brand kit readers remember. See what is included and start today.
+- [Author Website Design](https://fablenestpublishers.com/author-website-design): Author website design for children’s authors: book pages, newsletter sign-up and contact form, built for parents and teachers. Get started.
+- [Book Social Media Marketing](https://fablenestpublishers.com/book-social-media-marketing): Book social media marketing that reaches parents, teachers and librarians: profile set-up, content, launch campaigns and monthly reports.
+- [Book Trailer Services](https://fablenestpublishers.com/book-trailer-services): Book trailer services: script, storyboard, animation and music for a short, shareable trailer for your children’s book. See how it works.
+- [Book Press Release Writing](https://fablenestpublishers.com/book-press-release-writing): Book press release writing and sending for your children’s book launch: strong headline, media list and distribution support. Ask us how.
+- [Book Copyright Registration](https://fablenestpublishers.com/book-copyright-registration): Book copyright registration help: checking eligibility, preparing and filing your application and passing you the record. Not legal advice.
+- [Cost to Publish a Children’s Book](https://fablenestpublishers.com/cost-to-publish-a-childrens-book): Cost to publish a children’s book: typical ranges for editing, illustration, design and printing, and what changes the total. Read the guide.
+- [How to Copyright a Children’s Book](https://fablenestpublishers.com/how-to-copyright-a-childrens-book): How to copyright a children’s book: what copyright covers, whether to register and who owns the illustrations in the US, UK, Canada and Australia.
+- [How to Publish a Children’s Book](https://fablenestpublishers.com/how-to-publish-a-childrens-book): How to publish a children’s book in 8 steps: manuscript, illustrations, ISBN, self vs hybrid vs traditional, printing and marketing.
 
 ## Services
 
@@ -59,7 +59,7 @@ Steps:
 5. Publish: The finished files are uploaded to the platform you chose and the book page is set up.
 
 ### Children’s Book Illustration Services
-Our book illustration service creates the characters, page illustrations and cover artwork for your children’s book. You approve the style and the sketches, then receive finished, full-colour artwork prepared for print and ebook.
+Our children’s book illustration services create the characters, page illustrations and cover artwork for your book. You approve the style and the sketches, then receive finished, full-colour artwork prepared for print and ebook.
 
 - Q: What does a children’s book illustration service include?
   A: Character design, illustrations for each page or spread, cover artwork, rounds of revisions, and final files prepared for print and ebook.
@@ -94,7 +94,7 @@ Steps:
 4. Final illustration: Details, shading and background finish the picture, ready for print and screen.
 
 ### Author Branding Services
-Author branding gives you a consistent look, voice and story across your books, website and social media. We help you define your author story and visual identity, and deliver a simple brand kit you can reuse everywhere.
+Our author branding services give you a consistent look, voice and story across your books, website and social media. We help you define your author story and visual identity, and deliver a simple brand kit you can reuse everywhere.
 
 - Q: What is author branding?
   A: It is the look, voice and story that make you recognisable as an author, such as your colours, fonts, logo, bio and the way you talk to readers.
@@ -129,7 +129,7 @@ Steps:
 4. Deliver a brand kit: You receive final files and a simple guide you can reuse.
 
 ### Author Website Design
-An author website is your own home on the internet, where readers can learn about you, find your books and buy them. We design and build a mobile-friendly site with a page for each book, a newsletter sign-up and a contact form.
+Our author website design service builds your own home on the internet, where readers can learn about you, find your books and buy them. We design a mobile-friendly site with a page for each book, a newsletter sign-up and a contact form.
 
 - Q: Do I need an author website?
   A: It is not required, but it is the one place online that you fully control. It helps readers, parents and schools find your books, and gives you somewhere to send people from social media.
@@ -164,7 +164,7 @@ Steps:
 4. Launch: We test everything, publish the site and show you how to update it.
 
 ### Book Social Media Marketing
-Our social media marketing service helps your children’s book reach parents, teachers and readers. We set up your profiles, plan and schedule content, run a launch campaign, and report on what is working each month.
+Our book social media marketing helps your children’s book reach parents, teachers and readers. We set up your profiles, plan and schedule content, run a launch campaign, and report on what is working each month.
 
 - Q: Which social platforms do you work with?
   A: We choose platforms based on where your readers are, which for children’s books often means Instagram and Facebook, and sometimes others. We recommend the best fit during the audit.
@@ -198,8 +198,8 @@ Steps:
 3. Create and schedule: Posts are made, approved by you and scheduled.
 4. Review: We report what worked and adjust the plan.
 
-### Book Trailer Production
-A book trailer is a short film, usually 30 to 60 seconds, that gives readers a quick taste of your story. We write the script, plan the storyboard, animate your artwork with music, and deliver versions for web and social media.
+### Book Trailer Services
+Our book trailer services produce a short film, usually 30 to 60 seconds, that gives readers a quick taste of your story. We write the script, plan the storyboard, animate your artwork with music, and deliver versions for web and social media.
 
 - Q: What is a book trailer?
   A: A short promotional film for a book, similar to a movie trailer. It shows the mood and the best moments of the story without giving away the ending.
@@ -234,7 +234,7 @@ Steps:
 4. Deliver: You receive versions sized for your website and for social media.
 
 ### Book Press Release Writing
-A press release is a short, formal announcement of your book sent to journalists, bloggers and librarians. We write it in the correct format, build a media list suited to children’s books, and send it at the right moment.
+Our book press release writing service produces a short, formal announcement of your book for journalists, bloggers and librarians. We write it in the correct format, build a media list suited to children’s books, and send it at the right moment.
 
 - Q: What is a press release for a book?
   A: A news announcement about your book, written in a standard format so editors, bloggers and librarians can quickly see what the book is and why it matters.
@@ -269,7 +269,7 @@ Steps:
 4. Send and follow up: The release goes out at the right time and we follow up where it makes sense.
 
 ### Book Copyright Registration
-Copyright registration creates an official record that you are the author of your book. We guide you through the process: checking which registration applies, preparing the application, filing it and passing you the registration record. This is not legal advice.
+Our book copyright registration help creates an official record that you are the author of your book. We guide you through the process: checking which registration applies, preparing the application, filing it and passing you the registration record. This is not legal advice.
 
 - Q: Is my book protected by copyright without registering?
   A: In many countries copyright exists automatically when you create the work. Registration adds an official public record, which can be useful if you ever need to prove or enforce your rights.

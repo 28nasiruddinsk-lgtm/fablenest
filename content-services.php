@@ -120,7 +120,7 @@ return [
     ],
 
     'book-trailer' => [
-        'name' => 'Book Trailer Production',
+        'name' => 'Book Trailer Services',
         'subtitle' => 'A short film that makes readers want to open your book.',
         'intro' => [
             'heading' => ['A Book Trailer', 'That Sells', 'Your Story'], 'accent' => 1,
