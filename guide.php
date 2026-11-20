@@ -34,7 +34,7 @@ include __DIR__ . '/inc/site-header.php';
         <thead><tr><?php foreach ($tbl['head'] as $h): ?><th><?= $e($h) ?></th><?php endforeach ?></tr></thead>
         <tbody>
 <?php foreach ($tbl['rows'] as $row): ?>
-          <tr><?php foreach ($row as $i => $cell): ?><?= $i ? '<td>' : '<th scope="row">' ?><?= $e($cell) ?><?= $i ? '</td>' : '</th>' ?><?php endforeach ?></tr>
+          <tr><?php foreach ($row as $i => $cell): ?><?= $i ? '<td data-l="' . $e($tbl['head'][$i]) . '">' : '<th scope="row">' ?><?= $e($cell) ?><?= $i ? '</td>' : '</th>' ?><?php endforeach ?></tr>
 <?php endforeach ?>
         </tbody>
       </table></div>

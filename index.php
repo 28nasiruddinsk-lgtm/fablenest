@@ -22,6 +22,7 @@ $stories = $c['stories']['items'];
 <link rel="stylesheet" href="style.css?v=<?= filemtime(__DIR__ . '/style.css') ?>">
 <link rel="stylesheet" href="seo.css?v=<?= filemtime(__DIR__ . '/seo.css') ?>">
 <link rel="stylesheet" href="service.css?v=<?= filemtime(__DIR__ . '/service.css') ?>">
+<link rel="stylesheet" href="mobile.css?v=<?= filemtime(__DIR__ . '/mobile.css') ?>">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>

@@ -1,0 +1,118 @@
+/* Phones and small tablets (<= 980px). The desktop sections are drawn on a 1920px canvas; here the same sections become a normal
+   top-to-bottom flow with real, readable type. Loaded after every other sheet, so it only ever overrides. */
+@media (max-width:980px){
+  html{-webkit-text-size-adjust:100%}
+  body{overflow-x:clip}
+  img,svg,video{max-width:100%}
+
+  /* ---- the 1920px canvas becomes a flow ---- */
+  .pg{--u:calc(100cqw/700);height:auto!important;margin-top:0!important}
+  .pg .sec:not(.wd){position:relative;left:auto;top:auto;width:auto;height:auto;padding:40px 22px;display:flex;flex-wrap:wrap;gap:14px;align-content:flex-start}
+  .pg .sec:not(.wd) .a{position:relative;left:auto;top:auto;width:auto;height:auto;flex:1 1 100%;min-width:0}
+  .pg .th{white-space:normal;font-size:clamp(28px,8.6vw,44px);line-height:1.1}
+  .pg .t20{font-size:16px;line-height:1.65;white-space:normal;letter-spacing:0}
+  .pg .sec:not(.wd) .a.b2{flex:0 0 auto;min-width:150px;height:52px;font-size:17px;padding:0 26px;width:auto}
+
+  .pg .t20 .ln,.pg .rv-lines .ln{display:inline}
+  .pg .t20 .ln::after{content:" "}
+
+  /* about on the home page: text first, mascot below */
+  #about{padding-top:34px}
+  #about .about-mascot{order:5;max-width:420px;margin:6px auto 0}
+
+  /* quote strip */
+  #cta{margin:8px 12px;padding:30px 22px;border-radius:22px}
+  #cta .cta-bar{position:absolute!important;inset:0;flex:none!important;width:auto;height:auto;border-width:3px;border-radius:22px;box-shadow:4px 6px 0 var(--ink)}
+  #cta>*:not(.cta-bar){position:relative;z-index:1}
+  #cta .cta-h{font-size:clamp(24px,7.4vw,32px);line-height:1.15;white-space:normal}
+  #cta form{flex:1 1 100%;display:flex;flex-direction:column;gap:14px}
+  #cta .fld{position:relative;left:auto;top:auto;width:100%;height:50px;font-size:16px;border-bottom-width:2px}
+  #cta .cta-btn{position:relative;left:auto;top:auto;width:100%;height:54px;font-size:17px;border-width:2px}
+
+  /* services map: keep the picture and its animation (it is drawn on the 1920 canvas), just make the heading readable */
+  .pg .wd{--u:calc(100cqw/1920);position:relative;left:auto;top:auto;width:100%;height:calc(var(--h)*var(--u))}
+  .wd .th{font-size:clamp(18px,5.6vw,28px)!important;white-space:normal;left:2.5%!important;width:95%!important;top:calc(30*var(--u))!important;height:auto!important}
+  .wd .wwd-sub{left:5%!important;width:90%!important;top:calc(205*var(--u))!important;height:auto!important;font-size:11px;line-height:1.35;white-space:normal}
+
+  /* books we have published: swipeable row */
+  #portfolio{padding:30px 0 20px}
+  #portfolio .th,#portfolio .t20{padding:0 22px}
+  #portfolio .pfw{height:auto;position:relative}
+  #portfolio .pfs{height:auto}
+  #portfolio .pfs__track{gap:12px;padding:0 22px}
+  #portfolio .pfs__item{width:170px;height:auto}
+  #portfolio .pfw__btn{width:42px;margin-top:-21px}
+  #portfolio .pfw__btn--prev{left:6px}#portfolio .pfw__btn--next{right:6px}
+
+  /* why authors choose us: scene behind, four cards in two columns */
+  #why{margin:8px 12px;border-radius:22px;background:#00281a url(assets/s/why.jpg) center/cover;padding:34px 16px 28px}
+  #why>img.a{display:none}
+  #why .card{flex:0 0 calc(50% - 7px)!important;max-width:calc(50% - 7px)}
+  #why .t20{color:#fff}
+
+  /* what authors say */
+  #stories{margin:8px 12px;border-radius:22px;background:#00281a url(assets/s/author.jpg) center/cover;padding:34px 18px 30px;justify-content:center;text-align:center}
+  #stories>img.a{display:none}
+  #stories .tst{pointer-events:auto!important;display:flex;flex-direction:column;align-items:center;gap:10px}
+  #stories .tst[hidden]{display:none}
+  #stories .av{width:96px;height:96px;flex:none!important}
+  #stories .nm{font-size:20px;white-space:normal}
+  #stories .q{font-size:16px}
+  #stories .stars{font-size:24px;letter-spacing:3px}
+  #stories .arr{flex:0 0 48px!important;width:48px;height:48px}
+
+  /* contact */
+  #contact{margin:8px 12px;border-radius:22px;background:#f6ecd6;padding:34px 20px}
+  #contact>img.a{display:none}
+  #contact .crow{font-size:17px;white-space:normal}
+  #contact .crow img{width:44px;height:44px}
+  #contact .crow span{margin-left:12px}
+  #contact form{flex:1 1 100%;display:flex;flex-direction:column;gap:12px}
+  #contact form>*,#cta form>*{flex:none}
+  #contact .pf{position:relative;left:auto;top:auto;width:100%;height:52px;font-size:16px;padding:0 6px;border-bottom:2px solid rgba(27,42,31,.45)}
+  #contact textarea.pf{height:120px;padding-top:14px!important}
+  #contact .pbtn{position:relative;left:auto;top:auto;width:100%;height:54px;font-size:17px}
+
+  /* footer */
+  #footer{background:#002a1c;display:grid;grid-template-columns:1fr 1fr;gap:16px 14px;padding:44px 22px 26px}
+  #footer>img.a,#footer>div.a{display:none}
+  #footer .th,#footer p.t20,#footer .pill,#footer .ft-h,#footer .ft-row,#footer p.c{grid-column:1/-1}
+  #footer .th{font-size:clamp(30px,9vw,44px)}
+  #footer .pill{position:relative;height:56px;width:100%;flex:none}
+  #footer .pill input{width:calc(100% - 118px);left:20px;font-size:16px}
+  #footer .pill button{width:94px;height:44px;top:5px;right:5px;font-size:15px}
+  #footer nav{min-width:0}
+  #footer h3,#footer .ft-h{font-size:18px;line-height:1.3;margin-top:6px}
+  #footer ul{padding-top:8px}
+  #footer li{height:auto;font-size:16px;line-height:2.1}
+  #footer .ft-row{position:relative;left:auto;top:auto;height:auto;font-size:16px;white-space:normal;padding:2px 0}
+  #footer .ft-row img{width:34px;height:34px;margin-right:10px}
+  #footer p.c{font-size:13px;text-align:center}
+
+  /* "Imagination deserves to be seen": the text sits below the picture instead of on it */
+  .bk-img__box{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding-bottom:24px}
+  .bk-img__art,.bk-img__h,.bk-img__p{flex:1 1 100%;width:100%}
+  .bk-img__h{position:relative;top:auto;left:auto;right:auto;order:0;padding:22px 14px 0}
+  .bk-img__h span{font-size:5.6vw}
+  .bk-img__h b{font-size:14vw;-webkit-text-stroke:2px #fff}
+  .bk-img__art{order:1}
+  .bk-img__p{position:relative;left:auto;top:auto;order:2;padding:6px 22px;font-size:16px;line-height:1.6;width:auto;max-width:560px}
+  .bk-img__btn{position:relative!important;top:auto!important;left:auto!important;width:auto!important;order:3;min-height:48px;padding:0 24px;font-size:16px}
+}
+
+/* guide tables: each row becomes a small card instead of a sideways scroll */
+@media (max-width:700px){
+  .gd__tbl{overflow:visible;box-shadow:none;border-radius:0}
+  .gd__tbl table,.gd__tbl tbody,.gd__tbl tr,.gd__tbl th,.gd__tbl td{display:block;min-width:0;width:auto}
+  .gd__tbl table{min-width:0}
+  .gd__tbl thead{display:none}
+  .gd__tbl tr{margin:0 0 14px;border:1px solid #d8e6b4;border-radius:14px;overflow:hidden;background:#fff}
+  .gd__tbl tbody th{padding:12px 16px;font-size:16px}
+  .gd__tbl td{padding:10px 16px;font-size:15px;line-height:1.5;border-bottom:1px solid #eef3dc}
+  .gd__tbl td::before{content:attr(data-l);display:block;margin-bottom:2px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#4d6600;font-weight:600}
+}
+
+@media (max-width:420px){
+  .sx-wrap{padding-left:18px;padding-right:18px}
+  .pg .sec:not(.wd){padding-left:18px;padding-right:18px}
+}

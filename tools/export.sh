@@ -8,7 +8,7 @@ HOST=${HOST:-fablenestpublishers.com}
 OUT=docs
 rm -rf $OUT && mkdir -p $OUT
 cp -r assets $OUT/assets
-cp style.css about.css service.css seo.css main.js about.js $OUT/
+cp style.css about.css service.css seo.css mobile.css main.js about.js $OUT/
 sed -i "s/let msg = 'Please try again';/let msg = 'Preview only: form is off';/" $OUT/main.js
 touch $OUT/.nojekyll
 # sed rules: the static ones plus one pair per keyword address in inc/slugs.php

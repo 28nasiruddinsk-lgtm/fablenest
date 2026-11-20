@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="<?= $e($sheet) ?>?v=<?= filemtime(dirname(__DIR__) . '/' . $sheet) ?>">
 <?php endforeach ?>
 <link rel="stylesheet" href="seo.css?v=<?= filemtime(dirname(__DIR__) . '/seo.css') ?>">
+<link rel="stylesheet" href="mobile.css?v=<?= filemtime(dirname(__DIR__) . '/mobile.css') ?>">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
