@@ -49,7 +49,7 @@ return [
     ],
 
     'cta' => [
-        'title' => 'Let’s Bring Your Story to Life',
+        'title' => 'Publish Your Children’s Book',
         'lines' => ['Have a children’s book idea or a finished manuscript?', 'Tell us a little about your project, and let’s explore how we', 'can bring it to life.'],
         'button' => 'Start Your Story',
     ],
@@ -110,7 +110,7 @@ return [
 
     // About Us page (wireframe)
     'about_page' => [
-        'title' => 'About Us',
+        'title' => 'About Fablenest Publishers',
         'subtitle' => 'Helping authors transform their ideas into meaningful children’s books that inspire young minds and create lasting memories.',
         'intro' => [
             'heading' => ['Bringing Ideas to Life Through', 'the Power', 'of Storytelling'],
@@ -142,7 +142,7 @@ return [
 
     // Book Publishing service page
     'book_page' => [
-        'title' => 'Book Publishing',
+        'title' => 'Children’s Book Publishing Services',
         'subtitle' => 'Professional publishing solutions that transform your written work into a book ready to reach readers.',
         'intro' => [
             'heading' => ['Every Manuscript Deserves a', 'Professional', 'Finish'],

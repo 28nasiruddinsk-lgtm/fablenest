@@ -29,7 +29,7 @@ return [
     ],
 
     'about' => [
-        'title' => 'How We Work With Authors',
+        'title' => 'How We Work With Children’s Book Authors',
         'lead' => 'We are a team that helps authors make children’s books. We work on the editing, pictures, design and launch together, and we keep the author involved at every stage.',
         'body' => [
             'Our starting point is always the author’s idea. We ask about the story, the child it is for and what you hope the book will do, and then suggest the services that fit. Nothing is added that you do not need.',
@@ -51,7 +51,7 @@ return [
     ],
 
     'book-publishing' => [
-        'title' => 'What Book Publishing Involves',
+        'title' => 'What Children’s Book Publishing Involves',
         'lead' => 'Book publishing is the work between a finished manuscript and a book a reader can buy: editing, cover design, interior layout, file preparation and setting up the book on selling platforms.',
         'body' => [
             'Many authors think of publishing as one step, but it is really several. Each one affects how professional the book looks and how easily a reader can find and enjoy it.',

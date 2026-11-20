@@ -6,7 +6,7 @@ if (!$sp || empty($sp['faq'])) return;
 <section class="sx-faq" id="faq" aria-labelledby="faq-h">
   <div class="sx-wrap sx-faq__grid">
     <div class="sx-faq__intro sx-reveal">
-      <h2 class="sx-h" id="faq-h"><span class="sx-acc">Questions</span> Authors Ask</h2>
+      <h2 class="sx-h" id="faq-h">Children&rsquo;s Book <span class="sx-acc">Questions,</span> Answered</h2>
       <p>Quick, honest answers about <?= $seoKey === 'home' || $seoKey === 'about' ? 'working with us' : $e(strtolower($seoLabel)) ?>. Can’t see yours? Send us a message and we’ll reply.</p>
       <a class="sx-btn" href="<?= $e(($seoKey === 'home' ? '' : 'index.php') . '#contact') ?>">Ask a question</a>
     </div>

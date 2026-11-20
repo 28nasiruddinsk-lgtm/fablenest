@@ -4,10 +4,10 @@
 // portfolio = which portfolio tabs the page shows (covers, illustrations, trailers, websites); [] hides the section.
 return [
     'book-illustrations' => [
-        'name' => 'Book Illustrations',
+        'name' => 'Children’s Book Illustration Services',
         'subtitle' => 'Characters, scenes and covers drawn by illustrators who understand how children read pictures.',
         'intro' => [
-            'heading' => ['Pictures That Make', 'Every Page', 'Come Alive'], 'accent' => 1,
+            'heading' => ['Children’s Book Illustrations', 'That Make Every Page', 'Come Alive'], 'accent' => 1,
             'paragraphs' => [
                 'For young readers, the pictures often carry the story. Strong illustration gives your characters a personality, sets the mood of every scene, and keeps a child turning the page.',
                 'We match you with an illustrator whose style suits your story, from soft watercolour to bold, playful colour. You stay involved from the first sketch to the final spread.',
@@ -33,7 +33,7 @@ return [
     ],
 
     'author-branding' => [
-        'name' => 'Author Branding',
+        'name' => 'Author Branding Services',
         'subtitle' => 'A look, a voice and a story that make readers recognise you before they open the book.',
         'intro' => [
             'heading' => ['A Brand Readers', 'Remember', 'and Trust'], 'accent' => 1,
@@ -51,7 +51,7 @@ return [
                 ['Author Bio & Photo', 'Bios in three lengths and direction for author photos.'],
                 ['Brand Kit', 'A one-page guide with everything ready to reuse.'],
             ]],
-        'how' => ['title' => ['How Branding', 'Works'], 'intro' => 'We build your brand step by step, and you decide at every stage.',
+        'how' => ['title' => ['How Author Branding', 'Works'], 'intro' => 'We build your brand step by step, and you decide at every stage.',
             'steps' => [
                 ['Discovery', 'We learn about you, your books and your readers.'],
                 ['Concepts', 'Two or three directions to react to.'],
@@ -62,10 +62,10 @@ return [
     ],
 
     'author-website' => [
-        'name' => 'Author Website',
+        'name' => 'Author Website Design',
         'subtitle' => 'A home on the web for you and your books, where readers can find you and buy.',
         'intro' => [
-            'heading' => ['Give Your Books', 'a Home', 'Online'], 'accent' => 1,
+            'heading' => ['An Author Website That', 'Gives Your Books', 'a Home Online'], 'accent' => 1,
             'paragraphs' => [
                 'A website is the one place on the internet that is completely yours. It is where readers learn about your books, meet you, and find out where to buy.',
                 'We design a clean, friendly site that fits your brand and works well on phones, because that is where most parents and teachers will visit it.',
@@ -80,7 +80,7 @@ return [
                 ['Newsletter & Contact', 'Sign-up and contact forms so readers can stay in touch.'],
                 ['Launch & Support', 'Setup, testing and help during your first weeks online.'],
             ]],
-        'how' => ['title' => ['How Your Website', 'Gets Built'], 'intro' => 'Four clear stages, with your approval before each one.',
+        'how' => ['title' => ['How Your Author Website', 'Gets Built'], 'intro' => 'Four clear stages, with your approval before each one.',
             'steps' => [
                 ['Planning', 'We agree the pages, features and content.'],
                 ['Design', 'You review the look on desktop and mobile.'],
@@ -91,10 +91,10 @@ return [
     ],
 
     'social-media-marketing' => [
-        'name' => 'Social Media Marketing',
+        'name' => 'Book Social Media Marketing',
         'subtitle' => 'Reach parents, teachers and readers where they already spend their time.',
         'intro' => [
-            'heading' => ['Help Readers', 'Find Your Book', 'Every Day'], 'accent' => 1,
+            'heading' => ['Book Marketing That', 'Helps Readers Find', 'Your Book Every Day'], 'accent' => 1,
             'paragraphs' => [
                 'A good book still needs to be seen. Social media lets you share your story, your characters and your process with the people who buy and recommend children’s books.',
                 'We plan content that suits your book and your audience, and we help you post it regularly without it taking over your week.',
@@ -120,10 +120,10 @@ return [
     ],
 
     'book-trailer' => [
-        'name' => 'Book Trailer',
+        'name' => 'Book Trailer Production',
         'subtitle' => 'A short film that makes readers want to open your book.',
         'intro' => [
-            'heading' => ['A Short Film', 'That Sells', 'Your Story'], 'accent' => 1,
+            'heading' => ['A Book Trailer', 'That Sells', 'Your Story'], 'accent' => 1,
             'paragraphs' => [
                 'A book trailer gives readers a quick, exciting taste of your story. It works on your website, on social media and in emails to schools and libraries.',
                 'We turn your best moments into a short, polished film of around 30 to 60 seconds, using your illustrations, motion and music.',
@@ -138,7 +138,7 @@ return [
                 ['Music & Voice', 'Licensed music and, if you want one, a voiceover.'],
                 ['Final Cuts', 'Versions for web, social media and your book page.'],
             ]],
-        'how' => ['title' => ['How a Trailer', 'Is Made'], 'intro' => 'A short, clear process that gets your film out quickly.',
+        'how' => ['title' => ['How a Book Trailer', 'Is Made'], 'intro' => 'A short, clear process that gets your film out quickly.',
             'steps' => [
                 ['Brief', 'You tell us the tone, length and where it will be shown.'],
                 ['Storyboard', 'We plan every shot and you approve it.'],
@@ -149,10 +149,10 @@ return [
     ],
 
     'press-release' => [
-        'name' => 'Press Release',
+        'name' => 'Book Press Release Writing',
         'subtitle' => 'Announce your launch to the people who can help it reach readers.',
         'intro' => [
-            'heading' => ['Tell the World', 'About Your', 'New Book'], 'accent' => 1,
+            'heading' => ['A Book Press Release', 'That Tells the World', 'About Your New Book'], 'accent' => 1,
             'paragraphs' => [
                 'A press release is a clear, professional way to share news about your book with journalists, bloggers, librarians and local media.',
                 'We write it in the right format, with a strong headline, your quotes and the key facts, so it is easy for others to pick up and publish.',
@@ -167,7 +167,7 @@ return [
                 ['Media List', 'A targeted list of outlets that cover children’s books.'],
                 ['Distribution', 'Your release sent out at the right moment.'],
             ]],
-        'how' => ['title' => ['How a Press Release', 'Works'], 'intro' => 'From your news to the inbox of the people who matter.',
+        'how' => ['title' => ['How a Book Press Release', 'Works'], 'intro' => 'From your news to the inbox of the people who matter.',
             'steps' => [
                 ['Brief', 'You share the facts and your launch date.'],
                 ['Writing', 'We draft the release and you review it.'],
@@ -178,10 +178,10 @@ return [
     ],
 
     'copyright-registration' => [
-        'name' => 'Copyright Registration',
+        'name' => 'Book Copyright Registration',
         'subtitle' => 'Register your book so your work is protected from the day it is published.',
         'intro' => [
-            'heading' => ['Protect the Work', 'You Have Put', 'Heart Into'], 'accent' => 1,
+            'heading' => ['Copyright Registration', 'for the Work You Put', 'Heart Into'], 'accent' => 1,
             'paragraphs' => [
                 'Registering your copyright gives you an official record that you are the author of your book. It can make it much easier to act if someone copies your work.',
                 'We guide you through the paperwork: gathering the details, completing the application, and submitting it to the right office for your country.',
@@ -196,7 +196,7 @@ return [
                 ['Filing', 'The application is completed and submitted for you.'],
                 ['Certificate', 'You receive your registration record and a copy for your files.'],
             ]],
-        'how' => ['title' => ['How Registration', 'Works'], 'intro' => 'A straightforward process from your details to your certificate.',
+        'how' => ['title' => ['How Book Copyright Registration', 'Works'], 'intro' => 'A straightforward process from your details to your certificate.',
             'steps' => [
                 ['Review', 'We look at your book and publication details.'],
                 ['Details', 'You confirm authorship and the information to file.'],

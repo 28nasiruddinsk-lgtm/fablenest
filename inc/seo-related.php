@@ -6,7 +6,7 @@ $rel = array_slice($rel, 0, 4);
 ?>
 <section class="sx-rel" aria-labelledby="rel-h">
   <div class="sx-wrap">
-    <h2 class="sx-h sx-h--sm" id="rel-h">More ways we can <span class="sx-acc">help</span></h2>
+    <h2 class="sx-h sx-h--sm" id="rel-h">Related children&rsquo;s book <span class="sx-acc">services</span></h2>
     <div class="sx-rel__grid">
 <?php foreach ($rel as $i => [$name, $line]): ?>
       <a class="sx-card sx-reveal" style="--i:<?= $i ?>" href="<?= $e($c['service_pages'][$name] ?? 'index.php#services') ?>">

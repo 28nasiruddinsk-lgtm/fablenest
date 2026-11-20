@@ -15,7 +15,7 @@ if (!$gd) return;
 <?php foreach ($gd['body'] as $t): ?>
         <p><?= $e($t) ?></p>
 <?php endforeach ?>
-        <h3 class="sx-h3">Who this is for</h3>
+        <h3 class="sx-h3">Who this children&rsquo;s book service is for</h3>
         <ul class="sx-chips">
 <?php foreach ($gd['who'] as $w): ?>
           <li><?= $e($w) ?></li>
@@ -29,7 +29,7 @@ if (!$gd) return;
 
 <section class="sx-band sx-band--steps" aria-labelledby="steps-h">
   <div class="sx-wrap">
-    <h3 class="sx-h2 sx-steps__h sx-reveal" id="steps-h">Step <span class="sx-acc">by step</span></h3>
+    <h3 class="sx-h2 sx-steps__h sx-reveal" id="steps-h">How it works, <span class="sx-acc">step by step</span></h3>
     <ol class="sx-steps sx-steps--n<?= count($gd['steps']) ?>">
 <?php foreach ($gd['steps'] as $i => [$name, $text]): ?>
       <li class="sx-step sx-reveal" style="--i:<?= $i ?>">
@@ -46,7 +46,7 @@ if (!$gd) return;
   <div class="sx-wrap">
     <div class="sx-terms sx-terms--solo">
       <div class="sx-terms__list sx-reveal">
-        <h3 class="sx-h2" id="terms-h">Key <span class="sx-acc">terms,</span> in plain words</h3>
+        <h3 class="sx-h2" id="terms-h">Children&rsquo;s book <span class="sx-acc">terms,</span> explained</h3>
         <dl>
 <?php foreach ($gd['terms'] as [$term, $def]): ?>
           <div><dt><?= $e($term) ?></dt><dd><?= $e($def) ?></dd></div>
