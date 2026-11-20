@@ -102,7 +102,7 @@ return [
 
     'footer' => [
         'lines' => ['We help authors transform their ideas into beautifully', 'crafted children’s books through professional', 'publishing, illustration, design, and marketing', 'services.'],
-        'quick' => [['About Us', 'about.php'], ['Our Services', '#services'], ['Our Portfolio', '#portfolio'], ['How It Works', '#services'], ['Testimonials', '#stories'], ['FAQs', '#contact'], ['Cost Guide', 'guide.php?g=cost-to-publish-a-childrens-book'], ['Contact Us', '#contact']],
+        'quick' => [['About Us', 'about.php'], ['Our Services', '#services'], ['Our Portfolio', '#portfolio'], ['Testimonials', '#stories'], ['FAQs', '#contact'], ['Cost Guide', 'guide.php?g=cost-to-publish-a-childrens-book'], ['Copyright Guide', 'guide.php?g=how-to-copyright-a-childrens-book'], ['Contact Us', '#contact']],
         'services' => ['Book Illustrations', 'Book publishing', 'Author Branding', 'Author Website', 'Social Media Marketing', 'Book Trailer', 'Press Release', 'Copyright Registration'],
         'social' => [['Facebook', 'https://www.facebook.com/share/1H7cL6KSgu/'], ['Instagram', 'https://www.instagram.com/fablenestpublishers']],
         'copyright' => 'Copyright © 2026 Fablenest Publishers. All Rights Reserved.',

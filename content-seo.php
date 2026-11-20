@@ -18,6 +18,10 @@ return [
             ['Where will my book be sold?', 'Books can be prepared for the main retailers and print-on-demand platforms, including Amazon Kindle, Barnes & Noble, IngramSpark and Lulu.'],
             ['Do I keep the rights to my book?', 'Authors stay in control of their work. We give you a clear written agreement before any work begins, so you know exactly what you own and what we are doing.'],
             ['How do I get started?', 'Send us a short message through the contact form with a few lines about your book. We will reply to talk through your goals and suggest the right services.'],
+            ['How much does it cost to publish a children’s book?', 'Most self-published picture books cost between about $1,500 and $8,000, and illustration is usually the largest part. A lean DIY book can cost under $1,000. Our cost guide breaks down every stage; ask us for a stage-by-stage estimate for your own book.'],
+            ['How long does it take to publish a children’s book?', 'It depends mostly on illustration and on how quickly feedback comes back. Editing, cover, layout and ISBN steps are comparatively short; most of the time goes into the pictures. We give you a timeline once we have seen your manuscript and chosen an illustration style.'],
+            ['Do I need an illustrator to publish a picture book?', 'Yes, unless you will illustrate it yourself. Picture books depend on their art, and publishers and retailers expect professional-looking illustrations. We can match you with an illustrator whose style suits your story.'],
+            ['Is self-publishing a children’s book worth it?', 'It can be, if you want control over the book, the rights and the timing, and you are ready to market it. Self-publishing means you pay for production and promotion yourself instead of being paid an advance, so plan your budget and goals first.'],
         ],
     ],
 
@@ -46,6 +50,10 @@ return [
             ['Do you help with the book cover?', 'Yes. Cover design is part of the service. We create a cover that reflects your book and works well as a small thumbnail online.'],
             ['Which platforms can my book be published on?', 'We can prepare your book for the major platforms, including Amazon Kindle, Barnes & Noble, IngramSpark and Lulu, depending on your goals.'],
             ['Can I publish a book that is already written but not edited?', 'Yes. Manuscript preparation covers editing, proofreading and content refinement, so your text is polished before it is formatted.'],
+            ['What is the difference between self-publishing and hybrid publishing?', 'In self-publishing you hire and manage the editor, illustrator and designer yourself and keep the rights and the sale income. Hybrid publishers bundle those services for a fee. Fablenest gives you a managed team while you stay the owner of your book.'],
+            ['How much does it cost to self-publish a children’s book?', 'Public guides put most illustrated picture books between about $1,500 and $8,000. The biggest variables are the illustrator, the number of pages and whether you also want a trailer, website and launch support. See our cost guide for the full breakdown.'],
+            ['How many pages should a picture book have?', 'Most picture books have 24, 32 or 40 pages. 32 pages is the usual choice because printers bind in multiples of eight and it keeps illustration costs predictable.'],
+            ['Do I need an ISBN for my children’s book?', 'If you want retailers and libraries to track your book, yes, one for each format. Rules and prices differ by country. We explain the options for your country and can help you register the copyright too.'],
         ],
     ],
 
@@ -59,6 +67,10 @@ return [
             ['Can I choose the illustration style?', 'Yes. We show you styles that suit your story, such as watercolour or bold digital colour, and you approve one before the full artwork begins.'],
             ['How many illustrations does a picture book need?', 'It depends on the length and format of your book. We review your manuscript and recommend how many spreads or pages to illustrate.'],
             ['Will I see sketches before the final artwork?', 'Yes. You review rough sketches first and can request changes before they become finished illustrations.'],
+            ['How much does children’s book illustration cost?', 'Public guides put full-page illustrations at roughly $35 to $350 each, and a 24-page picture book at about $1,500 to $5,000 with a freelance illustrator. Style, number of characters and rounds of changes affect the price. Ask us for a stage-by-stage quote.'],
+            ['How many pages is a picture book?', 'Most picture books have 24, 32 or 40 pages; 32 is the standard. That is usually about 14 to 16 spreads of artwork, plus the cover.'],
+            ['How do I find the right illustrator for my children’s book?', 'Look at portfolios for the style you want, check that characters look the same from page to page, and agree the number of revision rounds in writing before work starts. We can match you with an illustrator and manage the process.'],
+            ['Who owns the illustrations?', 'It should be written down before work begins. We give you a clear agreement that says who owns the artwork and what you can do with it, so you know your rights to print, sell and promote the book.'],
         ],
     ],
 

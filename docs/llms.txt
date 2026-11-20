@@ -14,6 +14,7 @@
 - [Press Release](https://fablenestpublishers.com/service-press-release): Professional press release writing and distribution for your children’s book launch, with a strong headline, a media list and sending support.
 - [Copyright Registration](https://fablenestpublishers.com/service-copyright-registration): Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.
 - [Cost to Publish a Children’s Book](https://fablenestpublishers.com/cost-to-publish-a-childrens-book): Real price ranges for illustration, editing, cover design, printing and marketing, with ISBN and copyright notes by country. Request a quote.
+- [How to Copyright a Children’s Book](https://fablenestpublishers.com/how-to-copyright-a-childrens-book): What copyright covers, whether to register, and who owns the illustrations in a picture book, with rules for the US, UK, Canada and Australia.
 
 ## Services
 
@@ -34,6 +35,18 @@ Our book publishing service takes your manuscript through editing, cover design,
 
 - Q: Can I publish a book that is already written but not edited?
   A: Yes. Manuscript preparation covers editing, proofreading and content refinement, so your text is polished before it is formatted.
+
+- Q: What is the difference between self-publishing and hybrid publishing?
+  A: In self-publishing you hire and manage the editor, illustrator and designer yourself and keep the rights and the sale income. Hybrid publishers bundle those services for a fee. Fablenest gives you a managed team while you stay the owner of your book.
+
+- Q: How much does it cost to self-publish a children’s book?
+  A: Public guides put most illustrated picture books between about $1,500 and $8,000. The biggest variables are the illustrator, the number of pages and whether you also want a trailer, website and launch support. See our cost guide for the full breakdown.
+
+- Q: How many pages should a picture book have?
+  A: Most picture books have 24, 32 or 40 pages. 32 pages is the usual choice because printers bind in multiples of eight and it keeps illustration costs predictable.
+
+- Q: Do I need an ISBN for my children’s book?
+  A: If you want retailers and libraries to track your book, yes, one for each format. Rules and prices differ by country. We explain the options for your country and can help you register the copyright too.
 
 Book publishing is the work between a finished manuscript and a book a reader can buy: editing, cover design, interior layout, file preparation and setting up the book on selling platforms.
 
@@ -58,6 +71,18 @@ Our book illustration service creates the characters, page illustrations and cov
 
 - Q: Will I see sketches before the final artwork?
   A: Yes. You review rough sketches first and can request changes before they become finished illustrations.
+
+- Q: How much does children’s book illustration cost?
+  A: Public guides put full-page illustrations at roughly $35 to $350 each, and a 24-page picture book at about $1,500 to $5,000 with a freelance illustrator. Style, number of characters and rounds of changes affect the price. Ask us for a stage-by-stage quote.
+
+- Q: How many pages is a picture book?
+  A: Most picture books have 24, 32 or 40 pages; 32 is the standard. That is usually about 14 to 16 spreads of artwork, plus the cover.
+
+- Q: How do I find the right illustrator for my children’s book?
+  A: Look at portfolios for the style you want, check that characters look the same from page to page, and agree the number of revision rounds in writing before work starts. We can match you with an illustrator and manage the process.
+
+- Q: Who owns the illustrations?
+  A: It should be written down before work begins. We give you a clear agreement that says who owns the artwork and what you can do with it, so you know your rights to print, sell and promote the book.
 
 Illustrating a children’s book means designing the characters and drawing the scenes that tell the story alongside the words. It is done in stages so you can guide the look before the artwork is finished.
 
@@ -225,6 +250,27 @@ Most self-published children’s picture books cost between about $1,500 and $8,
 
 - Q: Who keeps the rights to the book?
   A: You do. Self-publishing keeps the copyright with you, and a written agreement with any illustrator or editor should say who owns the artwork and text before work begins.
+
+### How to Copyright a Children’s Book
+Your children’s book is protected by copyright automatically when you write or draw it. Registration is optional in most countries; in the United States it is needed before you can sue. If you hire an illustrator, get a written agreement that says who owns the artwork.
+
+- Q: How do I copyright a children’s book?
+  A: Your book is protected automatically once you write it down or draw it. In the United States you can add an official registration through the US Copyright Office; in the UK and Australia there is no registration system, so you keep dated drafts as evidence.
+
+- Q: How much does it cost to copyright a children’s book?
+  A: Copyright itself is free and automatic. If you register in the United States, the online fee is in the tens of dollars for a single author and one work; check the Copyright Office fee page for the current amount.
+
+- Q: Do I have to register to own the copyright?
+  A: No. Registration is optional in most countries. In the United States it is required before you can file an infringement lawsuit, which is why many authors register soon after finishing the book.
+
+- Q: Who owns the illustrations in my picture book?
+  A: The illustrator does, unless a written agreement transfers the copyright or licenses it to you. Agree on this in writing before any artwork is made.
+
+- Q: Can I copyright a book title?
+  A: No. Titles are not protected by copyright, though a title used as the name of a series may qualify for trademark protection.
+
+- Q: Is the copyright symbol required?
+  A: No. The © symbol with your name and the year is not required, but it is good practice because it tells readers who to contact.
 
 ## Contact
 Use the contact form at https://fablenestpublishers.com/#contact
