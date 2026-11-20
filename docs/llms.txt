@@ -15,6 +15,7 @@
 - [Copyright Registration](https://fablenestpublishers.com/service-copyright-registration): Step-by-step help registering your book’s copyright: eligibility, application preparation, filing and your registration record. Not legal advice.
 - [Cost to Publish a Children’s Book](https://fablenestpublishers.com/cost-to-publish-a-childrens-book): Real price ranges for illustration, editing, cover design, printing and marketing, with ISBN and copyright notes by country. Request a quote.
 - [How to Copyright a Children’s Book](https://fablenestpublishers.com/how-to-copyright-a-childrens-book): What copyright covers, whether to register, and who owns the illustrations in a picture book, with rules for the US, UK, Canada and Australia.
+- [How to Publish a Children’s Book](https://fablenestpublishers.com/how-to-publish-a-childrens-book): A clear step-by-step guide to publishing a children’s book: manuscript, illustrations, ISBN, self vs hybrid vs traditional, printing and marketing.
 
 ## Services
 
@@ -271,6 +272,27 @@ Your children’s book is protected by copyright automatically when you write or
 
 - Q: Is the copyright symbol required?
   A: No. The © symbol with your name and the year is not required, but it is good practice because it tells readers who to contact.
+
+### How to Publish a Children’s Book
+To publish a children’s book, finish and edit the manuscript, plan and commission the illustrations, design the cover and interior, get an ISBN, choose self, hybrid or traditional publishing, proof and print, then market it. Illustrations are the biggest cost, so fix the text first.
+
+- Q: How do I publish a children’s book?
+  A: Finish and edit the text, plan the pages, commission and approve the illustrations, design the cover and interior, get an ISBN, choose self, hybrid or traditional publishing, order a printed proof, then print or upload and market the book.
+
+- Q: Can I publish a children’s book without an illustrator?
+  A: Yes, if you illustrate it yourself. Otherwise picture books need illustrations, so most authors hire an illustrator; text-only chapter books for older children do not.
+
+- Q: Is self-publishing a children’s book worth it?
+  A: It can be if you want control and speed and can fund the illustrations and marketing. Sales depend heavily on your own promotion, so plan for that from the start.
+
+- Q: Do I need an agent to publish a children’s book?
+  A: Not to self-publish or use a hybrid publisher. Most traditional publishers only accept submissions through a literary agent.
+
+- Q: Do I need an ISBN for a children’s book?
+  A: You need one to sell through most bookstores and distributors. Each format (paperback, hardcover, ebook) needs its own. Amazon can provide a free one for books you sell only there.
+
+- Q: How many pages is a children’s picture book?
+  A: Most are 32 pages, though 24 or 40 pages also occur. Printers bind in set page multiples, so confirm with yours.
 
 ## Contact
 Use the contact form at https://fablenestpublishers.com/#contact
