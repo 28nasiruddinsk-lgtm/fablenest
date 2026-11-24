@@ -13,6 +13,7 @@ $stories = $c['stories']['items'];
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="only light">
 <?php $seoKey = 'home'; include __DIR__ . '/inc/seo.php' ?>
+<link rel="preload" href="assets/fonts/MilkyNice.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Comic+Relief:wght@700&family=Figtree:wght@400;500&display=swap" rel="stylesheet">
@@ -67,7 +68,7 @@ $stories = $c['stories']['items'];
 
 <section class="sec" id="about" style="--y0:1300;--h:880">
   <?php [$ms, $msAlt] = seo_mascot('music'); ?><div class="a rv rv-r about-mascot" style="--x:1000;--y:1300;--w:760;--h:700;--d:.15"><img src="<?= $e(seo_cut($ms)) ?>" alt="<?= $e($msAlt) ?>" decoding="async"></div>
-  <h2 class="a th rv rv-wipe" style="--x:140;--y:1322;--w:760;--h:200;--fs:72">Every <em>children&rsquo;s book</em><br>Starts with an idea</h2>
+  <h2 class="a th rv rv-wipe" style="--x:140;--y:1322;--w:820;--h:200;--fs:72">Every <em>children&rsquo;s book</em><br>Starts with an idea</h2>
   <p class="a t20 rv-lines stag" style="--x:157;--y:1517;--w:760;--h:340;--d:.5"><?= $br($c['about']['lines']) ?></p>
   <a class="a b2 fill rv rv-pop" style="--x:162;--y:1931;--w:216;--h:59;--d:1.5" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a>
   <a class="a b2 line rv rv-pop" style="--x:400;--y:1931;--w:195;--h:59;--d:1.65" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a>
@@ -77,7 +78,7 @@ $stories = $c['stories']['items'];
 
 <section class="sec wd" id="services" style="--y0:2554;--h:1800">
   <img class="a" style="--x:18;--y:2555;--w:1884;--h:1792" src="assets/s/whatdo.jpg" alt="Illustrated map of our four children’s book services: book publishing, book cover design, book illustration, and editing and proofreading" decoding="async">
-  <h2 class="a th th--dark th--c rv rv-pop" style="--x:660;--y:2606;--w:600;--h:105;--d:.2;--fs:82">Our <em>Book Publishing</em> Services</h2>
+  <h2 class="a th th--dark th--c rv rv-pop" style="--x:360;--y:2606;--w:1200;--h:105;--d:.2;--fs:82">Our <em>Book Publishing</em> Services</h2>
   <img class="a rv rv-pop wd-edit" style="--x:1480;--y:3905;--w:330;--h:220;--d:.4" src="assets/s/edit-magnifier.webp" alt="An open manuscript with red editing marks under a magnifying glass" loading="lazy" decoding="async">
   <p class="a t20 c wwd-sub rv" style="--x:0;--y:2701;--w:1920;--h:28;--d:.5"><?= $e($c['services']['intro']) ?></p>
   <svg class="a" style="--x:18;--y:2555;--w:1884;--h:1792" viewBox="18 2555 1884 1792" role="img" aria-label="Our services: <?= $e(implode(', ', $c['services']['list'])) ?>">
@@ -140,7 +141,7 @@ $stories = $c['stories']['items'];
 <div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="why" style="--y0:5515;--h:825">
   <img class="a rv" style="--x:18;--y:5515;--w:1884;--h:825" src="assets/s/why.jpg" alt="" decoding="async" loading="lazy">
-  <h2 class="a th th--dark th--c rv rv-pop" style="--x:660;--y:5568;--w:600;--h:95;--d:.2;--fs:78">Why Authors <em>Choose</em> Fablenest</h2>
+  <h2 class="a th th--dark th--c rv rv-pop" style="--x:360;--y:5568;--w:1200;--h:95;--d:.2;--fs:78">Why Authors <em>Choose</em> Fablenest</h2>
   <p class="a t20 c rv" style="--x:0;--y:5658;--w:1920;--h:28;--d:.5;color:#fff"><?= $e($c['why']['intro']) ?></p>
 <?php foreach ([[298, 5708, 262, 'l'], [1362, 5708, 262, 'r'], [437, 6046, 264, 'l'], [1238, 6046, 264, 'r']] as $i => [$x, $y, $w, $side]): ?>
   <div class="a card rv rv-<?= $side ?>" style="--x:<?= $x ?>;--y:<?= $y ?>;--w:<?= $w ?>;--h:226;--d:<?= .6 + $i * .2 ?>"><img src="assets/s/card<?= $i + 1 ?>.png" alt="<?= $e($c['why']['cards'][$i]) ?>"></div>

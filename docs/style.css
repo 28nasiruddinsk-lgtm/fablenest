@@ -1,6 +1,7 @@
 /* Every size is a pixel of the 1920 px design; --u turns one design pixel into the current screen size. */
+@font-face{font-family:'Milky Nice';src:url(assets/fonts/MilkyNice.ttf) format('truetype');font-weight:400;font-style:normal;font-display:swap}
 :root{
-  --ink:#002a1c; --body:'Figtree',system-ui,sans-serif; --logo:'Lilita One','Fredoka','Comic Relief',cursive;
+  --ink:#002a1c; --body:'Figtree',system-ui,sans-serif; --logo:'Milky Nice','Lilita One','Fredoka','Comic Relief',cursive;
   --ease-pop:cubic-bezier(.34,1.56,.64,1); --ease-out:cubic-bezier(.22,1,.36,1);
 }
 *{box-sizing:border-box;margin:0;padding:0}

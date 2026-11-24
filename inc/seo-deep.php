@@ -1,30 +1,28 @@
 <?php
-// Long-form page content (words in content-deep.php), styled like the guide articles. On phones each block is a closed accordion row so the page stays short.
+// Long-form page content (words in content-deep.php). First block = intro, the rest = numbered cards. On phones the cards are closed accordion rows.
 $deep = (require __DIR__ . '/../content-deep.php')[$seoKey] ?? [];
 if (!$deep) return;
+$lead = array_shift($deep);
+$body = function (array $s) use ($e) {
+    foreach (($s['p'] ?? []) as $p) echo '<p>', $e($p), "</p>\n";
+    if (!empty($s['list'])) { echo '<ul>'; foreach ($s['list'] as $li) echo '<li>', $e($li), '</li>'; echo "</ul>\n"; }
+    if (!empty($s['links'])) { echo '<p class="gd__more">'; foreach ($s['links'] as $n => [$t, $h]) echo $n ? ' · ' : '', '<a href="', $e($h), '">', $e($t), '</a>'; echo "</p>\n"; }
+};
 ?>
-<article class="gd" aria-label="About children’s book publishing">
-  <div class="sx-wrap gd__wrap">
-<?php foreach ($deep as $sec): ?>
-    <section class="gd__sec sx-reveal">
-      <details class="gd__acc" open>
-        <summary><h2 class="sx-h2"><?= $e($sec['h']) ?></h2></summary>
-<?php foreach (($sec['p'] ?? []) as $p): ?>
-        <p><?= $e($p) ?></p>
-<?php endforeach ?>
-<?php if (!empty($sec['list'])): ?>
-        <ul class="gd__list">
-<?php foreach ($sec['list'] as $li): ?>
-          <li><?= $e($li) ?></li>
-<?php endforeach ?>
-        </ul>
-<?php endif ?>
-<?php if (!empty($sec['links'])): ?>
-        <p class="gd__more"><?php foreach ($sec['links'] as $n => [$t, $h]): ?><?= $n ? ' · ' : '' ?><a href="<?= $e($h) ?>"><?= $e($t) ?></a><?php endforeach ?></p>
-<?php endif ?>
+<section class="sx-deep" aria-label="About children’s book publishing">
+  <div class="sx-wrap">
+    <header class="sx-deep__lead sx-reveal">
+      <h2 class="sx-h"><?= $e($lead['h']) ?></h2>
+      <div class="sx-deep__txt"><?php $body($lead) ?></div>
+    </header>
+    <div class="sx-deep__grid">
+<?php foreach ($deep as $i => $sec): ?>
+      <details class="gd__acc sx-deep__card sx-reveal" open>
+        <summary><span class="sx-deep__n"><?= sprintf('%02d', $i + 1) ?></span><h3 class="sx-deep__h"><?= $e($sec['h']) ?></h3></summary>
+        <div class="sx-deep__txt"><?php $body($sec) ?></div>
       </details>
-    </section>
 <?php endforeach ?>
+    </div>
   </div>
-</article>
-<script>if (matchMedia('(max-width:980px)').matches) document.querySelectorAll('.gd__acc').forEach((d, i) => { d.open = false })</script>
+</section>
+<script>if (matchMedia('(max-width:980px)').matches) document.querySelectorAll('.gd__acc').forEach(function (d) { d.open = false })</script>
