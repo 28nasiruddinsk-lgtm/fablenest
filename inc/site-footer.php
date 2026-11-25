@@ -15,7 +15,7 @@
 <?php foreach ([['phone', 9192], ['email', 9246], ['address', 9301]] as $i => [$k, $y]): ?>
   <a class="ft-row rv" style="--x:1610;--y:<?= $y ?>;--d:<?= .8 + $i * .1 ?>" href="<?= $e($link('#contact')) ?>"><img src="assets/s/f<?= $i + 1 ?>.png" alt=""><?= $e($c['contact'][$k]) ?></a>
 <?php endforeach ?>
-  <h3 class="a rv ft-h" style="--x:1614;--y:9364;--w:300;--h:36;--d:1.05">Social platforms</h3>
+  <h3 class="a rv ft-h" style="--x:1614;--y:9364;--w:300;--h:36;--d:1.05">Social Platforms</h3>
 <?php foreach ($c['footer']['social'] as $i => [$label, $href]): ?>
   <a class="ft-row rv" style="--x:1610;--y:<?= 9440 + $i * 55 ?>;--d:<?= 1.1 + $i * .1 ?>" href="<?= $e($href) ?>"><img src="assets/s/f<?= $i + 4 ?>.png" alt=""><?= $e($label) ?></a>
 <?php endforeach ?>

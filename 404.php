@@ -13,7 +13,7 @@ include __DIR__ . '/inc/head.php';
 include __DIR__ . '/inc/site-header.php';
 ?>
 <section class="ab-intro"><div class="container-fluid ab-wrap text-center py-5">
-  <h1 class="sv-h">That page <span class="sv-acc">wandered off</span></h1>
+  <h1 class="sv-h">That Page <span class="sv-acc">Wandered Off</span></h1>
   <p class="ab-p mx-auto mt-3" style="max-width:640px">The address may have changed or the page may no longer exist. Try one of these instead:</p>
   <p class="mt-4"><a class="sx-btn" href="/">Home</a> <a class="sx-btn" href="/book-publishing">Book publishing</a> <a class="sx-btn" href="/about">About us</a></p>
 </div></section>

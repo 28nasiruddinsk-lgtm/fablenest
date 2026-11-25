@@ -7,14 +7,14 @@ $pr = $s['process'];
     <div class="container-fluid ab-wrap">
       <div class="row align-items-center g-5">
         <div class="col-lg-5 ab-reveal">
-          <h2 class="sv-h pr__h" id="pr-h"><?php foreach ($pr['title'] as $n => $line): ?><span class="<?= $n === 0 ? 'sv-acc' : '' ?>"><?= $e($line) ?></span> <?php endforeach ?></h2>
+          <h2 class="sv-h pr__h" id="pr-h"><?php foreach (tc_lines($pr['title']) as $n => $line): ?><span class="<?= $n === 0 ? 'sv-acc' : '' ?>"><?= $e($line) ?></span> <?php endforeach ?></h2>
           <p class="pr__lead"><?= $e($pr['intro']) ?></p>
           <ol class="pr__steps">
 <?php foreach ($pr['steps'] as $i => [$name, $text, $tag]): ?>
             <li class="pr__step<?= $i === 0 ? ' is-on' : '' ?>" data-step="<?= $i + 1 ?>">
               <button type="button" aria-label="Show step <?= $i + 1 ?>: <?= $e($name) ?>">
                 <span class="pr__num"><?= $i + 1 ?></span>
-                <span class="pr__txt"><strong><?= $e($name) ?></strong><small><?= $e($text) ?></small></span>
+                <span class="pr__txt"><strong><?= $e(tc($name)) ?></strong><small><?= $e($text) ?></small></span>
                 <em class="pr__tag"><?= $e($tag) ?></em>
               </button>
             </li>

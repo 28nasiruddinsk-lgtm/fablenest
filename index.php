@@ -67,7 +67,7 @@ $stories = $c['stories']['items'];
 
 <section class="sec" id="about" style="--y0:1300;--h:880">
   <?php [$ms, $msAlt] = seo_mascot('music'); ?><div class="a rv rv-r about-mascot" style="--x:1000;--y:1300;--w:760;--h:700;--d:.15"><img src="<?= $e(seo_cut($ms)) ?>" alt="<?= $e($msAlt) ?>" decoding="async"></div>
-  <h2 class="a th rv rv-wipe" style="--x:140;--y:1322;--w:820;--h:200;--fs:72">Every <em>children&rsquo;s book</em><br>Starts with an idea</h2>
+  <h2 class="a th rv rv-wipe" style="--x:140;--y:1322;--w:820;--h:200;--fs:72">Every <em>Children&rsquo;s Book</em><br>Starts With an Idea</h2>
   <p class="a t20 rv-lines stag" style="--x:157;--y:1517;--w:760;--h:340;--d:.5"><?= $br($c['about']['lines']) ?></p>
   <a class="a b2 fill rv rv-pop" style="--x:162;--y:1931;--w:216;--h:59;--d:1.5" href="#contact"><?= $e($c['hero']['cta'][0]) ?></a>
   <a class="a b2 line rv rv-pop" style="--x:400;--y:1931;--w:195;--h:59;--d:1.65" href="#contact"><?= $e($c['hero']['cta'][1]) ?></a>
@@ -128,7 +128,7 @@ $stories = $c['stories']['items'];
 <section class="sx-bridge" aria-label="How we work">
   <div class="sx-wrap">
     <p class="sx-bridge__k">One team, one plan</p>
-    <h2 class="sx-h">A publishing plan <span class="sx-acc">built around</span><br>your children&rsquo;s book</h2>
+    <h2 class="sx-h">A Publishing Plan <span class="sx-acc">Built Around</span><br>Your Children&rsquo;s Book</h2>
     <p>We start by listening: who the book is for, where you want it sold and how much you want us to handle. Then we build a simple step-by-step plan, so you always know what happens next.</p>
     <a class="sx-btn" href="#contact">Talk to us</a>
   </div>

@@ -4,7 +4,7 @@ $glist = require __DIR__ . '/../content-articles.php';
 ?>
 <section class="sx-rel" aria-labelledby="gl-h">
   <div class="sx-wrap">
-    <h2 class="sx-h sx-h--sm" id="gl-h">Free children&rsquo;s book <span class="sx-acc">publishing guides</span></h2>
+    <h2 class="sx-h sx-h--sm" id="gl-h">Free Children&rsquo;s Book <span class="sx-acc">Publishing Guides</span></h2>
     <div class="sx-rel__grid">
 <?php $i = 0; foreach ($glist as $slug => $g): ?>
       <a class="sx-card sx-reveal" style="--i:<?= $i ?>" href="guide.php?g=<?= $e($slug) ?>">

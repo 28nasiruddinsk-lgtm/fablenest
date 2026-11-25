@@ -3,7 +3,7 @@
   <div class="container-fluid ab-wrap">
     <div class="row align-items-center g-5">
       <div class="col-lg-7 ab-reveal">
-        <h2 class="sv-h mb-4"><?php foreach ($s['intro']['heading'] as $n => $line): ?><span class="<?= $n === $s['intro']['accent'] ? 'sv-acc' : '' ?>"><?= $e($line) ?></span> <?php endforeach ?></h2>
+        <h2 class="sv-h mb-4"><?php foreach (tc_lines($s['intro']['heading']) as $n => $line): ?><span class="<?= $n === $s['intro']['accent'] ? 'sv-acc' : '' ?>"><?= $e($line) ?></span> <?php endforeach ?></h2>
 <?php foreach ($s['intro']['paragraphs'] as $t): ?>
         <p class="ab-p"><?= $e($t) ?></p>
 <?php endforeach ?>

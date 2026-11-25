@@ -26,7 +26,7 @@ if (!$pfTabs) return;
             <span class="pfo__bar" aria-hidden="true"><i></i><i></i><i></i><b><?= $e($cap) ?></b></span>
 <?php endif ?>
             <span class="pfo__pic"><img src="<?= $e($img) ?>" alt="<?= $e($name) ?>" loading="lazy"><?php if ($t === 'trailers'): ?><span class="pfo__play" aria-hidden="true"></span><?php endif ?></span>
-            <span class="pfo__meta"><strong><?= $e($name) ?></strong><?php if ($t !== 'websites'): ?><small><?= $e($cap) ?></small><?php endif ?></span>
+            <span class="pfo__meta"><strong><?= $e(tc($name)) ?></strong><?php if ($t !== 'websites'): ?><small><?= $e($cap) ?></small><?php endif ?></span>
           </<?= $tag ?>>
         </div>
 <?php endforeach ?>

@@ -12,13 +12,13 @@ $body = function (array $s) use ($e) {
 <section class="sx-deep" aria-label="About children’s book publishing">
   <div class="sx-wrap">
     <header class="sx-deep__lead sx-reveal">
-      <h2 class="sx-h"><?= $e($lead['h']) ?></h2>
+      <h2 class="sx-h"><?= $e(tc($lead['h'])) ?></h2>
       <div class="sx-deep__txt"><?php $body($lead) ?></div>
     </header>
     <div class="sx-deep__grid">
 <?php foreach ($deep as $i => $sec): ?>
       <details class="gd__acc sx-deep__card sx-reveal" open>
-        <summary><span class="sx-deep__n"><?= sprintf('%02d', $i + 1) ?></span><h3 class="sx-deep__h"><?= $e($sec['h']) ?></h3></summary>
+        <summary><span class="sx-deep__n"><?= sprintf('%02d', $i + 1) ?></span><h3 class="sx-deep__h"><?= $e(tc($sec['h'])) ?></h3></summary>
         <div class="sx-deep__txt"><?php $body($sec) ?></div>
       </details>
 <?php endforeach ?>

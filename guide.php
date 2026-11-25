@@ -25,7 +25,7 @@ include __DIR__ . '/inc/site-header.php';
     <p class="gd__meta">Updated <time datetime="<?= $e($g['updated']) ?>"><?= $e(date('F j, Y', strtotime($g['updated']))) ?></time> · By the Fablenest Publishers team</p>
 <?php foreach ($g['sections'] as $sec): ?>
     <section class="gd__sec sx-reveal">
-      <h2 class="sx-h2"><?= $e($sec['h']) ?></h2>
+      <h2 class="sx-h2"><?= $e(tc($sec['h'])) ?></h2>
 <?php foreach (($sec['p'] ?? []) as $p): ?>
       <p><?= $e($p) ?></p>
 <?php endforeach ?>
@@ -55,7 +55,7 @@ include __DIR__ . '/inc/site-header.php';
     </section>
 <?php endforeach ?>
     <section class="gd__cta sx-reveal">
-      <h2 class="sx-h2">Want a real number for <span class="sx-acc">your book?</span></h2>
+      <h2 class="sx-h2">Want a Real Number for <span class="sx-acc">Your Book?</span></h2>
       <p>Tell us the page count, style and goals, and we will send a stage-by-stage estimate with no obligation.</p>
       <a class="sx-btn" href="#contact">Request a quote</a>
     </section>
@@ -74,7 +74,7 @@ include __DIR__ . '/inc/site-header.php';
 
 <section class="sx-rel" aria-labelledby="rel-h">
   <div class="sx-wrap">
-    <h2 class="sx-h sx-h--sm" id="rel-h">Keep <span class="sx-acc">reading</span></h2>
+    <h2 class="sx-h sx-h--sm" id="rel-h">Keep <span class="sx-acc">Reading</span></h2>
     <div class="sx-rel__grid">
 <?php foreach ($g['related'] as $i => [$name, $href]): ?>
       <a class="sx-card sx-reveal" style="--i:<?= $i ?>" href="<?= $e($href) ?>">
