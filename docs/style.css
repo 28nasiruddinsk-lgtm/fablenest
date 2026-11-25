@@ -82,7 +82,7 @@ img{display:block}
 /* Figma: crop of the full paper image, stretched to 100% x 91% of the visible height, 5% from the top */
 .paper-crop{left:0;top:0;width:100%;height:100%;overflow:hidden}
 .paper-crop img{position:absolute;left:0;top:calc(-34.8*var(--pu));width:100%;height:calc(696.7*var(--pu))}
-.paper-title{position:absolute;margin:0;left:calc(161.9*var(--pu));top:calc(107.5*var(--pu));width:calc(305*var(--pu));height:calc(71*var(--pu));display:flex;align-items:center;justify-content:center;text-align:center;font:400 calc(30*var(--pu))/1.1 var(--logo);color:#4a2a10}
+.paper-title{position:absolute;margin:0;left:calc(161.9*var(--pu));top:calc(107.5*var(--pu));width:calc(305*var(--pu));height:calc(71*var(--pu));display:flex;align-items:center;justify-content:center;text-align:center;font:600 calc(30*var(--pu))/1.1 var(--logo);color:#4a2a10}
 .f{left:calc(130*var(--pu));width:calc(363*var(--pu));border-bottom:calc(1*var(--pu)) solid var(--ink);display:block}
 .f-name{top:calc(212*var(--pu));height:calc(38*var(--pu))}
 .f-email{top:calc(300*var(--pu));height:calc(38*var(--pu))}
@@ -201,7 +201,7 @@ img{display:block}
 /* CTA bar */
 .cta-bar{box-sizing:border-box;border:calc(4*var(--u)) solid var(--ink);border-radius:calc(28*var(--u));box-shadow:calc(7*var(--u)) calc(11*var(--u)) 0 var(--ink);
   background:linear-gradient(95deg,rgba(255,228,190,.6),rgba(255,228,190,0) 45%),linear-gradient(180deg,#ffd9a4,#ffc169)}
-.cta-h{font:400 calc(40*var(--u))/calc(48*var(--u)) var(--logo);letter-spacing:0;white-space:nowrap}
+.cta-h{font:600 calc(40*var(--u))/calc(48*var(--u)) var(--logo);letter-spacing:0;white-space:nowrap}
 .fld{display:block;box-sizing:border-box;border:0;border-bottom:calc(2*var(--u)) solid var(--ink);background:transparent;color:var(--ink);outline:0;
   font:400 calc(20*var(--u))/1 var(--body);letter-spacing:0;padding:0 calc(12*var(--u))}
 .fld::placeholder{color:rgba(0,42,28,.52)}
@@ -329,7 +329,7 @@ img{display:block}
 .mega::before{content:"";position:absolute;left:0;right:0;top:calc(-60*var(--u));height:calc(60*var(--u))} /* keeps the menu open while the pointer crosses the gap */
 .has-mega:hover .mega,.has-mega:focus-within .mega,.has-mega.open .mega{opacity:1;visibility:visible;transform:none;transition-delay:0s}
 .mega__intro{padding:calc(26*var(--u));border-radius:calc(20*var(--u));background:#002a1c;color:#fff;display:flex;flex-direction:column;gap:calc(12*var(--u))}
-.mega__intro strong{font:400 calc(30*var(--u))/1.15 var(--logo)}
+.mega__intro strong{font:600 calc(30*var(--u))/1.15 var(--logo)}
 .mega__intro p{margin:0;font-size:calc(17*var(--u));line-height:1.4;opacity:.85}
 .links .mega__all{position:static;left:auto;top:auto;height:auto;line-height:1.2;margin-top:auto;align-self:flex-start;padding:calc(10*var(--u)) calc(22*var(--u));border-radius:999px;background:linear-gradient(153deg,#ffe3bd 30%,#ffc169 80%);color:#002a1c;font-weight:500;font-size:calc(17*var(--u));transition:transform .25s var(--ease-pop)}
 .mega__all:hover{transform:translateX(4px)}
@@ -408,8 +408,8 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 .about-mascot img{display:block;height:100%;width:auto;max-width:100%;object-fit:contain;filter:drop-shadow(0 18px 22px rgba(0,42,28,.25));animation:hm-float 5s ease-in-out infinite alternate;--t:0deg}
 @media (prefers-reduced-motion:reduce){.about-mascot img{animation:none}}
 
-/* ---------- headings drawn as text (one font everywhere: Satoshi 500) ---------- */
-.th{margin:0;font:400 calc(var(--fs,80)*var(--u))/1.08 var(--logo);color:#002a1c;white-space:nowrap;letter-spacing:.005em}
+/* ---------- headings drawn as text (one font everywhere: Satoshi 600) ---------- */
+.th{margin:0;font:600 calc(var(--fs,80)*var(--u))/1.08 var(--logo);color:#002a1c;white-space:nowrap;letter-spacing:.005em}
 .th em{font-style:normal;color:#9fbc00}
 .th--dark{color:#fff}.th--dark em{color:#deff21}
 .th--c{text-align:center}
@@ -489,3 +489,6 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 @media (min-width:981px){.glow{left:calc(1210*var(--u));top:calc(360*var(--u))}}
 .glow{display:none!important}
 .wd-edit{object-fit:contain;filter:drop-shadow(0 calc(10*var(--u)) calc(14*var(--u)) rgba(0,0,0,.35))}
+
+/* footer column titles use the heading font too */
+.ft h3,.ft .ft-h,.ft-h{font-family:var(--logo);font-weight:600}
