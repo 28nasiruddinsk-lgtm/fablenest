@@ -78,7 +78,7 @@ $stories = $c['stories']['items'];
 <section class="sec wd" id="services" style="--y0:2554;--h:1800">
   <img class="a" style="--x:18;--y:2555;--w:1884;--h:1792" src="assets/s/whatdo.jpg" alt="Illustrated map of our four children’s book services: book publishing, book cover design, book illustration, and editing and proofreading" decoding="async">
   <h2 class="a th th--dark th--c rv rv-pop" style="--x:360;--y:2606;--w:1200;--h:105;--d:.2;--fs:82">Our <em>Book Publishing</em> Services</h2>
-  <img class="a rv rv-pop wd-edit" style="--x:1480;--y:3905;--w:330;--h:220;--d:.4" src="assets/s/edit-magnifier.webp" alt="An open manuscript with red editing marks under a magnifying glass" loading="lazy" decoding="async">
+  <img class="a rv rv-pop wd-edit" style="--x:1370;--y:3905;--w:330;--h:220;--d:.4" src="assets/s/edit-magnifier.webp" alt="An open manuscript with red editing marks under a magnifying glass" loading="lazy" decoding="async">
   <p class="a t20 c wwd-sub rv" style="--x:0;--y:2701;--w:1920;--h:28;--d:.5"><?= $e($c['services']['intro']) ?></p>
   <svg class="a" style="--x:18;--y:2555;--w:1884;--h:1792" viewBox="18 2555 1884 1792" role="img" aria-label="Our services: <?= $e(implode(', ', $c['services']['list'])) ?>">
     <defs>

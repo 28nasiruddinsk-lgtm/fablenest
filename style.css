@@ -492,3 +492,6 @@ input.pf:focus,textarea.pf:focus{background-color:rgba(255,255,255,.28)!importan
 
 /* footer column titles use the heading font too */
 .ft h3,.ft .ft-h,.ft-h{font-family:var(--logo);font-weight:600}
+
+/* services map: no glowing dot running along the path */
+#tracer{display:none}
