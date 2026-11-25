@@ -9,8 +9,8 @@
   .pg{--u:calc(100cqw/700);height:auto!important;margin-top:0!important}
   .pg .sec:not(.wd){position:relative;left:auto;top:auto;width:auto;height:auto;padding:40px 22px;display:flex;flex-wrap:wrap;gap:14px;align-content:flex-start}
   .pg .sec:not(.wd) .a{position:relative;left:auto;top:auto;width:auto;height:auto;flex:1 1 100%;min-width:0}
-  .pg .th{white-space:normal;font-size:clamp(28px,8.6vw,44px);line-height:1.1}
-  .pg .t20{font-size:16px;line-height:1.65;white-space:normal;letter-spacing:0}
+  .pg .th{white-space:normal;font-size:clamp(30px,9vw,46px);line-height:1.1}
+  .pg .t20{font-size:17px;line-height:1.65;white-space:normal;letter-spacing:0}
   .pg .sec:not(.wd) .a.b2{flex:1 1 calc(50% - 7px);min-width:140px;height:46px;font-size:15px;padding:0 14px;width:auto}
 
   .pg .t20 .ln,.pg .rv-lines .ln{display:inline}
@@ -33,7 +33,7 @@
   .pg .wd{--u:calc(100cqw/1920);position:relative;left:auto;top:auto;width:100%;height:calc(var(--h)*var(--u) + 110px)}
   .wd>img.a,.wd>svg.a,.wd .wd-edit{margin-top:74px}
   .wd .th{font-size:clamp(20px,6vw,30px)!important;white-space:normal;left:2.5%!important;width:95%!important;top:30px!important;height:auto!important;line-height:1.15}
-  .wd .wwd-sub{left:6%!important;width:88%!important;top:68px!important;height:auto!important;font-size:13px;line-height:1.4;white-space:normal;text-shadow:0 1px 3px rgba(0,0,0,.5)}
+  .wd .wwd-sub{left:6%!important;width:88%!important;top:68px!important;height:auto!important;font-size:14px;line-height:1.4;white-space:normal;text-shadow:0 1px 3px rgba(0,0,0,.5)}
 
   /* the desktop sheet pins #why, #stories and #services with id rules, so these need the same weight */
   .pg .sec#why,.pg .sec#stories{left:auto;width:auto;height:auto;overflow:hidden}
@@ -121,7 +121,7 @@
   .gd__tbl thead{display:none}
   .gd__tbl tr{margin:0 0 14px;border:1px solid #d8e6b4;border-radius:14px;overflow:hidden;background:#fff}
   .gd__tbl tbody th{padding:12px 16px;font-size:16px}
-  .gd__tbl td{padding:10px 16px;font-size:15px;line-height:1.5;border-bottom:1px solid #eef3dc}
+  .gd__tbl td{padding:10px 16px;font-size:16px;line-height:1.5;border-bottom:1px solid #eef3dc}
   .gd__tbl td::before{content:attr(data-l);display:block;margin-bottom:2px;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#4d6600;font-weight:600}
 }
 
@@ -138,18 +138,18 @@
   .sx-band{padding:60px 0 54px}
   .sx-bridge{padding:48px 0}
   .sx-steps__h{margin-top:0}
-  .sx-h,.sx-h2{font-size:clamp(24px,7vw,30px);text-wrap:balance}
+  .sx-h,.sx-h2{font-size:clamp(26px,7.4vw,32px);text-wrap:balance}
   .sx-steps__h,.sx-band--terms .sx-h2{text-align:center}
   .sx-steps,.sx-band--terms dl{display:flex!important;grid-template-columns:none!important;gap:12px!important;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin:0 calc(-1*clamp(18px,8.4vw,200px));padding:6px clamp(18px,8.4vw,200px) 14px;scroll-padding-left:clamp(18px,8.4vw,200px)}
   .sx-steps::-webkit-scrollbar,.sx-band--terms dl::-webkit-scrollbar{display:none}
   .sx-steps>.sx-step,.sx-band--terms dl>div{flex:0 0 78%;scroll-snap-align:start;box-sizing:border-box}
   .sx-band--steps .sx-step{padding:18px 18px 20px!important;border-radius:18px;flex-direction:column;gap:6px;border-top:0}
   .sx-step__n{font-size:34px!important;min-width:0;line-height:1}
-  .sx-step h4{font-size:18px}.sx-step p{font-size:14px;line-height:1.5}
+  .sx-step h4{font-size:19px}.sx-step p{font-size:16px;line-height:1.5}
   .sx-band--terms dl div{padding:14px 16px!important}
   .sx-band--terms dl div::before{display:none}
-  .sx-band--terms dt{font-size:18px}
-  .sx-band--terms dd{font-size:14px;margin-top:4px}
+  .sx-band--terms dt{font-size:20px}
+  .sx-band--terms dd{font-size:16px;margin-top:4px}
   .sx-band--terms .sx-h2{margin-bottom:18px}
   .sx-faq{padding:44px 0}
   .sx-faq__intro p{margin-bottom:14px}
@@ -158,7 +158,7 @@
   .sx-card{flex-direction:row;align-items:center;gap:12px;padding:14px 16px}
   .sx-card span:not(.sx-card__n){display:none}
   .sx-card__n{margin:0;flex:none;width:34px}
-  .sx-card strong{flex:1;font-size:17px}
+  .sx-card strong{flex:1;font-size:19px}
   .sx-card em{margin:0;padding:0}
   .sx-deep{padding:34px 0 38px}
   .sx-deep__lead{gap:12px;margin-bottom:18px}
@@ -167,7 +167,7 @@
   .sx-deep__card{padding:0 16px;border-radius:16px}
   .sx-deep__card>summary{pointer-events:auto;cursor:pointer;margin:0;padding:14px 0;gap:12px}
   .sx-deep__n{width:34px;height:34px;font-size:14px}
-  .sx-deep__h{flex:1;font-size:18px;line-height:1.25}
+  .sx-deep__h{flex:1;font-size:20px;line-height:1.25}
   .sx-deep__card>summary::after{content:'+';flex:none;display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#deff21;color:#002a1c;font:700 18px/1 var(--body)}
   .sx-deep__card[open]>summary::after{content:'–';background:#002a1c;color:#deff21}
   .sx-deep__card .sx-deep__txt{padding:0 0 12px}
