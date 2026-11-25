@@ -104,18 +104,6 @@ $stories = $c['stories']['items'];
 
 </div>
 
-<section class="sx-bridge" aria-label="How we work">
-  <div class="sx-wrap">
-    <p class="sx-bridge__k">One team, one plan</p>
-    <h2 class="sx-h">A publishing plan <span class="sx-acc">built around</span><br>your children&rsquo;s book</h2>
-    <p>We start by listening: who the book is for, where you want it sold and how much you want us to handle. Then we build a simple step-by-step plan, so you always know what happens next.</p>
-    <a class="sx-btn" href="#contact">Talk to us</a>
-  </div>
-</section>
-
-<?php include __DIR__ . '/inc/seo-guide.php' ?>
-<?php include __DIR__ . '/inc/seo-deep.php' ?>
-
 <div class="pg solo" style="height:calc(710*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="portfolio" style="--y0:6500;--h:710">
   <h2 class="a th th--c rv rv-wipe" style="--x:260;--y:6506;--w:1400;--h:100;--fs:74">Children&rsquo;s Books <em>We&rsquo;ve Helped</em> Publish</h2>
@@ -136,6 +124,19 @@ $stories = $c['stories']['items'];
   </div>
 </section>
 </div>
+
+<section class="sx-bridge" aria-label="How we work">
+  <div class="sx-wrap">
+    <p class="sx-bridge__k">One team, one plan</p>
+    <h2 class="sx-h">A publishing plan <span class="sx-acc">built around</span><br>your children&rsquo;s book</h2>
+    <p>We start by listening: who the book is for, where you want it sold and how much you want us to handle. Then we build a simple step-by-step plan, so you always know what happens next.</p>
+    <a class="sx-btn" href="#contact">Talk to us</a>
+  </div>
+</section>
+
+<?php include __DIR__ . '/inc/seo-guide.php' ?>
+<?php include __DIR__ . '/inc/seo-deep.php' ?>
+
 
 <div class="pg solo" style="height:calc(825*var(--u));margin-top:calc(160*var(--u))">
 <section class="sec" id="why" style="--y0:5515;--h:825">
