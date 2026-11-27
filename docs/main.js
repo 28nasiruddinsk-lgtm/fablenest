@@ -206,10 +206,25 @@ document.querySelectorAll('.sx-reveal').forEach(el => sxIo.observe(el));
   const box = document.querySelector('.pfs');
   if (!box) return;
   const reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
-  const half = () => box.scrollWidth / 2;                 // the track holds every cover twice
-  let paused = false, pos = 0, last = 0;
+  const n = box.querySelectorAll('.pfs__item').length / 2;   // the track holds every cover twice
   const frame = () => box.querySelector('.pfs__item').getBoundingClientRect().width + parseFloat(getComputedStyle(box.firstElementChild).columnGap || 0);
+  const half = () => n * frame();                          // exact width of one set (ignores track padding)
+  let paused = false, pos = 0, last = 0;
   const wrap = () => { if (box.scrollLeft >= half()) box.scrollLeft -= half(); else if (box.scrollLeft <= 0) box.scrollLeft += half(); pos = box.scrollLeft; };
+  const phone = matchMedia('(max-width:980px)');
+  if (phone.matches) {
+    // phones: native swipe + snap, one cover every 3.5 s via native smooth scroll (no per-frame scrollLeft writes = no jank);
+    // the loop jump happens only when scrolling has stopped, so it never fights finger momentum
+    let touching = false, idle;
+    box.scrollLeft = half();
+    const settle = () => { clearTimeout(idle); idle = setTimeout(() => { if (touching) return; const h = half(), x = box.scrollLeft; if (x >= h * 1.5 - frame()) box.scrollLeft = x - h; else if (x <= h * .5 + frame()) box.scrollLeft = x + h; }, 180); };
+    box.addEventListener('scroll', settle, { passive: true });
+    box.addEventListener('touchstart', () => { touching = true; }, { passive: true });
+    box.addEventListener('touchend', () => { touching = false; box._rest = Date.now() + 4000; settle(); }, { passive: true });
+    if (!reduce) setInterval(() => { if (touching || document.hidden || Date.now() < (box._rest || 0)) return; box.scrollBy({ left: frame(), behavior: 'smooth' }); }, 3500);
+    document.querySelectorAll('.pfw__btn').forEach(b => b.addEventListener('click', () => { box._rest = Date.now() + 4000; box.scrollBy({ left: (b.classList.contains('pfw__btn--next') ? 1 : -1) * frame(), behavior: 'smooth' }); }));
+    return;
+  }
   const tick = t => {
     if (!paused && !document.hidden && last) { pos += (t - last) * frame() / 6000; box.scrollLeft = pos; wrap(); }
     last = t; requestAnimationFrame(tick);
